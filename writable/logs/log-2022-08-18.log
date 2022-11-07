@@ -1,0 +1,84 @@
+CRITICAL - 2022-08-18 00:37:29 --> Invalid file: head/head.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head/head.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('head/head', [], true)
+ 3 APPPATH\Controllers\Estudiante.php(161): view('head/head')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-18 00:38:44 --> Invalid file: head/head.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head/head.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('head/head', [], true)
+ 3 APPPATH\Controllers\Estudiante.php(161): view('head/head')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-18 00:39:41 --> Invalid file: head/head.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head/head.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('head/head', [], true)
+ 3 APPPATH\Controllers\Estudiante.php(161): view('head/head')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-18 00:39:56 --> Invalid file: estudiante/ticket_adicional.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('estudiante/ticket_adicional.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket_adicional', [], true)
+ 3 APPPATH\Views\estudiante\ticket\formulario.php(162): view('estudiante/ticket_adicional')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 7 APPPATH\Controllers\Estudiante.php(174): view('estudiante/ticket/formulario', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-18 00:40:22 --> Invalid file: estudiante/ticket_adicional.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('estudiante/ticket_adicional.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket_adicional', [], true)
+ 3 APPPATH\Views\estudiante\ticket\formulario.php(162): view('estudiante/ticket_adicional')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 7 APPPATH\Controllers\Estudiante.php(134): view('estudiante/ticket/formulario', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-18 00:41:15 --> Invalid file: estudiante/ticket_adicional.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('estudiante/ticket_adicional.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket_adicional', [], true)
+ 3 APPPATH\Views\estudiante\ticket\formulario.php(162): view('estudiante/ticket_adicional')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 7 APPPATH\Controllers\Estudiante.php(177): view('estudiante/ticket/formulario', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-18 00:41:51 --> Undefined variable: deudor
+in APPPATH\Views\estudiante\ticket\formulario.php on line 188.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(188): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: deudor', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 188, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(177): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-18 00:42:07 --> Undefined variable: deudor
+in APPPATH\Controllers\Estudiante.php on line 160.
+ 1 APPPATH\Controllers\Estudiante.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: deudor', 'APPPATH\\Controllers\\Estudiante.php', 160, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

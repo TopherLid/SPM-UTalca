@@ -1,0 +1,146 @@
+.modal-content {
+    background: #576F72;
+    color : #ffffff;
+}
+
+h2{
+    font-size: medium;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.logo_wide{
+
+    height: 150px;
+}
+
+.btn_width{
+    width:1500px;
+}
+
+.center{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.padding_titulo{
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.line{
+    /*poner alguna linea o algo*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row_margin{
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+.info_box{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text_box{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/**/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-o-outer-spin-button,
+input::-o-inner-spin-button {
+    -o-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #60CDCD !important;
+    color:black !important; 
+}
+*/
+
+.btn-primary{
+    background-color: #60CDCD !important;
+    color:black !important; 
+}
+
+.btn-primary:hover{
+    background-color: #ffffff !important;
+    color:black !important; 
+}
+
+
+.btn-outline-primary{
+    background-color: #ffffff !important;
+    color:black !important; 
+}
+
+.btn-outline-primary:hover{
+    background-color: #60CDCD !important;
+    color: #ffffff !important; 
+}
+
+
+.btn-warning, .btn-warning:hover, .btn-warning:active, .btn-warning:visited {
+    background-color: #F29B33 !important;
+}
+
+.btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
+    background-color: #1ab293 !important;
+}
+
+.proh {
+    cursor: not-allowed;
+}
+
+input.proh, textarea  { 
+    background: #f6f6f6; 
+}
+
+.proh:focus{
+    background:#f6f6f6;
+}
+
+.pagination .page-link {
+    background: #60CDCD;
+    color: black;
+}
+
+.pagination:hover .page-link:hover{
+    background: #F29B33;
+    color: #000000;
+}
+
+
+
+.btn-secundario, .btn-secundario:hover, .btn-secundario:active, .btn-secundario:visited {
+    background-color: #fff !important;
+    color:#60CDCD !important; 
+}
+
+#footer {
+    background-color: #FFFFFF;
+    padding: 180px 0 20px 0;
+}

@@ -1,0 +1,237 @@
+CRITICAL - 2022-10-18 09:07:25 --> syntax error, unexpected '?>'
+in APPPATH\Views\admin\convocatorias\individual.php on line 191.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/individual', [], true)
+ 3 APPPATH\Controllers\Convocatoria.php(328): view('admin/convocatorias/individual', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202201')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 09:07:47 --> syntax error, unexpected '?>'
+in APPPATH\Views\admin\convocatorias\individual.php on line 191.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/individual', [], true)
+ 3 APPPATH\Controllers\Convocatoria.php(328): view('admin/convocatorias/individual', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202201')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 12:06:42 --> Undefined variable: postulacion
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\AuthSPM.php(14): view('estudiante/ticket/correcto')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 12:06:42 --> Undefined variable: postulacion
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\AuthSPM.php(14): view('estudiante/ticket/correcto')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 12:22:22 --> Undefined variable: postulacion
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\AuthSPM.php(14): view('estudiante/ticket/correcto')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 12:46:41 --> Undefined variable: postulacion
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\AuthSPM.php(14): view('estudiante/ticket/correcto')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->inicio()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:04:27 --> Undefined variable: postulacion
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(264): view('estudiante/ticket/correcto')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:05:01 --> Undefined index: ID_POSTULANTE
+in APPPATH\Controllers\Estudiante.php on line 254.
+ 1 APPPATH\Controllers\Estudiante.php(254): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Controllers\\Estudiante.php', 254, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:05:37 --> Undefined index: ID_POSTULANTE
+in APPPATH\Controllers\Estudiante.php on line 254.
+ 1 APPPATH\Controllers\Estudiante.php(254): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Controllers\\Estudiante.php', 254, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:06:06 --> Undefined variable: carrera
+in APPPATH\Controllers\Estudiante.php on line 260.
+ 1 APPPATH\Controllers\Estudiante.php(260): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: carrera', 'APPPATH\\Controllers\\Estudiante.php', 260, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:06:54 --> Undefined variable: carreraModel
+in APPPATH\Controllers\Estudiante.php on line 260.
+ 1 APPPATH\Controllers\Estudiante.php(260): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: carreraModel', 'APPPATH\\Controllers\\Estudiante.php', 260, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:07:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(266): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:07:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(268): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:08:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(269): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:19:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(271): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:21:01 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\ticket\correcto.php on line 68.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(272): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:32:10 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\ticket\correcto.php on line 68.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(272): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:32:37 --> Undefined variable: postulacion
+in APPPATH\Controllers\Estudiante.php on line 272.
+ 1 APPPATH\Controllers\Estudiante.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Controllers\\Estudiante.php', 272, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:32:47 --> Undefined variable: postulacion
+in APPPATH\Views\estudiante\ticket\correcto.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(274): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:33:01 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\ticket\correcto.php on line 68.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(274): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:34:40 --> Undefined variable: detallePostulanteModel
+in APPPATH\Controllers\Estudiante.php on line 261.
+ 1 APPPATH\Controllers\Estudiante.php(261): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: detallePostulanteModel', 'APPPATH\\Controllers\\Estudiante.php', 261, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:35:16 --> Class 'App\Models\DetallePostulanteModel' not found
+in APPPATH\Controllers\Estudiante.php on line 216.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:35:40 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\ticket\correcto.php on line 68.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 68, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(279): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 13:36:17 --> Undefined index: NACIMIENTO_POSTULANTE
+in APPPATH\Views\estudiante\ticket\correcto.php on line 70.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NACIMIENTO_POSTULANTE', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 70, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(279): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 22:36:56 --> Too few arguments to function App\Controllers\PDF::copia(), 0 passed in C:\xampp\htdocs\tesis\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\PDF.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

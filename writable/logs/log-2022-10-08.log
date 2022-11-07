@@ -1,0 +1,115 @@
+CRITICAL - 2022-10-08 13:56:54 --> Array to string conversion
+in APPPATH\Controllers\Estudiante.php on line 173.
+ 1 APPPATH\Controllers\Estudiante.php(173): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Estudiante.php', 173, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 14:14:16 --> Undefined index: NOMBRE
+in APPPATH\Controllers\Estudiante.php on line 157.
+ 1 APPPATH\Controllers\Estudiante.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE', 'APPPATH\\Controllers\\Estudiante.php', 157, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 14:14:45 --> Undefined variable: contador
+in APPPATH\Controllers\Estudiante.php on line 160.
+ 1 APPPATH\Controllers\Estudiante.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: contador', 'APPPATH\\Controllers\\Estudiante.php', 160, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 14:14:58 --> Undefined variable: cesta
+in APPPATH\Controllers\Estudiante.php on line 166.
+ 1 APPPATH\Controllers\Estudiante.php(166): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cesta', 'APPPATH\\Controllers\\Estudiante.php', 166, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 17:38:53 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Test.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 17:41:47 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Test.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 17:43:38 --> Call to a member function isValid() on array
+in APPPATH\Controllers\Test.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 17:45:12 --> Undefined variable: errors
+in APPPATH\Views\testupload.php on line 8.
+ 1 APPPATH\Views\testupload.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'APPPATH\\Views\\testupload.php', 8, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\testupload.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('testupload', [], true)
+ 5 APPPATH\Controllers\Test.php(9): view('testupload')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 17:45:51 --> Undefined variable: errors
+in APPPATH\Views\testupload.php on line 8.
+ 1 APPPATH\Views\testupload.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'APPPATH\\Views\\testupload.php', 8, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\testupload.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('testupload', [], true)
+ 5 APPPATH\Controllers\Test.php(9): view('testupload')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 17:46:26 --> Undefined variable: errors
+in APPPATH\Views\testupload.php on line 8.
+ 1 APPPATH\Views\testupload.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: errors', 'APPPATH\\Views\\testupload.php', 8, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\testupload.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('testupload', [], true)
+ 5 APPPATH\Controllers\Test.php(11): view('testupload')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 17:47:02 --> Invalid file: upload_form.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\Test.php(29): view('upload_form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 17:48:19 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads\\20221008', '1665269299_7e06c158b76d0d60264c')
+ 3 APPPATH\Controllers\Test.php(35): CodeIgniter\HTTP\Files\UploadedFile->store()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 20:32:39 --> Undefined variable: paisesModel
+in APPPATH\Controllers\Estudiante.php on line 314.
+ 1 APPPATH\Controllers\Estudiante.php(314): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: paisesModel', 'APPPATH\\Controllers\\Estudiante.php', 314, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->individual('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-08 20:33:09 --> Undefined variable: universidad
+in APPPATH\Views\estudiante\historial_especifico.php on line 264.
+ 1 APPPATH\Views\estudiante\historial_especifico.php(264): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: universidad', 'APPPATH\\Views\\estudiante\\historial_especifico.php', 264, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial_especifico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial_especifico', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(340): view('estudiante/historial_especifico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->individual('58')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

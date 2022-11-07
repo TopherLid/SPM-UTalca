@@ -1,0 +1,42 @@
+CRITICAL - 2022-11-03 13:44:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Notificacion.php on line 50.
+ 1 APPPATH\Controllers\Notificacion.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Notificacion.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 13:45:02 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Notificacion.php on line 50.
+ 1 APPPATH\Controllers\Notificacion.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Notificacion.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 13:46:55 --> Undefined variable: seleccion
+in APPPATH\Controllers\Notificacion.php on line 50.
+ 1 APPPATH\Controllers\Notificacion.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: seleccion', 'APPPATH\\Controllers\\Notificacion.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 13:47:04 --> Undefined index: EMAIL
+in APPPATH\Controllers\Notificacion.php on line 52.
+ 1 APPPATH\Controllers\Notificacion.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: EMAIL', 'APPPATH\\Controllers\\Notificacion.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 13:47:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Notificacion.php on line 52.
+ 1 APPPATH\Controllers\Notificacion.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Notificacion.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 13:48:38 --> Undefined index: EMAIL
+in APPPATH\Controllers\Notificacion.php on line 61.
+ 1 APPPATH\Controllers\Notificacion.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: EMAIL', 'APPPATH\\Controllers\\Notificacion.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

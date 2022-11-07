@@ -1,0 +1,625 @@
+ERROR - 2022-10-06 08:43:31 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Postulante.php(86): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-06 08:43:31 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Postulante.php(86): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 09:39:20 --> Too few arguments to function CodeIgniter\Session\Session::set(), 0 passed in C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php on line 37 and at least 1 expected
+in SYSTEMPATH\Session\Session.php on line 462.
+ 1 APPPATH\Controllers\AuthSPM.php(37): CodeIgniter\Session\Session->set()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 10:35:57 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(171): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-06 10:35:57 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Convocatoria.php(171): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 10:44:19 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(354): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->modificarModal()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-06 10:44:19 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Convocatoria.php(354): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificarModal()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 10:45:42 --> Undefined variable: id_admin
+in APPPATH\Controllers\Convocatoria.php on line 73.
+ 1 APPPATH\Controllers\Convocatoria.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_admin', 'APPPATH\\Controllers\\Convocatoria.php', 73, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->creada()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 10:46:34 --> Undefined variable: id_admin
+in APPPATH\Controllers\Convocatoria.php on line 72.
+ 1 APPPATH\Controllers\Convocatoria.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_admin', 'APPPATH\\Controllers\\Convocatoria.php', 72, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->creada()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 10:46:48 --> Undefined variable: usuario
+in APPPATH\Controllers\Convocatoria.php on line 87.
+ 1 APPPATH\Controllers\Convocatoria.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Controllers\\Convocatoria.php', 87, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->creada()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 10:47:04 --> mysqli_sql_exception: Column 'MIN_CREDITO_SCT' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `CO...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `CO...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `CO...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CO...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(88): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->creada()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 10:47:04 --> Column 'MIN_CREDITO_SCT' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `CONVOCATORIA` (`NOMBRE_CONVOCATORIA`, `FECHA_INICIO_CONVOCATORIA`, `FECHA_FIN_CONVOCATORIA`, `ESTADO_CONVOCATORIA`, `MIN_CREDITO_SCT`, `MAX_CREDITO_SCT`, `ID_PROGRAMA`) VALUES (\'a\', \'2024-01-01\', \'2024-02-02\', \'Próximamente\', NULL, NULL, \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `CONVOCATORIA` (`NOMBRE_CONVOCATORIA`, `FECHA_INICIO_CONVOCATORIA`, `FECHA_FIN_CONVOCATORIA`, `ESTADO_CONVOCATORIA`, `MIN_CREDITO_SCT`, `MAX_CREDITO_SCT`, `ID_PROGRAMA`) VALUES (\'a\', \'2024-01-01\', \'2024-02-02\', \'Próximamente\', NULL, NULL, \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `CONVOCATORIA` (`NOMBRE_CONVOCATORIA`, `FECHA_INICIO_CONVOCATORIA`, `FECHA_FIN_CONVOCATORIA`, `ESTADO_CONVOCATORIA`, `MIN_CREDITO_SCT`, `MAX_CREDITO_SCT`, `ID_PROGRAMA`) VALUES (\'a\', \'2024-01-01\', \'2024-02-02\', \'Próximamente\', NULL, NULL, \'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `CONVOCATORIA` (`NOMBRE_CONVOCATORIA`, `FECHA_INICIO_CONVOCATORIA`, `FECHA_FIN_CONVOCATORIA`, `ESTADO_CONVOCATORIA`, `MIN_CREDITO_SCT`, `MAX_CREDITO_SCT`, `ID_PROGRAMA`) VALUES (:NOMBRE_CONVOCATORIA:, :FECHA_INICIO_CONVOCATORIA:, :FECHA_FIN_CONVOCATORIA:, :ESTADO_CONVOCATORIA:, :MIN_CREDITO_SCT:, :MAX_CREDITO_SCT:, :ID_PROGRAMA:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Convocatoria.php(88): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->creada()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 10:52:40 --> Undefined variable: usuario
+in APPPATH\Controllers\Convocatoria.php on line 381.
+ 1 APPPATH\Controllers\Convocatoria.php(381): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Controllers\\Convocatoria.php', 381, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificarModal()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 11:38:03 --> Undefined variable: usuario
+in APPPATH\Views\admin\programas\vista.php on line 53.
+ 1 APPPATH\Views\admin\programas\vista.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\admin\\programas\\vista.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\programas\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/programas/vista', [], true)
+ 5 APPPATH\Controllers\Programa.php(32): view('admin/programas/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->programas()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 11:44:07 --> Undefined variable: usuario
+in APPPATH\Controllers\Programa.php on line 65.
+ 1 APPPATH\Controllers\Programa.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Controllers\\Programa.php', 65, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 11:44:20 --> mysqli_sql_exception: Column 'NOMBRE_PROGRAMA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PR...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PR...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PR...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Programa.php(67): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Programa->crear()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 11:44:20 --> Column 'NOMBRE_PROGRAMA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (:NOMBRE_PROGRAMA:, :DESC_PROGRAMA:, :ESTADO_PROGRAMA:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Programa.php(67): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 11:44:27 --> mysqli_sql_exception: Column 'NOMBRE_PROGRAMA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PR...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PR...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PR...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Programa.php(67): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Programa->crear()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 11:44:27 --> Column 'NOMBRE_PROGRAMA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (:NOMBRE_PROGRAMA:, :DESC_PROGRAMA:, :ESTADO_PROGRAMA:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Programa.php(67): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 11:45:02 --> mysqli_sql_exception: Column 'NOMBRE_PROGRAMA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PR...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PR...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PR...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Programa.php(70): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Programa->crear()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 11:45:02 --> Column 'NOMBRE_PROGRAMA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (:NOMBRE_PROGRAMA:, :DESC_PROGRAMA:, :ESTADO_PROGRAMA:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Programa.php(70): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 11:45:07 --> mysqli_sql_exception: Column 'NOMBRE_PROGRAMA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PR...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PR...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PR...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Programa.php(70): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Programa->crear()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 11:45:07 --> Column 'NOMBRE_PROGRAMA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (:NOMBRE_PROGRAMA:, :DESC_PROGRAMA:, :ESTADO_PROGRAMA:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Programa.php(70): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 11:46:13 --> mysqli_sql_exception: Column 'NOMBRE_PROGRAMA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PR...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PR...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PR...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Programa.php(70): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Programa->crear()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 11:46:13 --> Column 'NOMBRE_PROGRAMA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (:NOMBRE_PROGRAMA:, :DESC_PROGRAMA:, :ESTADO_PROGRAMA:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Programa.php(70): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 11:49:10 --> mysqli_sql_exception: Column 'ESTADO_PROGRAMA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PR...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PR...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PR...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Programa.php(70): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Programa->crear()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 11:49:10 --> Column 'ESTADO_PROGRAMA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (\'\', \'Activo\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (\'\', \'Activo\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (\'\', \'Activo\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (:NOMBRE_PROGRAMA:, :DESC_PROGRAMA:, :ESTADO_PROGRAMA:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Programa.php(70): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 11:49:24 --> mysqli_sql_exception: Column 'ESTADO_PROGRAMA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PR...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PR...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PR...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Programa.php(70): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Programa->crear()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-06 11:49:24 --> Column 'ESTADO_PROGRAMA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (\'a\', \'Activo\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (\'a\', \'Activo\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (\'a\', \'Activo\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `PROGRAMA` (`NOMBRE_PROGRAMA`, `DESC_PROGRAMA`, `ESTADO_PROGRAMA`) VALUES (:NOMBRE_PROGRAMA:, :DESC_PROGRAMA:, :ESTADO_PROGRAMA:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Programa.php(70): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 11:53:25 --> Undefined variable: preguntaModel
+in APPPATH\Controllers\Programa.php on line 103.
+ 1 APPPATH\Controllers\Programa.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntaModel', 'APPPATH\\Controllers\\Programa.php', 103, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->modificar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 11:53:45 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Programa.php(103): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->modificar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 11:53:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Programa.php(103): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->modificar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 11:55:11 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Programa.php(103): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->modificar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 11:55:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Programa.php(105): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->modificar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 12:05:05 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Universidad.php(97): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Universidad->creada()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-06 12:05:05 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Universidad.php(97): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->creada()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-06 12:09:57 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Universidad.php(97): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Universidad->creada()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-06 12:09:57 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Universidad.php(97): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->creada()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 14:05:40 --> Undefined property: App\Controllers\Universidad::$input
+in APPPATH\Controllers\Universidad.php on line 60.
+ 1 APPPATH\Controllers\Universidad.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Universidad::$input', 'APPPATH\\Controllers\\Universidad.php', 60, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 14:06:16 --> Undefined property: App\Controllers\Universidad::$input
+in APPPATH\Controllers\Universidad.php on line 60.
+ 1 APPPATH\Controllers\Universidad.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Universidad::$input', 'APPPATH\\Controllers\\Universidad.php', 60, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 14:26:12 --> Undefined index: programa
+in APPPATH\Controllers\Universidad.php on line 92.
+ 1 APPPATH\Controllers\Universidad.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: programa', 'APPPATH\\Controllers\\Universidad.php', 92, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->modificar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 14:37:35 --> Undefined index: programa
+in APPPATH\Controllers\Universidad.php on line 61.
+ 1 APPPATH\Controllers\Universidad.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: programa', 'APPPATH\\Controllers\\Universidad.php', 61, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 18:21:44 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 326.
+ 1 APPPATH\Controllers\Estudiante.php(326): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 326, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 18:42:12 --> Undefined variable: postulante
+in APPPATH\Controllers\Estudiante.php on line 330.
+ 1 APPPATH\Controllers\Estudiante.php(330): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante', 'APPPATH\\Controllers\\Estudiante.php', 330, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 18:45:30 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 381.
+ 1 APPPATH\Controllers\Estudiante.php(381): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 381, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial_individual('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 18:51:13 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\historial_especifico.php on line 75.
+ 1 APPPATH\Views\estudiante\historial_especifico.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\historial_especifico.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial_especifico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial_especifico', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(400): view('estudiante/historial_especifico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial_individual('58')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 18:52:25 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\estudiante\historial_especifico.php on line 81.
+ 1 APPPATH\Views\estudiante\historial_especifico.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\estudiante\\historial_especifico.php', 81, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial_especifico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial_especifico', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(401): view('estudiante/historial_especifico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial_individual('58')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 18:53:14 --> Undefined index: NACIMIENTO_POSTULANTE
+in APPPATH\Views\estudiante\historial_especifico.php on line 88.
+ 1 APPPATH\Views\estudiante\historial_especifico.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NACIMIENTO_POSTULANTE', 'APPPATH\\Views\\estudiante\\historial_especifico.php', 88, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial_especifico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial_especifico', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(401): view('estudiante/historial_especifico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial_individual('58')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 18:53:24 --> Undefined index: MATRICULA_POSTULANTE
+in APPPATH\Views\estudiante\historial_especifico.php on line 96.
+ 1 APPPATH\Views\estudiante\historial_especifico.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: MATRICULA_POSTULANTE', 'APPPATH\\Views\\estudiante\\historial_especifico.php', 96, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial_especifico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial_especifico', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(401): view('estudiante/historial_especifico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial_individual('58')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 22:09:50 --> Undefined variable: aux
+in APPPATH\Controllers\Estudiante.php on line 366.
+ 1 APPPATH\Controllers\Estudiante.php(366): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: aux', 'APPPATH\\Controllers\\Estudiante.php', 366, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->modificar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 22:10:02 --> Invalid file: admin/convicatorias/error.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/convicatorias/error.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convicatorias/error', [], true)
+ 3 APPPATH\Controllers\Estudiante.php(379): view('admin/convicatorias/error')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->modificar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-06 22:10:33 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('58', 'update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], '58')
+ 3 APPPATH\Controllers\Estudiante.php(366): CodeIgniter\Model->update([...], '58')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->modificar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

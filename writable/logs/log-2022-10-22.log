@@ -1,0 +1,72 @@
+CRITICAL - 2022-10-22 09:54:30 --> syntax error, unexpected '?>', expecting ':'
+in APPPATH\Views\admin\convocatorias\individual.php on line 174.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/individual', [], true)
+ 3 APPPATH\Controllers\Convocatoria.php(338): view('admin/convocatorias/individual', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202201')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 10:25:04 --> Undefined variable: preguntasModel
+in APPPATH\Controllers\Convocatoria.php on line 322.
+ 1 APPPATH\Controllers\Convocatoria.php(322): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntasModel', 'APPPATH\\Controllers\\Convocatoria.php', 322, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202238')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 10:26:37 --> Class 'App\Controllers\PreguntaInputModel' not found
+in APPPATH\Controllers\Convocatoria.php on line 323.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202238')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 10:26:51 --> Undefined variable: contador_preguntas
+in APPPATH\Controllers\Convocatoria.php on line 337.
+ 1 APPPATH\Controllers\Convocatoria.php(337): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: contador_preguntas', 'APPPATH\\Controllers\\Convocatoria.php', 337, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202238')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 16:35:36 --> Undefined variable: pa
+in APPPATH\Controllers\Convocatoria.php on line 447.
+ 1 APPPATH\Controllers\Convocatoria.php(447): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pa', 'APPPATH\\Controllers\\Convocatoria.php', 447, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar_preguntas()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 16:35:54 --> Undefined variable: preguntas_base
+in APPPATH\Controllers\Convocatoria.php on line 451.
+ 1 APPPATH\Controllers\Convocatoria.php(451): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas_base', 'APPPATH\\Controllers\\Convocatoria.php', 451, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar_preguntas()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 16:36:09 --> Undefined variable: session
+in APPPATH\Controllers\Convocatoria.php on line 466.
+ 1 APPPATH\Controllers\Convocatoria.php(466): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Controllers\\Convocatoria.php', 466, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar_preguntas()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 17:18:52 --> Call to undefined function Config\delete()
+in APPPATH\Config\Routes.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(766): require()
+ 2 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 17:19:15 --> Undefined variable: preguntas_asociadas
+in APPPATH\Controllers\Convocatoria.php on line 497.
+ 1 APPPATH\Controllers\Convocatoria.php(497): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas_asociadas', 'APPPATH\\Controllers\\Convocatoria.php', 497, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->eliminar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-22 17:19:55 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2366.
+ 1 SYSTEMPATH\Model.php(400): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(963): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Convocatoria.php(503): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->eliminar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,140 @@
+CRITICAL - 2022-10-20 09:16:13 --> Undefined variable: array
+in APPPATH\Views\welcome_message.php on line 12.
+ 1 APPPATH\Views\welcome_message.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: array', 'APPPATH\\Views\\welcome_message.php', 12, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\PDF.php(31): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 09:35:00 --> Undefined variable: array
+in APPPATH\Views\welcome_message.php on line 14.
+ 1 APPPATH\Views\welcome_message.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: array', 'APPPATH\\Views\\welcome_message.php', 14, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\PDF.php(31): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 09:37:13 --> Undefined variable: array
+in APPPATH\Views\welcome_message.php on line 14.
+ 1 APPPATH\Views\welcome_message.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: array', 'APPPATH\\Views\\welcome_message.php', 14, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\PDF.php(33): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 10:41:35 --> Class 'App\Controllers\UniversidadModelModel' not found
+in APPPATH\Controllers\PDF.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 10:41:43 --> Undefined variable: postulacion
+in APPPATH\Controllers\PDF.php on line 26.
+ 1 APPPATH\Controllers\PDF.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Controllers\\PDF.php', 26, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 10:41:52 --> Undefined index: 2dA_OPCION
+in APPPATH\Controllers\PDF.php on line 29.
+ 1 APPPATH\Controllers\PDF.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 2dA_OPCION', 'APPPATH\\Controllers\\PDF.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 11:00:39 --> Class 'App\Controllers\Options' not found
+in APPPATH\Controllers\PDF.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 11:01:32 --> Class 'App\Controllers\Options' not found
+in APPPATH\Controllers\PDF.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 11:07:11 --> Undefined variable: aData
+in APPPATH\Controllers\PDF.php on line 47.
+ 1 APPPATH\Controllers\PDF.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: aData', 'APPPATH\\Controllers\\PDF.php', 47, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('89')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 12:43:02 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Test.php on line 40.
+ 1 APPPATH\Controllers\Test.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Test.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 12:43:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Test.php on line 41.
+ 1 APPPATH\Controllers\Test.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Test.php', 41, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 14:12:12 --> Undefined variable: postulante_carrera
+in APPPATH\Controllers\Postulante.php on line 68.
+ 1 APPPATH\Controllers\Postulante.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante_carrera', 'APPPATH\\Controllers\\Postulante.php', 68, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 14:12:25 --> Undefined variable: postulante_carrera
+in APPPATH\Controllers\Postulante.php on line 68.
+ 1 APPPATH\Controllers\Postulante.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante_carrera', 'APPPATH\\Controllers\\Postulante.php', 68, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 14:19:04 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Postulante.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 14:19:48 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Postulante.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 14:19:56 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 249.
+ 1 APPPATH\Controllers\Postulante.php(249): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 249, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('55')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 15:06:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 148.
+ 1 APPPATH\Controllers\Postulante.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 148, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('77')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 15:07:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 148.
+ 1 APPPATH\Controllers\Postulante.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 148, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('77')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 15:08:24 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 249.
+ 1 APPPATH\Controllers\Postulante.php(249): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 249, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('57')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

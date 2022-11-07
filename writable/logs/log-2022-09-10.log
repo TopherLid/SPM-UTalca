@@ -1,0 +1,14 @@
+CRITICAL - 2022-09-10 20:42:46 --> Undefined index: RELACION
+in APPPATH\Controllers\AuthSPM.php on line 86.
+ 1 APPPATH\Controllers\AuthSPM.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: RELACION', 'APPPATH\\Controllers\\AuthSPM.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->redirector()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-10 20:43:00 --> Undefined index: RELACION
+in APPPATH\Controllers\AuthSPM.php on line 86.
+ 1 APPPATH\Controllers\AuthSPM.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: RELACION', 'APPPATH\\Controllers\\AuthSPM.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->redirector()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

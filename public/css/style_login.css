@@ -1,0 +1,81 @@
+/* CSS Document */
+
+/*GLOBAL*/
+
+body {
+  background: #ffffff;
+}
+
+.card-signin {
+  border: 0;
+    border-bottom: solid 4px #D30101;
+    border-radius: 0;
+}
+
+.card-signin .card-title {
+  font-size: 1.7rem;
+
+  background-color: #D30101;
+  color: #ffffff;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 4px #ffffff;
+    margin-bottom: 0;
+}
+
+.card-signin .card-body {
+  padding: 0rem;
+    background-color: #F2F2F2;
+}
+
+.form {
+  width: 100%;
+  padding: 2rem;
+}
+
+label {
+    margin-bottom: 0;
+    margin-top: 8px;
+    color: #5F5F5F;
+
+}
+
+.pregunta {
+    color: #707070;
+    text-align: center;
+
+} 
+
+.texto_rojo {
+    color: #D30101;
+    text-align: center;
+
+} 
+
+.texto_sesion {
+    color: #D30101;
+
+    font-size: 18px;
+    border: 0px;
+    background-color:  #F2F2F2;
+} 
+
+.form-control-lg {
+    border-radius: 0;
+}
+
+.alinear {
+        vertical-align: middle;
+    }
+
+
+#footer {
+    background-color: #FFFFFF;
+    padding: 180px 0 20px 0;
+}
+
+.texto_footer {
+        font-size: 14px;
+        color: #707070;
+        text-align: center;
+    }

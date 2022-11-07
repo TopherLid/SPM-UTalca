@@ -1,0 +1,462 @@
+CRITICAL - 2022-10-24 00:51:44 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 245.
+ 1 APPPATH\Controllers\Postulante.php(245): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 245, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('89')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 00:51:47 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 245.
+ 1 APPPATH\Controllers\Postulante.php(245): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 245, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('59')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 00:58:32 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 245.
+ 1 APPPATH\Controllers\Postulante.php(245): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 245, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 00:59:40 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 243.
+ 1 APPPATH\Controllers\Postulante.php(243): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 243, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 00:59:54 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 239.
+ 1 APPPATH\Controllers\Postulante.php(239): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 239, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:00:35 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 237.
+ 1 APPPATH\Controllers\Postulante.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 237, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:01:01 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 234.
+ 1 APPPATH\Controllers\Postulante.php(234): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 234, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:01:59 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 234.
+ 1 APPPATH\Controllers\Postulante.php(234): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 234, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:02:16 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 232.
+ 1 APPPATH\Controllers\Postulante.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 232, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:02:37 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 234.
+ 1 APPPATH\Controllers\Postulante.php(234): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 234, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:03:07 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 236.
+ 1 APPPATH\Controllers\Postulante.php(236): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 236, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:07:02 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 193.
+ 1 APPPATH\Controllers\Postulante.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:09:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 193.
+ 1 APPPATH\Controllers\Postulante.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:09:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 193.
+ 1 APPPATH\Controllers\Postulante.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('88')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:12:02 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+in APPPATH\Controllers\Postulante.php on line 170.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Postulante.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Postulante')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Postulante')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Postulante')
+ 5 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Postulante', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:16:06 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 204.
+ 1 APPPATH\Controllers\Estudiante.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 204, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:29:32 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 206.
+ 1 APPPATH\Controllers\Estudiante.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 206, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:30:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 172.
+ 1 APPPATH\Controllers\Estudiante.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 172, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:30:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 39.
+ 1 APPPATH\Controllers\Estudiante.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:30:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 39.
+ 1 APPPATH\Controllers\Estudiante.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:30:44 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 39.
+ 1 APPPATH\Controllers\Estudiante.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:37:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 43.
+ 1 APPPATH\Controllers\Estudiante.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:40:02 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 43.
+ 1 APPPATH\Controllers\Estudiante.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:40:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 46.
+ 1 APPPATH\Controllers\Estudiante.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:42:58 --> Undefined variable: convocatorias
+in APPPATH\Controllers\Convocatoria.php on line 151.
+ 1 APPPATH\Controllers\Convocatoria.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatorias', 'APPPATH\\Controllers\\Convocatoria.php', 151, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:45:17 --> Undefined variable: convocatorias
+in APPPATH\Controllers\Convocatoria.php on line 165.
+ 1 APPPATH\Controllers\Convocatoria.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatorias', 'APPPATH\\Controllers\\Convocatoria.php', 165, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:45:24 --> Undefined variable: convocatorias
+in APPPATH\Controllers\Convocatoria.php on line 165.
+ 1 APPPATH\Controllers\Convocatoria.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatorias', 'APPPATH\\Controllers\\Convocatoria.php', 165, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:45:58 --> Undefined variable: convocatorias
+in APPPATH\Views\admin\convocatorias\vista.php on line 102.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatorias', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 102, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(168): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 01:46:02 --> Undefined variable: convocatorias
+in APPPATH\Controllers\Convocatoria.php on line 165.
+ 1 APPPATH\Controllers\Convocatoria.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatorias', 'APPPATH\\Controllers\\Convocatoria.php', 165, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 09:49:34 --> Undefined variable: detallePreguntaModel
+in APPPATH\Controllers\Universidad.php on line 177.
+ 1 APPPATH\Controllers\Universidad.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: detallePreguntaModel', 'APPPATH\\Controllers\\Universidad.php', 177, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->modificar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 10:08:51 --> Undefined variable: id_programa
+in APPPATH\Controllers\Postulante.php on line 84.
+ 1 APPPATH\Controllers\Postulante.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_programa', 'APPPATH\\Controllers\\Postulante.php', 84, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 10:09:03 --> Undefined variable: id_programa
+in APPPATH\Controllers\Postulante.php on line 84.
+ 1 APPPATH\Controllers\Postulante.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_programa', 'APPPATH\\Controllers\\Postulante.php', 84, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 10:11:53 --> Undefined variable: id_programa
+in APPPATH\Controllers\Postulante.php on line 84.
+ 1 APPPATH\Controllers\Postulante.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_programa', 'APPPATH\\Controllers\\Postulante.php', 84, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 10:20:26 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 108.
+ 1 APPPATH\Controllers\Postulante.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 10:22:03 --> Undefined variable: preguntas
+in APPPATH\Controllers\Convocatoria.php on line 89.
+ 1 APPPATH\Controllers\Convocatoria.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas', 'APPPATH\\Controllers\\Convocatoria.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 10:22:53 --> Undefined index: CONTADOR_POSTULANTES
+in APPPATH\Views\admin\convocatorias\vista.php on line 116.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: CONTADOR_POSTULANTES', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 116, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(123): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:03:13 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 220.
+ 1 APPPATH\Controllers\Estudiante.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 220, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:04:59 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 222.
+ 1 APPPATH\Controllers\Estudiante.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 222, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:07:52 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 222.
+ 1 APPPATH\Controllers\Estudiante.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 222, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:52:56 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 230.
+ 1 APPPATH\Controllers\Estudiante.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 230, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:53:19 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 229.
+ 1 APPPATH\Controllers\Estudiante.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 229, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:53:27 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 229.
+ 1 APPPATH\Controllers\Estudiante.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 229, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:53:43 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 221.
+ 1 APPPATH\Controllers\Estudiante.php(221): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 221, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:57:06 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 222.
+ 1 APPPATH\Controllers\Estudiante.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 222, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 15:57:19 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 223.
+ 1 APPPATH\Controllers\Estudiante.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 223, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 16:11:12 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 223.
+ 1 APPPATH\Controllers\Estudiante.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 223, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 16:11:30 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 223.
+ 1 APPPATH\Controllers\Estudiante.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 223, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 16:11:59 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 223.
+ 1 APPPATH\Controllers\Estudiante.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 223, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 16:12:17 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 223.
+ 1 APPPATH\Controllers\Estudiante.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 223, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 16:12:22 --> Illegal string offset 'ID_PREGUNTA'
+in APPPATH\Controllers\Estudiante.php on line 223.
+ 1 APPPATH\Controllers\Estudiante.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PREGUNTA\'', 'APPPATH\\Controllers\\Estudiante.php', 223, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 16:30:34 --> syntax error, unexpected ')'
+in APPPATH\Views\estudiante\ticket\formulario.php on line 207.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 3 APPPATH\Controllers\Estudiante.php(277): view('estudiante/ticket/formulario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 16:48:16 --> Undefined index: label
+in APPPATH\Views\estudiante\ticket\formulario.php on line 210.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(210): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: label', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 210, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(277): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 22:50:20 --> Undefined variable: du
+in APPPATH\Controllers\Universidad.php on line 160.
+ 1 APPPATH\Controllers\Universidad.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: du', 'APPPATH\\Controllers\\Universidad.php', 160, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->modificar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 23:20:04 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 108.
+ 1 APPPATH\Controllers\Postulante.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 23:58:02 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 387.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 23:58:19 --> Undefined index: id_convocatoria
+in APPPATH\Controllers\Estudiante.php on line 395.
+ 1 APPPATH\Controllers\Estudiante.php(395): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_convocatoria', 'APPPATH\\Controllers\\Estudiante.php', 395, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-24 23:58:45 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `RE...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `RE...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `RE...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `RE...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(407): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-24 23:58:45 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (\'Xokas\', \'1\', \'92\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (\'Xokas\', \'1\', \'92\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (\'Xokas\', \'1\', \'92\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (:RESPUESTA:, :ID_PREGUNTA:, :ID_POSTULACION:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Estudiante.php(407): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 23:59:52 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 241.
+ 1 APPPATH\Controllers\Postulante.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 241, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('90')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 23:59:55 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 241.
+ 1 APPPATH\Controllers\Postulante.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 241, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('91')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 23:59:56 --> Undefined index: LABEL
+in APPPATH\Views\admin\postulaciones\individual.php on line 174.
+ 1 APPPATH\Views\admin\postulaciones\individual.php(174): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: LABEL', 'APPPATH\\Views\\admin\\postulaciones\\individual.php', 174, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\individual.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/individual', [], true)
+ 5 APPPATH\Controllers\Postulante.php(245): view('admin/postulaciones/individual', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('92')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

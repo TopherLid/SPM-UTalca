@@ -1,0 +1,42 @@
+.body_color {
+    background-color: #E4DCCF;
+}
+
+.nav_mobile{
+    color:white;
+}
+
+.div-line{
+    height: 3px;
+    width: 100%;
+    background-color:#6a6e73;
+}
+
+.modal-content {
+    background: #576F72 !important;
+    color : #ffffff !important;
+}
+
+.session_container {
+    padding-top:25px;
+}
+
+.concluido {
+    color:#ff0000;
+}
+
+.convocatoria_id {
+    color:green;
+}
+
+.multiple-inputs{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+#footer {
+    padding-top: 150px; 
+    padding-bottom:50px; 
+    background-color: #E4DCCF;
+}

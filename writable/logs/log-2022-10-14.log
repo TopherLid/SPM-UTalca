@@ -1,0 +1,75 @@
+CRITICAL - 2022-10-14 10:02:02 --> Class 'App\Controllers\UsuarioModel' not found
+in APPPATH\Controllers\Postulante.php on line 167.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:02:54 --> Undefined variable: data
+in APPPATH\Controllers\Postulante.php on line 194.
+ 1 APPPATH\Controllers\Postulante.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Postulante.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:03:11 --> Undefined variable: data
+in APPPATH\Controllers\Postulante.php on line 194.
+ 1 APPPATH\Controllers\Postulante.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Postulante.php', 194, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:03:31 --> Undefined variable: data
+in APPPATH\Controllers\Postulante.php on line 196.
+ 1 APPPATH\Controllers\Postulante.php(196): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Postulante.php', 196, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:04:09 --> Undefined variable: data
+in APPPATH\Controllers\Postulante.php on line 198.
+ 1 APPPATH\Controllers\Postulante.php(198): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Postulante.php', 198, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:05:05 --> Undefined variable: data
+in APPPATH\Controllers\Postulante.php on line 198.
+ 1 APPPATH\Controllers\Postulante.php(198): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Postulante.php', 198, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:05:26 --> Undefined variable: data
+in APPPATH\Controllers\Postulante.php on line 198.
+ 1 APPPATH\Controllers\Postulante.php(198): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Postulante.php', 198, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 14:06:53 --> Class 'App\Controllers\DetallePreguntaModel' not found
+in APPPATH\Controllers\Postulante.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 15:01:29 --> Undefined variable: preguntaModel
+in APPPATH\Controllers\Postulante.php on line 168.
+ 1 APPPATH\Controllers\Postulante.php(168): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntaModel', 'APPPATH\\Controllers\\Postulante.php', 168, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 21:34:58 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\Postulante.php on line 179.
+ 1 APPPATH\Controllers\Postulante.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Controllers\\Postulante.php', 179, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 21:36:06 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\Postulante.php on line 181.
+ 1 APPPATH\Controllers\Postulante.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Controllers\\Postulante.php', 181, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

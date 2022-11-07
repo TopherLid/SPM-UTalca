@@ -1,0 +1,706 @@
+CRITICAL - 2022-10-09 16:45:49 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(61): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 16:54:27 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(61): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:07:07 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(61): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:44:57 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(61): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:44:58 --> syntax error, unexpected '$convocatorias' (T_VARIABLE), expecting ']'
+in APPPATH\Controllers\Convocatoria.php on line 77.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Convocatoria.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Convocatoria')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Convocatoria')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Convocatoria')
+ 5 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Convocatoria', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:49:20 --> Undefined variable: convocatoria
+in APPPATH\Controllers\Convocatoria.php on line 57.
+ 1 APPPATH\Controllers\Convocatoria.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatoria', 'APPPATH\\Controllers\\Convocatoria.php', 57, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:49:27 --> Undefined variable: universidades_base
+in APPPATH\Controllers\Convocatoria.php on line 86.
+ 1 APPPATH\Controllers\Convocatoria.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: universidades_base', 'APPPATH\\Controllers\\Convocatoria.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:55:27 --> Undefined index: ID_CONVOCATORIA
+in APPPATH\Controllers\Convocatoria.php on line 102.
+ 1 APPPATH\Controllers\Convocatoria.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_CONVOCATORIA', 'APPPATH\\Controllers\\Convocatoria.php', 102, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:55:44 --> Undefined index: CONTADOR_POSTULANTES
+in APPPATH\Controllers\Convocatoria.php on line 110.
+ 1 APPPATH\Controllers\Convocatoria.php(110): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: CONTADOR_POSTULANTES', 'APPPATH\\Controllers\\Convocatoria.php', 110, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:55:59 --> Undefined index: CONTADOR_POSTULANTES
+in APPPATH\Controllers\Convocatoria.php on line 111.
+ 1 APPPATH\Controllers\Convocatoria.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: CONTADOR_POSTULANTES', 'APPPATH\\Controllers\\Convocatoria.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 17:56:29 --> Undefined index: CONTADOR_POSTULANTES
+in APPPATH\Controllers\Convocatoria.php on line 111.
+ 1 APPPATH\Controllers\Convocatoria.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: CONTADOR_POSTULANTES', 'APPPATH\\Controllers\\Convocatoria.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:09:38 --> Undefined variable: convocatoria
+in APPPATH\Controllers\Convocatoria.php on line 103.
+ 1 APPPATH\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatoria', 'APPPATH\\Controllers\\Convocatoria.php', 103, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:09:46 --> Undefined variable: programa
+in APPPATH\Controllers\Convocatoria.php on line 103.
+ 1 APPPATH\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Controllers\\Convocatoria.php', 103, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:09:57 --> Undefined variable: convocatoria
+in APPPATH\Views\admin\convocatorias\vista.php on line 105.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatoria', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 105, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(105): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:14:18 --> Undefined index: NOMBRE_PROGRAMA
+in APPPATH\Controllers\Convocatoria.php on line 88.
+ 1 APPPATH\Controllers\Convocatoria.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_PROGRAMA', 'APPPATH\\Controllers\\Convocatoria.php', 88, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:14:36 --> Undefined variable: contador_programas
+in APPPATH\Controllers\Convocatoria.php on line 79.
+ 1 APPPATH\Controllers\Convocatoria.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: contador_programas', 'APPPATH\\Controllers\\Convocatoria.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:15:10 --> Undefined variable: contador_programas
+in APPPATH\Controllers\Convocatoria.php on line 80.
+ 1 APPPATH\Controllers\Convocatoria.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: contador_programas', 'APPPATH\\Controllers\\Convocatoria.php', 80, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:15:23 --> Undefined variable: convocatoria
+in APPPATH\Views\admin\convocatorias\vista.php on line 105.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatoria', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 105, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(137): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:16:25 --> Undefined variable: conv
+in APPPATH\Views\admin\convocatorias\vista.php on line 108.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: conv', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:16:54 --> Undefined variable: conv
+in APPPATH\Views\admin\convocatorias\vista.php on line 108.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: conv', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:17:28 --> Undefined index: CONTADOR_POSTULANTES
+in APPPATH\Views\admin\convocatorias\vista.php on line 119.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: CONTADOR_POSTULANTES', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 119, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:18:20 --> syntax error, unexpected '?>'
+in APPPATH\Views\admin\convocatorias\vista.php on line 119.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 3 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:18:33 --> Undefined variable: programa
+in APPPATH\Views\admin\convocatorias\vista.php on line 166.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(166): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 166, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:18:43 --> Undefined variable: programa
+in APPPATH\Views\admin\convocatorias\vista.php on line 256.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 256, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:18:50 --> Undefined variable: programa
+in APPPATH\Views\admin\convocatorias\vista.php on line 256.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 256, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:19:04 --> Undefined variable: programa
+in APPPATH\Views\admin\convocatorias\vista.php on line 256.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 256, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:19:11 --> Undefined variable: programa
+in APPPATH\Views\admin\convocatorias\vista.php on line 256.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 256, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:19:17 --> Undefined variable: programa
+in APPPATH\Views\admin\convocatorias\vista.php on line 256.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 256, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(118): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:36:38 --> Undefined index: NOMBRE_PROGRAMA
+in APPPATH\Views\admin\convocatorias\vista.php on line 122.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_PROGRAMA', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 122, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(121): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 18:37:25 --> Undefined index: NOMBRE_PROGRAMA
+in APPPATH\Controllers\Convocatoria.php on line 103.
+ 1 APPPATH\Controllers\Convocatoria.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_PROGRAMA', 'APPPATH\\Controllers\\Convocatoria.php', 103, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:12:28 --> Undefined index: programa
+in APPPATH\Controllers\Universidad.php on line 92.
+ 1 APPPATH\Controllers\Universidad.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: programa', 'APPPATH\\Controllers\\Universidad.php', 92, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->modificar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:12:34 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(61): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:35:09 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(61): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:39:55 --> Class 'App\Controllers\DetallePostulante' not found
+in APPPATH\Controllers\Postulante.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:40:50 --> Class 'App\Controllers\DetallePostulante' not found
+in APPPATH\Controllers\Postulante.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:41:19 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(74): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:41:37 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(74): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:43:55 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(74): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:44:08 --> Undefined variable: postulantes
+in APPPATH\Views\admin\postulaciones\vista.php on line 122.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulantes', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 122, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(74): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:44:12 --> Undefined variable: postulante
+in APPPATH\Controllers\Postulante.php on line 72.
+ 1 APPPATH\Controllers\Postulante.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante', 'APPPATH\\Controllers\\Postulante.php', 72, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:44:22 --> Undefined variable: postulantes
+in APPPATH\Views\admin\postulaciones\vista.php on line 122.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulantes', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 122, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(74): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 19:44:26 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(74): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 20:04:40 --> Undefined variable: universidades_base
+in APPPATH\Controllers\Postulante.php on line 74.
+ 1 APPPATH\Controllers\Postulante.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: universidades_base', 'APPPATH\\Controllers\\Postulante.php', 74, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 21:21:34 --> Undefined variable: paises
+in APPPATH\Controllers\Postulante.php on line 75.
+ 1 APPPATH\Controllers\Postulante.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: paises', 'APPPATH\\Controllers\\Postulante.php', 75, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 21:29:40 --> Undefined variable: paises
+in APPPATH\Controllers\Postulante.php on line 84.
+ 1 APPPATH\Controllers\Postulante.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: paises', 'APPPATH\\Controllers\\Postulante.php', 84, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:28:48 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\Postulante.php on line 106.
+ 1 APPPATH\Controllers\Postulante.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\Postulante.php', 106, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:29:17 --> Undefined variable: convocatorias
+in APPPATH\Controllers\Postulante.php on line 77.
+ 1 APPPATH\Controllers\Postulante.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatorias', 'APPPATH\\Controllers\\Postulante.php', 77, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:29:35 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\Postulante.php on line 83.
+ 1 APPPATH\Controllers\Postulante.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\Postulante.php', 83, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:30:07 --> Undefined index: MATRICULA_POSTULANTE
+in APPPATH\Controllers\Postulante.php on line 84.
+ 1 APPPATH\Controllers\Postulante.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: MATRICULA_POSTULANTE', 'APPPATH\\Controllers\\Postulante.php', 84, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:30:24 --> Undefined index: NOMBRE_CARRERA
+in APPPATH\Controllers\Postulante.php on line 85.
+ 1 APPPATH\Controllers\Postulante.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_CARRERA', 'APPPATH\\Controllers\\Postulante.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:30:30 --> Undefined index: ID_CONVOCATORIA
+in APPPATH\Controllers\Postulante.php on line 79.
+ 1 APPPATH\Controllers\Postulante.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_CONVOCATORIA', 'APPPATH\\Controllers\\Postulante.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:32:19 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\Postulante.php on line 106.
+ 1 APPPATH\Controllers\Postulante.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\Postulante.php', 106, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:33:34 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\Postulante.php on line 108.
+ 1 APPPATH\Controllers\Postulante.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\Postulante.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:34:26 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\Postulante.php on line 109.
+ 1 APPPATH\Controllers\Postulante.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\Postulante.php', 109, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:34:38 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\Postulante.php on line 109.
+ 1 APPPATH\Controllers\Postulante.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\Postulante.php', 109, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:35:20 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\Postulante.php on line 108.
+ 1 APPPATH\Controllers\Postulante.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\Postulante.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 22:37:39 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 97.
+ 1 APPPATH\Controllers\Postulante.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 97, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:02:38 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 98.
+ 1 APPPATH\Controllers\Postulante.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 98, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:04:12 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 105.
+ 1 APPPATH\Controllers\Postulante.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 105, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:04:34 --> Undefined variable: cambiar_postulante
+in APPPATH\Controllers\Postulante.php on line 98.
+ 1 APPPATH\Controllers\Postulante.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cambiar_postulante', 'APPPATH\\Controllers\\Postulante.php', 98, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:05:07 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 111.
+ 1 APPPATH\Controllers\Postulante.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:22:38 --> Undefined variable: postulante_carrera
+in APPPATH\Controllers\Postulante.php on line 87.
+ 1 APPPATH\Controllers\Postulante.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante_carrera', 'APPPATH\\Controllers\\Postulante.php', 87, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:23:10 --> Undefined variable: postulante_carrera
+in APPPATH\Controllers\Postulante.php on line 88.
+ 1 APPPATH\Controllers\Postulante.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante_carrera', 'APPPATH\\Controllers\\Postulante.php', 88, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:24:12 --> Undefined variable: postulante_carrera
+in APPPATH\Controllers\Postulante.php on line 88.
+ 1 APPPATH\Controllers\Postulante.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante_carrera', 'APPPATH\\Controllers\\Postulante.php', 88, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:24:50 --> Undefined variable: postulante_carrera
+in APPPATH\Controllers\Postulante.php on line 90.
+ 1 APPPATH\Controllers\Postulante.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante_carrera', 'APPPATH\\Controllers\\Postulante.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:26:17 --> Undefined variable: Convocatoria
+in APPPATH\Controllers\Postulante.php on line 98.
+ 1 APPPATH\Controllers\Postulante.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: Convocatoria', 'APPPATH\\Controllers\\Postulante.php', 98, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:26:49 --> Illegal string offset 'ID_CONVOCATORIA'
+in APPPATH\Views\admin\postulaciones\vista.php on line 93.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_CONVOCATORIA\'', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:27:23 --> Illegal string offset 'ID_CONVOCATORIA'
+in APPPATH\Views\admin\postulaciones\vista.php on line 93.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_CONVOCATORIA\'', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:31:34 --> Illegal string offset 'ID_CONVOCATORIA'
+in APPPATH\Views\admin\postulaciones\vista.php on line 93.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_CONVOCATORIA\'', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:31:37 --> Illegal string offset 'ID_CONVOCATORIA'
+in APPPATH\Views\admin\postulaciones\vista.php on line 93.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_CONVOCATORIA\'', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:32:51 --> Illegal string offset 'ID_CONVOCATORIA'
+in APPPATH\Views\admin\postulaciones\vista.php on line 93.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_CONVOCATORIA\'', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:32:52 --> Illegal string offset 'ID_CONVOCATORIA'
+in APPPATH\Views\admin\postulaciones\vista.php on line 93.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_CONVOCATORIA\'', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:32:54 --> Illegal string offset 'ID_CONVOCATORIA'
+in APPPATH\Views\admin\postulaciones\vista.php on line 93.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_CONVOCATORIA\'', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:33:11 --> Undefined variable: convocatorias
+in APPPATH\Views\admin\postulaciones\vista.php on line 92.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatorias', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 92, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:43:12 --> Undefined index: NOMBRE_ESTUDIANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 117.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_ESTUDIANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 117, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 23:45:20 --> Undefined index: ID_POSTULACION
+in APPPATH\Views\admin\postulaciones\vista.php on line 124.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULACION', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 124, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(134): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-09 23:46:02 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Postulante.php(160): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-09 23:46:02 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Postulante.php(160): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

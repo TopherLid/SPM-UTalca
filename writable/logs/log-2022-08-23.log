@@ -1,0 +1,74 @@
+CRITICAL - 2022-08-23 13:51:06 --> Invalid file: admin/programa/especifica.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/programa/especifica.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/programa/especifica', [], true)
+ 3 APPPATH\Controllers\Programa.php(47): view('admin/programa/especifica', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->vista('3')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 13:51:56 --> Undefined variable: aux
+in APPPATH\Views\admin\programas\especifica.php on line 7.
+ 1 APPPATH\Views\admin\programas\especifica.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: aux', 'APPPATH\\Views\\admin\\programas\\especifica.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\programas\\especifica.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/programas/especifica', [], true)
+ 5 APPPATH\Controllers\Programa.php(47): view('admin/programas/especifica', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->vista('3')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:08:37 --> Undefined variable: usuario
+in APPPATH\Views\admin\notificaciones\correcto.php on line 52.
+ 1 APPPATH\Views\admin\notificaciones\correcto.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\admin\\notificaciones\\correcto.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\notificaciones\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/notificaciones/correcto', [], true)
+ 5 APPPATH\Controllers\Notificacion.php(27): view('admin/notificaciones/correcto')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202201')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:28:13 --> strip_tags() expects parameter 1 to be string, array given
+in APPPATH\Controllers\Estudiante.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strip_tags() expects parameter 1 to be string, array given', 'APPPATH\\Controllers\\Estudiante.php', 119, [...])
+ 2 APPPATH\Controllers\Estudiante.php(119): strip_tags([...])
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario_guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:29:10 --> Array to string conversion
+in APPPATH\Controllers\Estudiante.php on line 119.
+ 1 APPPATH\Controllers\Estudiante.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Estudiante.php', 119, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario_guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:34:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 79.
+ 1 APPPATH\Controllers\Postulante.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('35')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 14:34:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 79.
+ 1 APPPATH\Controllers\Postulante.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('36')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 15:36:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 79.
+ 1 APPPATH\Controllers\Postulante.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('37')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-23 17:16:35 --> Array to string conversion
+in APPPATH\Controllers\Notificacion.php on line 70.
+ 1 APPPATH\Controllers\Notificacion.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Notificacion.php', 70, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202201')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
