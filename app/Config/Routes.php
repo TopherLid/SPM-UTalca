@@ -100,12 +100,12 @@ $routes->get('/admin/postulante/verificador/(:num)', 'PDF::verificador/$1');
 
 $routes->get('/admin/postulantes/exportar/(:num)', 'Excel::exportar/$1');
 
-$routes->get('/admin/postulantes/notificar/(:num)', 'Notificacion::mailer/$1');
 
 
 
+$routes->put('/admin/movilidad/notificar', 'Notificacion::email');
+$routes->post('/admin/postulante/confirmacion', 'Postulante::confirmacion');
 
-$routes->get('/admin/movilidad/modificar', 'Notificacion::email');
 
 
 

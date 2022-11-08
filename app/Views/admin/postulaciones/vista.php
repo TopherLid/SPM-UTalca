@@ -14,11 +14,7 @@
 
     <link href="<?= base_url() ?>/public/fa/css/all.css" rel="stylesheet">
     <script src="<?= base_url() ?>/public/fa/js/all.js"></script>
-
-
-
 </head>
-<?php $contador=1; ?>
 <body  style="background-color: #E4DCCF;">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -131,13 +127,13 @@
                                     <th col-index=6 scope="col">Estado</th>
                                     <th col-index=7 scope="col">Programa</th>
                                     <th col-index=8 scope="col">Detalle</th>
-                                    <th col-index=9 scope="col">Selección</th>
+                                    <th col-index=9 scope="col">Confirmar</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $contador=1; foreach ($postulaciones as $postulacion): ?>
+                                <?php foreach ($postulaciones as $postulacion): ?>
                                     <tr>
-                                        <th>#<?=$contador?></th>
+                                        <th>#<?=$postulacion['ID_POSTULACION']?></th>
                                         <td><?=$postulacion['NOMBRE']?></td>
                                         <td><?=$postulacion['MATRICULA']?></td>
                                         <td><?=$postulacion['NOMBRE_CONVOCATORIA']?></td>
@@ -145,14 +141,20 @@
                                         <td><?=$postulacion['ESTADO_POSTULACION']?></td>
                                         <td><?=$postulacion['NOMBRE_PROGRAMA']?></td>
                                         <td>
-                                            <a href='<?=base_url();?>/admin/postulantes/<?=$postulacion['ID_POSTULACION'];?>' class='btn btn-primary btn-circle' target="_blank" role='button'><i class="fa-solid fa-file"></i> Detalle</a>
+                                            <center>
+                                                <a href='<?=base_url();?>/admin/postulantes/<?=$postulacion['ID_POSTULACION'];?>' class='btn btn-primary btn-circle' target="_blank" role='button'><i class="fa-solid fa-file"></i></a>
+                                            </center>
                                         </td>
                                         <td>
-                                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-id="<?=$postulacion['ID_POSTULACION']?>" 
-                                        data-bs-target="#exampleModal2">Selección</button>
+
+                                        <?php if ($postulacion['CONFIRMACION']=="En espera") : ?>
+                                            <center><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-id="<?=$postulacion['ID_POSTULACION']?>" data-bs-nombre="<?=$postulacion['NOMBRE']?>" data-bs-target="#seleccionModal"><i class="fa-solid fa-pen-to-square"></i></button></center>
+                                            <?php else: ?>
+                                            <span><?=$postulacion['CONFIRMACION']?></span>
+                                        <?php endif;?>
                                         </td>
                                     </tr>
-                                <?php $contador++; endforeach;?>
+                                <?php endforeach;?>
                             </tbody>
                         </table>
                     </div>
@@ -179,75 +181,65 @@
                 </div>
             </div>
             
+            <div class="modal fade" id="notificacionModal" tabindex="-1" aria-labelledby="notificacionModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="notificacionModalLabel">Notificar estudiantes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form class="needs-validation" action="<?= base_url()?>/admin/movilidad/notificar" method="post" accept-charset="utf-8">
+                <input type="hidden" name="_method" value="PUT"/>
+                <div class="modal-body">
+                    <input class="form-control rest proh" id="id_notif" readonly="true" type="hidden" name="id_notif">
+                    ¿Está seguro/a de realizar la notificación de la convocatoria?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-info"><i class="fa-solid fa-share"></i> <i class="fa-regular fa-envelope"></i> Notificar estudiantes</button>
+                </div>
+                </form>
+                </div>
+            </div>
+            </div>
 
-
-
-<div class="modal fade" id="notificacionModal" tabindex="-1" aria-labelledby="notificacionModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="notificacionModalLabel">Notificar estudiantes</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <form class="needs-validation" action="<?= base_url()?>/admin/movilidad/modificar" method="post" accept-charset="utf-8" id="form_modificar_programa" novalidate>
-      <input type="hidden" name="_method" value="PUT"/>
-      <div class="modal-body">
-          <input class="form-control rest proh" id="id_notif" readonly="true" type="hidden" name="id_notif">
-        ¿Está seguro/a de realizar la notificación de la convocatoria?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="submit" class="btn btn-info"><i class="fa-solid fa-share"></i> <i class="fa-regular fa-envelope"></i> Notificar estudiantes</button>
-      </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
-
-<!-- Modal2 -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel2">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-
-
-
-
-        <form class="needs-validation" action="<?= base_url()?>/admin/movilidad/modificar" method="post" accept-charset="utf-8" id="form_modificar_programa" novalidate>
-            <input type="hidden" name="_method" value="PUT"/>
-            <input class="form-control rest proh" id="id_programa" readonly="true" type="hidden" name="id_programa">
-
-
-
-            ...
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">a</button>
-        </div>
-    </form>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-                
+            <div class="modal fade" id="seleccionModal" tabindex="-1" aria-labelledby="seleccionModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="seleccionModalLabel">Selección</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <form class="needs-validation" action="<?= base_url()?>/postulante/confirmacion" method="post" accept-charset="utf-8" id="seleccion_estudiante" novalidate>
+                      <div class="modal-body">
+                          <input class="form-control rest proh" id="id_confirmar" readonly="true" type="hidden" name="id_confirmar">
+                          <div class="container">
+                        <div class="row">
+                            <div class="mb-3">
+                                    <label for="nombre_estudiante" class="col-form-label">Estudiante</label>
+                                    <input type="text" class="form-control" id="nombre_estudiante"  name="nombre_estudiante" readonly="true">
+                                </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="seleccion" id="estado_post_becado" required value="Confirmado" >
+                                <label class="form-check-label" for="seleccion">Confirmado</label> <!-- required -->
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="seleccion" id="estado_post_seleccion" required value="No confirmado" >
+                                <label class="form-check-label" for="seleccion" >No confirmado</label>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Seleccionar</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+            </div>
             <?php endif; ?>
-                
         </div>
 
     <div id="footer" style="padding-top: 150px; padding-bottom:50px; background-color: #E4DCCF;">
@@ -257,46 +249,35 @@
 <script> 
 function val() 
 { 
-    value = document.getElementById("periodo_convocatoria").value;
+
+    valor = document.getElementById("periodo_convocatoria").value;
     
     notificacion = document.getElementById("boton_notificacion");
     hider = document.getElementById("hider");
 
-
-    console.log(value)
-
-
     id_notif = document.getElementById("id_notif");
     
-
     var exampleModal = document.getElementById('notificacionModal')
     var modalBodyID = exampleModal.querySelector(".modal-body input[name='id_notif']");
-
-
-
-
 
     btn_notificar = document.getElementById("btn_notificar");
     
     exceldoc = document.getElementById("boton_exportar");
     exceldoc.target ="_blank";
 
-    if (value != "all") {
+
+    if (valor != "all") {
 
         btn_notificar.style.display = "block" ;
         exceldoc.style.display = "block" ;
-
         hider.style.display = "none";
-        modalBodyID.value = value;
-
-        notificacion.href="<?=base_url()?>/admin/postulantes/notificar/"+value;
-        exceldoc.href ="<?=base_url()?>/admin/postulantes/exportar/"+value;
+    
+        btn_notificar.setAttribute("data-bs-idNot", valor);
+        exceldoc.href ="<?=base_url()?>/admin/postulantes/exportar/"+valor;
     } else {
 
         hider.style.display = "block";
-
         modalBodyID.value = 0;
-
         btn_notificar.style.display = "none" ;
         exceldoc.style.display = "none" ;
     }
@@ -322,11 +303,36 @@ function val()
 
 } 
 </script> 
+
+<script>
+    var notificacionModal = document.getElementById('notificacionModal');
+    notificacionModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var id_notificacion = button.getAttribute('data-bs-idNot');
+    
+        var modalBodyIDNoti = notificacionModal.querySelector(".modal-body input[name='id_notif']");
+
+        modalBodyIDNoti.value = id_notificacion;
+    })
+</script>
+
+
+<script>
+
+var seleccionModal = document.getElementById('seleccionModal');
+seleccionModal.addEventListener('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+    var id_postulante = button.getAttribute('data-bs-id');
+    var nombre_postulante = button.getAttribute('data-bs-nombre');
+
+    var modalBodyID = seleccionModal.querySelector(".modal-body input[name='id_confirmar']");
+    var modalBodyNombre = seleccionModal.querySelector(".modal-body input[name='nombre_estudiante']");
+
+   modalBodyID.value = id_postulante;
+    modalBodyNombre.value = nombre_postulante;
+})
+
+</script>
 </body>
-<style>
-.modal-content {
-    background: #576F72;
-    color : #ffffff;
-}
-</style>
+
 </html>

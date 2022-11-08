@@ -69,7 +69,7 @@
 
     <div class="container-fluid">
         <div class="row">
-        <div class="col-md-10">
+        <div class="col-lg-10">
             
             <h2 class="center"><center>Información del Postulante</center></h2>
             <div class="container-fluid">
@@ -191,9 +191,9 @@
 
             </div>    
         </div>    
-        <div class="col-md-2">
+        <div class="col-lg-2">
             <table class="table"> 
-                <tr><th scope="row"><center><h4 class="center">Documentos</center></h4></th>
+                <tr><th scope="row"><center><h4 class="center">Docs</center></h4></th>
                 <tr><td><a href="<?=base_url()?>/postulante/cv/<?=$postulacion['ID_POSTULACION']?>" class="btn btn-primary btn-circle w-100" role="button">Curriculum</a></td></tr>
                 <tr><td><a href="<?=base_url()?>/postulante/antecedente/<?=$postulacion['ID_POSTULACION']?>" class="btn btn-primary btn-circle w-100" role="button">C. Interés</a></td></tr>
 

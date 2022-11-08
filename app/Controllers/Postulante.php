@@ -10,10 +10,8 @@ use App\Models\EstudianteModel;
 use App\Models\CarreraModel;
 
 use App\Models\MovilidadModel;
-
 use App\Models\IdiomaModel;
 use App\Models\PaisModel;
-
 
 use App\Models\PreguntaModel;
 use App\Models\RespuestaModel;
@@ -44,17 +42,16 @@ class Postulante extends BaseController
             'email' => session()->get('email')
         ];
 
-        $convocatorias = $convocatoriaModel->findAll();
+        $convocatorias = $convocatoriaModel->orderBy('ID_CONVOCATORIA', 'DESC')->findAll();
 
         /**
          * La función paginate muestra un máximo de 25 datos en la tabla, generando un botón para ver los sgtes 25 datos
          */
         
-        $postulaciones_base = $postulacionModel->paginate(25);
+        $postulaciones_base = $postulacionModel->orderBy('ID_POSTULACION', 'DESC')->paginate(25);
         $paginador = $postulacionModel->pager;
         
-        $carreras = $carreraModel->findAll();
-        $programas = $programaModel->findAll();
+
 
         if (is_null($postulaciones_base) || empty($postulaciones_base)){
             $postulaciones = false;
@@ -74,6 +71,7 @@ class Postulante extends BaseController
                     'NOMBRE' => $estudiante['NOMBRE'],
                     'MATRICULA'=> $estudiante['MATRICULA'],
                     'CARRERA' => $carrera['NOMBRE'],
+                    'CONFIRMACION' => $aux['CONFIRMACION'],
                     'ID_CONVOCATORIA' => $aux['ID_CONVOCATORIA'],
                     'NOMBRE_CONVOCATORIA' => $convocatoria['NOMBRE'],
                     'ESTADO_POSTULACION' => $aux['ESTADO'],
@@ -94,8 +92,6 @@ class Postulante extends BaseController
 
         return view('admin/postulaciones/vista', $data);
     }
-
-    #revisar el controlador
     
     public function registro($aux)
     {
@@ -242,17 +238,74 @@ class Postulante extends BaseController
         if ($estado !="Rechazado" && $estado != "Modificable") {
             $data = [
                 'ESTADO'=> $estado,
-                'SELECCION' => $u_seleccion
+                'SELECCION' => $u_seleccion,
+                'CONFIRMACION' => "En espera"
             ];
         }
 
         if ($postulacionModel->update($aux, $data)){
-            #$datos_estudiante = [];
-            #$movilidad->create($datos_estudiante);
+
+            $session-> setFlashData('status', 'El registro '.$aux.' ha sido actualizado correctamente.');
+            $session-> setFlashData('status_action', 'alert-success');
+            $session-> setFlashData('status_alert', '¡Correcto!');
+
 
             return redirect()->to('admin/postulantes/'.$aux);
         } else {
-           return view('admin/convicatorias/error'); #('errors/admin/convocatoria') o redirect -> controlador -> error
+
+            $session-> setFlashData('status', 'El registro '.$aux.' no ha sido actualizado.');
+            $session-> setFlashData('status_action', 'alert-danger');
+            $session-> setFlashData('status_alert', '¡Error!');
+
+            return redirect()->to('admin/postulantes/'.$aux);
+        }  
+    }
+
+
+    public function confirmacion(){
+        $session = session();
+
+        $sesion_creada = $session->has('id_administrativo');
+
+        if($sesion_creada==false){
+            return redirect()->to('/'); //http://inet.utalca.cl/intranet/auth_sso   
+        }
+
+        $postulacionModel = new PostulacionModel();
+        $movilidadModel = new MovilidadModel();
+        
+        $aux = $this->request->getVar('id_confirmar');
+        $seleccion = $this->request->getVar('seleccion');
+        
+        $data = [
+            'SELECCION'=>$seleccion
+        ];
+
+        $postulacion = $postulacionModel-> find ($aux);
+
+        if ($postulacionModel->update($aux, $data)){
+            
+            if ($seleccion=="Confirmado"){
+
+                $movilidad = [
+                    'ID_ESTUDIANTE' => $postulacion['ID_ESTUDIANTE']
+                ];
+
+                $movilidadModel->insert($movilidad);
+            }
+
+            $session-> setFlashData('status', 'El registro '.$aux.' se ha asignado como: '.$seleccion);
+            $session-> setFlashData('status_action', 'alert-success');
+            $session-> setFlashData('status_alert', '¡Correcto!');
+
+            return redirect()->to('admin/postulantes');
+        } else {
+
+            $session-> setFlashData('status', 'El registro '.$aux.' no ha sido actualizado.');
+            $session-> setFlashData('status_action', 'alert-danger');
+            $session-> setFlashData('status_alert', '¡Error!');
+
+            return redirect()->to('admin/postulantes');
         }  
     }
 }

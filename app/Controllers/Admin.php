@@ -62,17 +62,83 @@ class Admin extends BaseController
 
             $no_info=false;
 
+            $finder_aceptados = array(
+                'ESTADO' => 'Aceptada',
+                'ID_CONVOCATORIA' => $convocatoria['ID_CONVOCATORIA']
+            );
+
+            $aceptados = count($postulacionModel->where($finder_aceptados)->findAll());
+
+            $finder_rechazado = array(
+                'ESTADO' => 'Rechazada',
+                'ID_CONVOCATORIA' => $convocatoria['ID_CONVOCATORIA']
+            );
+
+            $rechazado = count($postulacionModel->where($finder_rechazado)->findAll());
+
+            $finder_becados = array(
+                'ESTADO' => 'Aceptado con Beca',
+                'ID_CONVOCATORIA' => $convocatoria['ID_CONVOCATORIA']
+            );
+            $aceptados_becados = count($postulacionModel->where($finder_becados)->findAll());
+
+
+            $postulaciones_contadas = [
+                'Aceptadas' => $aceptados,
+                'Rechazadas' => $rechazado,
+                'Becados' => $aceptados_becados
+            ];
+
+            /**
+             * Cuando existe una convocatoria busca la última creada
+             * Busca el programa, las postulaciones y la movilidad del estudiante
+             * Si la cantidad de postulaciones es distinto de 0, cuenta todas las postulaciones
+             */
+
+            $preparacion = array(
+                'ESTADO' => 'En preparación',
+                'ID_CONVOCATORIA' => $convocatoria['ID_CONVOCATORIA']
+            );
+            $preparados = count($movilidadModel->where($preparacion)->findAll());
+
+            $curso = array(
+                'ESTADO' => 'En curso',
+                'ID_CONVOCATORIA' => $convocatoria['ID_CONVOCATORIA']
+            );
+            $cursados = count($movilidadModel->where($curso)->findAll());
+
+            $correcta = array(
+                'ESTADO' => 'Correcta',
+                'ID_CONVOCATORIA' => $convocatoria['ID_CONVOCATORIA']
+            );
+            $correctos = count($movilidadModel->where($correcta)->findAll());
+
+            $cancelada = array(
+                'ESTADO' => 'Cancelada',
+                'ID_CONVOCATORIA' => $convocatoria['ID_CONVOCATORIA']
+            );
+            $cancelados = count($movilidadModel->where($cancelada)->findAll());
+
+            $finalizada = array(
+                'ESTADO' => 'Finalizada',
+                'ID_CONVOCATORIA' => $convocatoria['ID_CONVOCATORIA']
+            );
+            $finalizados = count($movilidadModel->where($finalizada)->findAll());
+
+            $movilidad_contadas = [
+                'Preparacion' => $preparados,
+                'Curso' => $cursados,
+                'Cancelada'=> $correctos,
+                'Correcta' => $cancelados,
+                'Finalizada' => $finalizados
+            ];
+
             $programa = $programaModel->find($convocatoria['ID_PROGRAMA']);
-            $postulaciones = $postulacionModel->select('*')->where('ID_CONVOCATORIA', $convocatoria['ID_CONVOCATORIA'])->findAll();
-
-            $contador = 0;
-
-            if (! is_null($postulaciones)){
-                $contador = count($postulaciones);
-            }
+            $contador = count($postulacionModel->select('*')->where('ID_CONVOCATORIA', $convocatoria['ID_CONVOCATORIA'])->findAll());
         }
 
-        $data=array('programa'=>$programa, 'convocatoria'=>$convocatoria, 'usuario'=>$usuario, 'contador'=>$contador, 'no_info'=>$no_info);
+        $data=array('programa'=>$programa, 'convocatoria'=>$convocatoria, 'usuario'=>$usuario, 'contador'=>$contador, 'no_info'=>$no_info, 
+        'postulaciones_contadas'=>$postulaciones_contadas, 'movilidad_contadas'=>$movilidad_contadas);
             
         return view('admin/index', $data);
     }

@@ -121,7 +121,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title"><i class="fa-solid fa-address-book"></i> Programa asociado</h3>
+                            <h4 class="card-title"><i class="fa-solid fa-address-book"></i> Programa asociado</h4>
                             <?php if($no_info==false): ?>
                                 <p class="card-text">Nombre: <?=$programa['NOMBRE']?></p>
                                 <p class="card-text">Estado: <?=$programa['ESTADO']?></p>
@@ -136,25 +136,36 @@
             </div>
             
 
-            <div class="row">
-                <div class="col-6">
+            <div class="row gy-4">
+                <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="card-title"><i class="fa-solid fa-plane-departure"></i> Movilidad Preparada</h2>
-                            <br>
-                            <p class="card-text">Estudiantes aceptados con beca: </p>
-                            <p class="card-text">Estudiantes aceptados con crédito: </p>
-                            <p class="card-text">Estudiantes rechazados: </p>
+                            <h4 class="card-title"><i class="fa-solid fa-plane-departure"></i> Movilidad Preparada</h4>
+                            <?php if($no_info==false): ?>
+                                <p class="card-text">Estudiantes aceptados con beca: <?=$postulaciones_contadas['Becados']?></p>
+                                <p class="card-text">Estudiantes aceptados con crédito: <?=$postulaciones_contadas['Aceptadas']?></p>
+                                <p class="card-text">Estudiantes rechazados: <?=$postulaciones_contadas['Rechazadas']?></p>
+                                <p class="card-text">Movilidad Preparada:<?=$movilidad_contadas['Preparacion']?></p>
+                            <?php else: ?>
+                                <p class="card-text">No existe movilidad.</p>
+                            <?php endif;?>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="card-title"><i class="fa-solid fa-plane-arrival"></i> Movilidad Activa</h2>
-                            <br>
-                            <p class="card-text">Estudiantes: </p>
-                            <p class="card-text"></p>
+                            <h4 class="card-title"><i class="fa-solid fa-plane-arrival"></i> Movilidad Activa</h4>
+                            <?php if($no_info==false): ?>
+                                <p class="card-text">Movilidad En curso: <?=$movilidad_contadas['Curso']?></p>
+                                <p class="card-text">Movilidad Cancelada: <?=$movilidad_contadas['Cancelada']?></p>
+                                <p class="card-text">Movilidad Correcta: <?=$movilidad_contadas['Correcta']?></p>
+                                <p class="card-text">Movilidad Finalizada: <?=$movilidad_contadas['Finalizada']?></p>
+                            <?php else: ?>
+                                <p class="card-text">No existe movilidad.</p>
+                            <?php endif;?>
+
                         </div>
                     </div>
                 </div>

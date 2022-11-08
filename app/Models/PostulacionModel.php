@@ -11,7 +11,7 @@ class PostulacionModel extends Model
 
     protected $returnType     = 'array';
     protected $allowedFields = ['NACIONALIDAD', 'N_TELEFONO', 'EMAIL_PERSONAL', 'NIVEL_INGLES', 'IDIOMA_2', '1RA_OPCION', 
-    '2DA_OPCION', '3RA_OPCION', 'SELECCION', 'ESTADO', 'ID_CONVOCATORIA', 'ID_MOVILIDAD', 'ID_ESTUDIANTE'];
+    '2DA_OPCION', '3RA_OPCION', 'SELECCION', 'ESTADO', 'ID_CONVOCATORIA', 'ID_MOVILIDAD', 'ID_ESTUDIANTE', 'CONFIRMACION'];
 
     protected $validationRules    = [];
     protected $validationMessages = [];
