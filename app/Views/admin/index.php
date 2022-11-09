@@ -142,10 +142,10 @@
                         <div class="card-body">
                             <h4 class="card-title"><i class="fa-solid fa-plane-departure"></i> Movilidad Preparada</h4>
                             <?php if($no_info==false): ?>
-                                <p class="card-text">Estudiantes aceptados con beca: <?=$postulaciones_contadas['Becados']?></p>
-                                <p class="card-text">Estudiantes aceptados con crédito: <?=$postulaciones_contadas['Aceptadas']?></p>
-                                <p class="card-text">Estudiantes rechazados: <?=$postulaciones_contadas['Rechazadas']?></p>
-                                <p class="card-text">Movilidad Preparada:<?=$movilidad_contadas['Preparacion']?></p>
+                                <p class="card-text">Estudiantes aceptados con beca: <?=$postulaciones_contadas['Becados']?> estudiantes</p>
+                                <p class="card-text">Estudiantes aceptados con crédito: <?=$postulaciones_contadas['Aceptadas']?> estudiantes</p>
+                                <p class="card-text">Estudiantes rechazados: <?=$postulaciones_contadas['Rechazadas']?> estudiantes</p>
+                                <p class="card-text">Movilidad Preparada:<?=$movilidad_contadas['Preparacion']?> estudiantes</p>
                             <?php else: ?>
                                 <p class="card-text">No existe movilidad.</p>
                             <?php endif;?>
@@ -158,10 +158,10 @@
                         <div class="card-body">
                             <h4 class="card-title"><i class="fa-solid fa-plane-arrival"></i> Movilidad Activa</h4>
                             <?php if($no_info==false): ?>
-                                <p class="card-text">Movilidad En curso: <?=$movilidad_contadas['Curso']?></p>
-                                <p class="card-text">Movilidad Cancelada: <?=$movilidad_contadas['Cancelada']?></p>
-                                <p class="card-text">Movilidad Correcta: <?=$movilidad_contadas['Correcta']?></p>
-                                <p class="card-text">Movilidad Finalizada: <?=$movilidad_contadas['Finalizada']?></p>
+                                <p class="card-text">Movilidad En curso: <?=$movilidad_contadas['Curso']?> estudiantes</p>
+                                <p class="card-text">Movilidad Cancelada: <?=$movilidad_contadas['Cancelada']?> estudiantes</p>
+                                <p class="card-text">Movilidad Correcta: <?=$movilidad_contadas['Correcta']?> estudiantes</p>
+                                <p class="card-text">Movilidad Finalizada: <?=$movilidad_contadas['Finalizada']?> estudiantes</p>
                             <?php else: ?>
                                 <p class="card-text">No existe movilidad.</p>
                             <?php endif;?>
@@ -176,10 +176,6 @@
     <div id="footer">
         <center><p class="texto_footer"> © 2022 SPM DESARROLLO CONJUNTO IIE Y RRII - UNIVERSIDAD DE TALCA </p></center>	
     </div>
-
-
-
-
+    
 </body> 
-
 </html>

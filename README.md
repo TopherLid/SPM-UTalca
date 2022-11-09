@@ -1,9 +1,3 @@
-## SPM Repositorio
-
-Repositorio base de SPM UTalca, para cualquier tipo de información enviar dm a TopherLid
-
-<br>
-
 # CodeIgniter 4 Development
 
 [![Build Status](https://github.com/codeigniter4/CodeIgniter4/workflows/PHPUnit/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions?query=workflow%3A%22PHPUnit%22)

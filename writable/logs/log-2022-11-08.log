@@ -49,3 +49,39 @@ in APPPATH\Controllers\Postulante.php on line 297.
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 16:40:27 --> Undefined index: NOMBRE
+in APPPATH\Controllers\Excel.php on line 153.
+ 1 APPPATH\Controllers\Excel.php(153): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE', 'APPPATH\\Controllers\\Excel.php', 153, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('29')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 17:52:54 --> Undefined variable: pregunta_asignada
+in APPPATH\Views\admin\convocatorias\individual.php on line 166.
+ 1 APPPATH\Views\admin\convocatorias\individual.php(166): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_asignada', 'APPPATH\\Views\\admin\\convocatorias\\individual.php', 166, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\individual.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/individual', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(263): view('admin/convocatorias/individual', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('29')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 18:21:29 --> Undefined index: TITULO
+in APPPATH\Controllers\Convocatoria.php on line 272.
+ 1 APPPATH\Controllers\Convocatoria.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TITULO', 'APPPATH\\Controllers\\Convocatoria.php', 272, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 18:22:28 --> Undefined index: Nombre
+in APPPATH\Views\admin\convocatorias\individual.php on line 182.
+ 1 APPPATH\Views\admin\convocatorias\individual.php(182): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Nombre', 'APPPATH\\Views\\admin\\convocatorias\\individual.php', 182, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\individual.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/individual', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(286): view('admin/convocatorias/individual', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('7')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

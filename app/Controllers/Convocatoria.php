@@ -64,6 +64,15 @@ class Convocatoria extends BaseController
             $preguntas = false;
         } 
 
+        $posicion=0;
+
+        foreach ($convocatorias as $convocatoria){
+            $contador = count($postulacionModel->where('ID_CONVOCATORIA', $convocatoria['ID_CONVOCATORIA'])->findAll());
+
+            $convocatorias[$posicion] += ['CONTADOR' => $contador];
+            $posicion++;
+        }
+
         /**
          * Toma la información y la guarda en el arreglo data, el cual, es mostrado en la vista
          */
@@ -248,8 +257,29 @@ class Convocatoria extends BaseController
         if(empty($preguntas) || is_null($preguntas)){
             $preguntas = false;
         }
-        
-        $data=array('usuario'=>$usuario, 'convocatoria'=>$convocatoria, 'preguntas'=>$preguntas, 'programa'=>$programa);
+
+        $pregunta_asociada = $preguntaConvocatoriaModel->where('ID_CONVOCATORIA', $convocatoria['ID_CONVOCATORIA'])->findAll();
+
+        if (empty($pregunta_asociada || is_null($pregunta_asociada))){
+            $pregunta_asignada=false;
+        } else {
+            $contador = 0;
+            foreach($pregunta_asociada as $pa){
+
+                $pregunta = $preguntaModel->find($pa['ID_PREGUNTA']);
+
+                $cambiar[$contador] = [
+                    'NOMBRE' => $pregunta['TITULO'],
+                    'TIPO' => $pregunta['TIPO_INPUT']
+                ];
+
+                $pregunta_asignada = array_replace($pregunta_asociada, $cambiar);
+
+                $contador++;
+            }
+        }
+
+        $data=array('usuario'=>$usuario, 'convocatoria'=>$convocatoria, 'preguntas'=>$preguntas, 'programa'=>$programa, 'pregunta_asignada'=>$pregunta_asignada);
 
         return view('admin/convocatorias/individual', $data);
     }

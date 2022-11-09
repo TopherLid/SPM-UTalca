@@ -108,6 +108,7 @@
                                     <th scope="col">Nombre Convocatoria</th>
                                     <th scope="col">Inicio</th>
                                     <th scope="col">Termino</th>
+                                    <th scope="col">Contador</th>
                                     <th scope="col">Estado</th>
                                     <th scope="col">Opciones</th>
                                     <th scope="col">Vista</th>
@@ -126,6 +127,7 @@
                                     $fecha_final = new DateTime ($convocatoria['FECHA_INICIO']);
                                     echo date_format($fecha_final, "d-m-Y");
                                     ?></td>
+                                    <td><?=$convocatoria['CONTADOR']?></td>
                                     <td><?=$convocatoria['ESTADO']?></td> 
                                     <?php if ($convocatoria['ESTADO']!='Cerrada'): ?>
                                     <td> 

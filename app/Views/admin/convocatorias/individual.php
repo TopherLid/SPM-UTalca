@@ -159,13 +159,42 @@
             <br>
             <br>
 
-            <div class="row">
             <br>
-                <center><h4>Preguntas adicionales</h4></center>
-                <br><br>
-                <center><span>La convocatoria actual no posee preguntas adicionales para el formulario.</span></center>
+                <?php if($pregunta_asignada==false):?>
 
-            </div>
+                    <div class="row">
+                        <center><h2>Preguntas adicionales</h2></center>
+                        <br><br><br><br>
+                        <div class="col-12">
+                            <div class="alert alert-warning" role="alert">
+                                <center><h4><i class="fa-solid fa-triangle-exclamation"></i> La convocatoria actual no posee preguntas adicionales para el formulario.</h4></center>
+                            </div>
+                        </div>
+
+                    </div>
+            
+                <?php else : ?>
+
+                    <div class="row">
+                        <center><h2>Preguntas adicionales</h2></center>
+                        <br><br><br><br>
+
+
+                        <?php foreach ($pregunta_asignada as $pa) : ?>
+
+                            <div class="alert alert-dark col-6" role="alert">
+                                <center> <span>Pregunta: <?=$pa['NOMBRE']?> - Tipo: <?=$pa['TIPO']?></span></center>
+                            </div>
+
+
+
+                        <?php endforeach; ?>
+
+                    </div>
+
+                <?php endif; ?>
+
+
 
             <br>
             <br>
@@ -247,7 +276,21 @@
                 </div>
                 </div>
             <?php else:?>
-                <center><h2>El estado de la convocatoria ha cambiado, no puede ser modificado el formulario asociado ni ser eliminada.</h2></center>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-danger" role="alert">
+                            <center>
+                                <h4 class="alert-heading"><i class="fa-solid fa-triangle-exclamation"></i> Estado de la convocatoria modificado</h4>
+                            </center>
+                            <hr>
+                            <center>
+                                <p>El estado de la convocatoria ha cambiado, no puede ser modificado el formulario asociado ni ser eliminada.</p>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+
             <?php endif;?>
     </div>
 
@@ -256,13 +299,4 @@
     </div>
 
 </body>
-
-
-
-<style>
-.modal-content {
-    background: #576F72;
-    color : #ffffff;
-}
-</style>
 </html>

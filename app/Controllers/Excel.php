@@ -64,13 +64,13 @@ class Excel extends BaseController
         $sheet->setCellValue('J1', 'Campus');
         $sheet->setCellValue('K1', 'Facultad');
         $sheet->setCellValue('L1', 'Carrera');
-        $sheet->setCellValue('M1', 'Pos');
-        $sheet->setCellValue('N1', 'Porcentaje');
-        $sheet->setCellValue('O1', 'PAT');
-        $sheet->setCellValue('P1', 'PM');
-        $sheet->setCellValue('Q1', 'Rep');
-        $sheet->setCellValue('R1', 'ECTS');
-        $sheet->setCellValue('S1', 'Inglés');
+        $sheet->setCellValue('M1', 'Pos'); # Ranking movilidad
+        $sheet->setCellValue('N1', 'Porcentaje'); # porcentaje de movilidad
+        $sheet->setCellValue('O1', 'PAT'); # Promedio Total Cursados
+        $sheet->setCellValue('P1', 'PM'); # Puntaje Movilidad
+        $sheet->setCellValue('Q1', 'Rep'); #
+        $sheet->setCellValue('R1', 'ECTS'); #
+        $sheet->setCellValue('S1', 'Inglés'); 
         $sheet->setCellValue('T1', 'Otro Idioma');
         $sheet->setCellValue('U1', 'Programa');
         $sheet->setCellValue('V1', 'Universidad 1');
@@ -81,7 +81,6 @@ class Excel extends BaseController
         $sheet->setCellValue('AA1', 'Universidad destino');
         $sheet->setCellValue('AB1', 'Pais destino');
         $sheet->setCellValue('AC1', 'Confirmación');
-        #$sheet->setCellValue('AD1', 'Periodo Movilidad');
 
         $contador_columna=2;
         $num=1;
@@ -104,10 +103,10 @@ class Excel extends BaseController
             
             if ($postulacion['SELECCION']==0){
                 $seleccion = [
-                    'NOMBRE_UNIVERSIDAD' => "Rechazada o no verificado"
+                    'NOMBRE' => "Rechazada o no verificado"
                 ];
                 $pais = [
-                    'NOMBRE_PAIS' => "Rechazada o no verificado"
+                    'NOMBRE' => "Rechazada o no verificado"
                 ];
             } else {
                 $seleccion = $universidadModel->find($postulacion['SELECCION']);
@@ -128,26 +127,32 @@ class Excel extends BaseController
             $sheet->setCellValue('J'.$contador_columna, $carrera['CAMPUS']);
             $sheet->setCellValue('K'.$contador_columna, $carrera['FACULTAD']);
 
-            $sheet->setCellValue('M'.$contador_columna, 'Pos');
-            $sheet->setCellValue('N'.$contador_columna, 'Porcentaje');
-            $sheet->setCellValue('O'.$contador_columna, 'PAT');
-            $sheet->setCellValue('P'.$contador_columna, 'PM');
+            $sheet->setCellValue('M'.$contador_columna, $estudiante['POS']);
+            $sheet->setCellValue('N'.$contador_columna, $estudiante['PORCENTAJE']);
+            $sheet->setCellValue('O'.$contador_columna, $estudiante['PAT']);
+            $sheet->setCellValue('P'.$contador_columna, $estudiante['PM']);
+
             $sheet->setCellValue('Q'.$contador_columna, $estudiante['RAMOS_REPROBADOS']);
             $sheet->setCellValue('R'.$contador_columna, $estudiante['CREDITOS_APROBADOS']);
-            
             $sheet->setCellValue('S'.$contador_columna, $postulacion['NIVEL_INGLES']);
             $sheet->setCellValue('T'.$contador_columna, $postulacion['IDIOMA_2']);
             
             $sheet->setCellValue('U'.$contador_columna, $convocatoria['NOMBRE']);
+
+            if ($postulacion['ESTADO']=="Aceptado"){
+                $sheet->setCellValue('Y'.$contador_columna, "Si");
+            } else {
+                $sheet->setCellValue('Y'.$contador_columna, "No");
+            }
         
-            $sheet->setCellValue('Y'.$contador_columna, 'CREDITO');
             $sheet->setCellValue('Z'.$contador_columna, $postulacion['ESTADO']);
                 
             $sheet->setCellValue('V'.$contador_columna, $u1['NOMBRE']);
             $sheet->setCellValue('W'.$contador_columna, $u2['NOMBRE']);
             $sheet->setCellValue('X'.$contador_columna, $u3['NOMBRE']);
-            #$sheet->setCellValue('AA'.$contador_columna, $seleccion['NOMBRE']);
-            #$sheet->setCellValue('AB'.$contador_columna, $pais['NOMBRE']);
+            $sheet->setCellValue('AA'.$contador_columna, $seleccion['NOMBRE']);
+            $sheet->setCellValue('AB'.$contador_columna, $pais['NOMBRE']);
+            $sheet->setCellValue('AB'.$contador_columna, $postulacion['CONFIRMACION']);
                 
             $contador_columna++;
             $num++;

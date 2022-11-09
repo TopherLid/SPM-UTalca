@@ -40,3 +40,9 @@
     padding-bottom:50px; 
     background-color: #E4DCCF;
 }
+
+
+.alert-dark {
+    background: #576F72 !important;
+    color : #ffffff !important;
+}
