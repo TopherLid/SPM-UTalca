@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-11-2022 a las 01:43:34
+-- Tiempo de generación: 07-11-2022 a las 12:41:09
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -92,7 +92,7 @@ INSERT INTO `convocatoria` (`ID_CONVOCATORIA`, `NOMBRE`, `FECHA_INICIO`, `FECHA_
 (5, 'Convocatoria a Beca Juan Abate Molina 2do Semestre', '2333-01-01', '2233-02-02', 'Próximamente', 1, 99, 'No', 5, 1),
 (6, 'Convocatoria a Beca Juan Abate Molina 2do Semestre', '2333-01-01', '2233-02-02', 'Próximamente', 1, 99, 'No', 5, 1),
 (7, 'Convocatoria a Beca Juan Abate Molina 2do Semestre', '2333-01-01', '2233-02-02', 'Activa', 1, 99, 'No', 5, 1),
-(29, 'Programa de Doble Titulación', '2022-10-03', '2022-11-04', 'Activa', 1, 99, 'Si', 3, 1);
+(29, 'Programa de Doble Titulación', '2022-10-03', '2022-11-04', 'Activa', 1, 99, 'No', 3, 1);
 
 -- --------------------------------------------------------
 
@@ -166,9 +166,7 @@ CREATE TABLE `idioma` (
 --
 
 INSERT INTO `idioma` (`ID_IDIOMA`, `IDIOMA`, `ESTADO`) VALUES
-(1, 'Japonés Medio', 'Activo'),
-(2, 'Japonés Básico', 'Activo'),
-(3, 'Japonés Avanzado', 'Activo');
+(2, 'Japonés A1', 'Activo');
 
 -- --------------------------------------------------------
 
@@ -180,18 +178,10 @@ CREATE TABLE `movilidad` (
   `ID_MOVILIDAD` int(11) NOT NULL,
   `FECHA_INICIO` date NOT NULL,
   `FECHA_FIN` date NOT NULL,
-  `SEMESTRE` varchar(25) NOT NULL DEFAULT 'Por definir',
-  `ESTADO` varchar(25) NOT NULL DEFAULT 'En preparación',
-  `ID_ESTUDIANTE` int(15) NOT NULL,
-  `ID_CONVOCATORIA` int(15) NOT NULL
+  `SEMESTRE` varchar(25) NOT NULL,
+  `ESTADO` varchar(25) NOT NULL,
+  `ID_ESTUDIANTE` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `movilidad`
---
-
-INSERT INTO `movilidad` (`ID_MOVILIDAD`, `FECHA_INICIO`, `FECHA_FIN`, `SEMESTRE`, `ESTADO`, `ID_ESTUDIANTE`, `ID_CONVOCATORIA`) VALUES
-(1, '0000-00-00', '0000-00-00', 'Por definir', 'En preparación', 1, 7);
 
 -- --------------------------------------------------------
 
@@ -303,26 +293,25 @@ CREATE TABLE `postulacion` (
   `ESTADO` varchar(50) NOT NULL DEFAULT 'En espera',
   `ID_CONVOCATORIA` int(15) NOT NULL,
   `ID_MOVILIDAD` int(15) NOT NULL DEFAULT 0,
-  `ID_ESTUDIANTE` int(15) NOT NULL,
-  `CONFIRMACION` varchar(50) NOT NULL DEFAULT 'Sin aceptar'
+  `ID_ESTUDIANTE` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `postulacion`
 --
 
-INSERT INTO `postulacion` (`ID_POSTULACION`, `NACIONALIDAD`, `N_TELEFONO`, `EMAIL_PERSONAL`, `NIVEL_INGLES`, `IDIOMA_2`, `1RA_OPCION`, `2DA_OPCION`, `3RA_OPCION`, `SELECCION`, `ESTADO`, `ID_CONVOCATORIA`, `ID_MOVILIDAD`, `ID_ESTUDIANTE`, `CONFIRMACION`) VALUES
-(4, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 1, 'Aceptado', 7, 0, 1, 'Confirmado'),
-(5, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1, 'Sin aceptar'),
-(6, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1, 'Sin aceptar'),
-(7, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1, 'Sin aceptar'),
-(8, 'chileno', 984352456, 'cparedes@gmail.com', 'Inglés B1', '2', 1, 2, 3, 0, 'En espera', 7, 0, 1, 'Sin aceptar'),
-(9, 'Chilena', 985451458, 'cparedeslopes@gmail.com', 'Inglés C1', '2', 1, 2, 3, 0, 'En espera', 7, 0, 1, 'Sin aceptar'),
-(10, 'chileno', 984532453, 'cparedes@gmail.com', 'Inglés C1', '2', 1, 2, 3, 0, 'En espera', 7, 0, 1, 'Sin aceptar'),
-(11, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1, 'Sin aceptar'),
-(12, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés B2', '2', 1, 1, 1, 0, 'Rechazada', 7, 0, 1, 'Sin aceptar'),
-(13, 'Chilena', 947984537, 'fr@gmail', 'Inglés A1', '2', 1, 1, 1, 0, 'En espera', 29, 0, 1, 'Sin aceptar'),
-(14, 'Chilena', 947984537, 'fr@gmail.com', 'Inglés A1', '2', 1, 1, 1, 0, 'Aceptado con Beca', 29, 0, 1, 'En espera');
+INSERT INTO `postulacion` (`ID_POSTULACION`, `NACIONALIDAD`, `N_TELEFONO`, `EMAIL_PERSONAL`, `NIVEL_INGLES`, `IDIOMA_2`, `1RA_OPCION`, `2DA_OPCION`, `3RA_OPCION`, `SELECCION`, `ESTADO`, `ID_CONVOCATORIA`, `ID_MOVILIDAD`, `ID_ESTUDIANTE`) VALUES
+(4, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 1, 'Aceptado', 7, 0, 1),
+(5, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1),
+(6, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1),
+(7, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1),
+(8, 'chileno', 984352456, 'cparedes@gmail.com', 'Inglés B1', '2', 1, 2, 3, 0, 'En espera', 7, 0, 1),
+(9, 'Chilena', 985451458, 'cparedeslopes@gmail.com', 'Inglés C1', '2', 1, 2, 3, 0, 'En espera', 7, 0, 1),
+(10, 'chileno', 984532453, 'cparedes@gmail.com', 'Inglés C1', '2', 1, 2, 3, 0, 'En espera', 7, 0, 1),
+(11, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés C1', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1),
+(12, 'Chilena', 989896187, 'chrisparedeslbz@gmail.com', 'Inglés B2', '2', 1, 1, 1, 0, 'En espera', 7, 0, 1),
+(13, 'Chilena', 947984537, 'fr@gmail', 'Inglés A1', '2', 1, 1, 1, 0, 'En espera', 29, 0, 1),
+(14, 'Chilena', 947984537, 'fr@gmail.com', 'Inglés A1', '2', 1, 1, 1, 0, 'En espera', 29, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -758,7 +747,7 @@ INSERT INTO `universidad` (`ID_UNIVERSIDAD`, `NOMBRE`, `ESTADO`, `ID_PAIS`) VALU
 (297, 'Universidad Antonio Nariño', 'Activo', 9),
 (298, 'Universidad Autónoma de Guadalajara', 'Activo', 27),
 (299, 'Universidad Autónoma Metropolitana Unidad Xochimilco', 'Activo', 27),
-(300, 'Universidad de Cantabria ', 'Activo', 15),
+(300, 'Universidad de Cantabria ', 'Activo', 15),
 (301, 'Universidade de Evora', 'Activo', 32),
 (302, 'Universidad de Sonora', 'Activo', 27),
 (303, 'University of North Texas', 'Activo', 16),
@@ -844,9 +833,7 @@ ALTER TABLE `idioma`
 -- Indices de la tabla `movilidad`
 --
 ALTER TABLE `movilidad`
-  ADD PRIMARY KEY (`ID_MOVILIDAD`),
-  ADD KEY `ID_ESTUDIANTE` (`ID_ESTUDIANTE`),
-  ADD KEY `ID_CONVOCATORIA` (`ID_CONVOCATORIA`);
+  ADD PRIMARY KEY (`ID_MOVILIDAD`);
 
 --
 -- Indices de la tabla `opciones_preg_multiple`
@@ -940,13 +927,13 @@ ALTER TABLE `estudiante`
 -- AUTO_INCREMENT de la tabla `idioma`
 --
 ALTER TABLE `idioma`
-  MODIFY `ID_IDIOMA` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_IDIOMA` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `movilidad`
 --
 ALTER TABLE `movilidad`
-  MODIFY `ID_MOVILIDAD` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_MOVILIDAD` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `opciones_preg_multiple`
