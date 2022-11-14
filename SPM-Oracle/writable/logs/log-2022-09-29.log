@@ -1,0 +1,240 @@
+CRITICAL - 2022-09-29 16:19:57 --> Class 'App\Controllers\UsuarioModel' not found
+in APPPATH\Controllers\AuthSPM.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 16:36:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 28.
+ 1 APPPATH\Controllers\AuthSPM.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 17:02:26 --> Undefined variable: var
+in APPPATH\Controllers\AuthSPM.php on line 28.
+ 1 APPPATH\Controllers\AuthSPM.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: var', 'APPPATH\\Controllers\\AuthSPM.php', 28, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 17:51:50 --> Undefined variable: userModel
+in APPPATH\Controllers\AuthSPM.php on line 18.
+ 1 APPPATH\Controllers\AuthSPM.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userModel', 'APPPATH\\Controllers\\AuthSPM.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 17:52:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 32.
+ 1 APPPATH\Controllers\AuthSPM.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 17:52:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 32.
+ 1 APPPATH\Controllers\AuthSPM.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 17:53:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 34.
+ 1 APPPATH\Controllers\AuthSPM.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 17:54:59 --> Undefined index: ID_USER
+in APPPATH\Controllers\AuthSPM.php on line 35.
+ 1 APPPATH\Controllers\AuthSPM.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_USER', 'APPPATH\\Controllers\\AuthSPM.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-29 17:56:02 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-29 17:56:02 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `detalle_postulante`
+WHERE `ID_USER` = (\'19718582\',\'1\',\'estudiante\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_postulante`
+WHERE `ID_USER` = (\'19718582\',\'1\',\'estudiante\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_postulante`
+WHERE `ID_USER` = (\'19718582\',\'1\',\'estudiante\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_postulante`
+WHERE `ID_USER` = :ID_USER:', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-29 17:56:26 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-09-29 17:56:26 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `detalle_postulante`
+WHERE `ID_USER` = (\'19718582\',\'1\',\'estudiante\')
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_postulante`
+WHERE `ID_USER` = (\'19718582\',\'1\',\'estudiante\')
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_postulante`
+WHERE `ID_USER` = (\'19718582\',\'1\',\'estudiante\')
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_postulante`
+WHERE `ID_USER` = :ID_USER:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 17:57:46 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\AuthSPM.php on line 36.
+ 1 APPPATH\Controllers\AuthSPM.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\AuthSPM.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 18:40:20 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Controllers\AuthSPM.php on line 36.
+ 1 APPPATH\Controllers\AuthSPM.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Controllers\\AuthSPM.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 18:40:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 47.
+ 1 APPPATH\Controllers\Estudiante.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 47, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 19:39:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 64.
+ 1 APPPATH\Controllers\Estudiante.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 64, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 19:48:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 65.
+ 1 APPPATH\Controllers\Estudiante.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 65, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 20:27:59 --> Class 'App\Modals\CarreraModel' not found
+in APPPATH\Controllers\AuthSPM.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 20:28:15 --> Class 'App\Modals\CarreraModel' not found
+in APPPATH\Controllers\AuthSPM.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 20:33:40 --> Undefined variable: carreraModel
+in APPPATH\Controllers\Estudiante.php on line 58.
+ 1 APPPATH\Controllers\Estudiante.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: carreraModel', 'APPPATH\\Controllers\\Estudiante.php', 58, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 21:47:00 --> Undefined variable: postulante
+in APPPATH\Controllers\Estudiante.php on line 48.
+ 1 APPPATH\Controllers\Estudiante.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante', 'APPPATH\\Controllers\\Estudiante.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 21:49:49 --> Undefined variable: datitos
+in APPPATH\Controllers\Estudiante.php on line 39.
+ 1 APPPATH\Controllers\Estudiante.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datitos', 'APPPATH\\Controllers\\Estudiante.php', 39, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 21:50:26 --> Undefined index: SCT_ESTUDIANTE
+in APPPATH\Controllers\Estudiante.php on line 84.
+ 1 APPPATH\Controllers\Estudiante.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: SCT_ESTUDIANTE', 'APPPATH\\Controllers\\Estudiante.php', 84, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 21:50:45 --> Undefined variable: programa
+in APPPATH\Controllers\Estudiante.php on line 121.
+ 1 APPPATH\Controllers\Estudiante.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Controllers\\Estudiante.php', 121, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 21:53:12 --> Undefined variable: programa
+in APPPATH\Controllers\Estudiante.php on line 121.
+ 1 APPPATH\Controllers\Estudiante.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Controllers\\Estudiante.php', 121, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 22:11:13 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\verificador\correcto.php on line 59.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(59): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-29 22:51:07 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\verificador\correcto.php on line 59.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(59): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

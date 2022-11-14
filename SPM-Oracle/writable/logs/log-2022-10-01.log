@@ -1,0 +1,51 @@
+CRITICAL - 2022-10-01 15:44:33 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\verificador\correcto.php on line 59.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(60): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-01 15:45:50 --> Undefined index: NACIMIENTO_POSTULANTE
+in APPPATH\Views\estudiante\verificador\correcto.php on line 71.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NACIMIENTO_POSTULANTE', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(60): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-01 15:46:05 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\estudiante\verificador\correcto.php on line 77.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 77, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(60): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-01 15:46:23 --> Undefined index: carrera
+in APPPATH\Views\estudiante\verificador\correcto.php on line 89.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: carrera', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 89, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(60): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-01 22:55:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 233.
+ 1 APPPATH\Controllers\Estudiante.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 233, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

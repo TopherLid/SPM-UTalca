@@ -1,0 +1,492 @@
+CRITICAL - 2022-08-13 13:31:04 --> Undefined variable: db
+in APPPATH\Controllers\AuthSPM.php on line 20.
+ 1 APPPATH\Controllers\AuthSPM.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Controllers\\AuthSPM.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 13:49:23 --> Undefined variable: db
+in APPPATH\Controllers\AuthSPM.php on line 20.
+ 1 APPPATH\Controllers\AuthSPM.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Controllers\\AuthSPM.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 14:07:13 --> syntax error, unexpected 'ooo' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Config\Database.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(249): spl_autoload_call('Config\\Database')
+ 5 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(69): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 6 SYSTEMPATH\Debug\Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 7 SYSTEMPATH\Config\Services.php(714): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+ 8 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+ 9 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('toolbar', [...])
+10 SYSTEMPATH\Config\Services.php(709): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', null)
+11 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::toolbar()
+12 APPPATH\Config\Events.php(46): CodeIgniter\Config\BaseService::__callStatic('toolbar', [])
+13 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+14 SYSTEMPATH\CodeIgniter.php(317): CodeIgniter\Events\Events::trigger('pre_system')
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 14:07:21 --> Undefined variable: db
+in APPPATH\Controllers\AuthSPM.php on line 20.
+ 1 APPPATH\Controllers\AuthSPM.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Controllers\\AuthSPM.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 16:06:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'TOPHER'@'localhost' (using password: YES) in D:\wamp64\www\tesis_oci8\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\wamp64\www\tesis_oci8\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'TOPHER', '123', 'SPM', 3307, '', 0)
+#1 D:\wamp64\www\tesis_oci8\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\tesis_oci8\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\tesis_oci8\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp64\www\tesis_oci8\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\tesis_oci8\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 D:\wamp64\www\tesis_oci8\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 D:\wamp64\www\tesis_oci8\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 D:\wamp64\www\tesis_oci8\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 D:\wamp64\www\tesis_oci8\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp64\www\tesis_oci8\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\wamp64\www\tesis_oci8\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\wamp64\www\tesis_oci8\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\tesis_oci8\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\tesis_oci8\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\wamp64\www\tesis_oci8\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\wamp64\www\tesis_oci8\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 D:\wamp64\www\tesis_oci8\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 D:\wamp64\www\tesis_oci8\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 D:\wamp64\www\tesis_oci8\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 D:\wamp64\www\tesis_oci8\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\tesis_oci8\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 16:06:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-13 16:09:30 --> Undefined variable: db
+in APPPATH\Controllers\Admin.php on line 27.
+ 1 APPPATH\Controllers\Admin.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Controllers\\Admin.php', 27, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 21:36:20 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'Topher', '123', 'spm', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 21:36:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 21:36:24 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'Topher', '123', 'spm', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 21:36:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 22:02:02 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'Topher', '123', 'spm', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 22:02:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 22:11:06 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'TOPHER', '123', 'SPM', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 22:11:06 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 22:12:45 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'TOPHER', '123', 'SPM', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 22:12:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 22:13:06 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'TOPHER', '123', 'spm', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 22:13:06 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 22:13:10 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'TOPHER', '123', 'spm', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 22:13:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 22:13:45 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'TOPHER', '123', 'spm', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 22:13:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-08-13 22:21:05 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'TOPHER', '123', 'spm', 3307, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-08-13 22:21:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '111')
+ 5 APPPATH\Controllers\AuthSPM.php(21): CodeIgniter\BaseModel->find('111')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

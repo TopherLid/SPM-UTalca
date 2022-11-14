@@ -1,0 +1,14 @@
+CRITICAL - 2022-10-21 14:59:23 --> Undefined index: pregunta
+in APPPATH\Controllers\Convocatoria.php on line 230.
+ 1 APPPATH\Controllers\Convocatoria.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pregunta', 'APPPATH\\Controllers\\Convocatoria.php', 230, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 15:07:39 --> Undefined index: pregunta
+in APPPATH\Controllers\Convocatoria.php on line 230.
+ 1 APPPATH\Controllers\Convocatoria.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pregunta', 'APPPATH\\Controllers\\Convocatoria.php', 230, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

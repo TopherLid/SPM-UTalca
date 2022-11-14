@@ -1,0 +1,211 @@
+CRITICAL - 2022-11-04 00:23:53 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 387.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 00:37:38 --> Undefined index: TITULO_PREGUNTA
+in APPPATH\Views\admin\convocatorias\individual.php on line 209.
+ 1 APPPATH\Views\admin\convocatorias\individual.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TITULO_PREGUNTA', 'APPPATH\\Views\\admin\\convocatorias\\individual.php', 209, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\individual.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/individual', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(254): view('admin/convocatorias/individual', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('6')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 00:38:13 --> Too few arguments to function App\Controllers\PDF::cv(), 0 passed in C:\xampp\htdocs\tesis\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\PDF.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->cv()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 00:38:31 --> Undefined property: App\Controllers\PDF::$load
+in APPPATH\Controllers\PDF.php on line 87.
+ 1 APPPATH\Controllers\PDF.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PDF::$load', 'APPPATH\\Controllers\\PDF.php', 87, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->cv('12')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 05:50:49 --> Undefined property: App\Controllers\PDF::$load
+in APPPATH\Controllers\PDF.php on line 87.
+ 1 APPPATH\Controllers\PDF.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PDF::$load', 'APPPATH\\Controllers\\PDF.php', 87, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->cv('12')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 05:51:00 --> Undefined variable: filename
+in APPPATH\Controllers\PDF.php on line 94.
+ 1 APPPATH\Controllers\PDF.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: filename', 'APPPATH\\Controllers\\PDF.php', 94, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->cv('12')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 05:51:11 --> File not found: /uploads/7/12/cv.pdf
+in SYSTEMPATH\Files\File.php on line 46.
+ 1 SYSTEMPATH\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/uploads/7/12/cv.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('/uploads/7/12/cv.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(781): CodeIgniter\HTTP\DownloadResponse->setFilePath('/uploads/7/12/cv.pdf')
+ 4 APPPATH\Controllers\PDF.php(94): CodeIgniter\HTTP\Response->download('cv.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->cv('12')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 05:51:38 --> File not found: /writable/uploads/7/12/cv.pdf
+in SYSTEMPATH\Files\File.php on line 46.
+ 1 SYSTEMPATH\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/writable/uploads/7/12/cv.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('/writable/uploads/7/12/cv.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(781): CodeIgniter\HTTP\DownloadResponse->setFilePath('/writable/uploads/7/12/cv.pdf')
+ 4 APPPATH\Controllers\PDF.php(94): CodeIgniter\HTTP\Response->download('cv.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->cv('12')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 05:51:54 --> File not found: http://tesis.localhost/writable/uploads/7/12/cv.pdf
+in SYSTEMPATH\Files\File.php on line 46.
+ 1 SYSTEMPATH\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://tesis.localhost/writable/uploads/7/12/cv.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('http://tesis.localhost/writable/uploads/7/12/cv.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(781): CodeIgniter\HTTP\DownloadResponse->setFilePath('http://tesis.localhost/writable/uploads/7/12/cv.pdf')
+ 4 APPPATH\Controllers\PDF.php(94): CodeIgniter\HTTP\Response->download('cv.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->cv('12')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 05:52:44 --> File not found: http://tesis.localhost/writable/uploads/7/12/cv.pdf
+in SYSTEMPATH\Files\File.php on line 46.
+ 1 SYSTEMPATH\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://tesis.localhost/writable/uploads/7/12/cv.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('http://tesis.localhost/writable/uploads/7/12/cv.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(781): CodeIgniter\HTTP\DownloadResponse->setFilePath('http://tesis.localhost/writable/uploads/7/12/cv.pdf')
+ 4 APPPATH\Controllers\PDF.php(96): CodeIgniter\HTTP\Response->download('cv.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->cv('12')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 06:11:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 163.
+ 1 APPPATH\Controllers\Postulante.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 163, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 06:14:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 163.
+ 1 APPPATH\Controllers\Postulante.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 163, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 06:15:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 163.
+ 1 APPPATH\Controllers\Postulante.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 163, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 06:16:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 163.
+ 1 APPPATH\Controllers\Postulante.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 163, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 06:18:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 165.
+ 1 APPPATH\Controllers\Postulante.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 165, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:22:54 --> Undefined index: EMAIL
+in APPPATH\Controllers\Excel.php on line 122.
+ 1 APPPATH\Controllers\Excel.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: EMAIL', 'APPPATH\\Controllers\\Excel.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:24:22 --> Undefined index: EMAIL
+in APPPATH\Controllers\Excel.php on line 122.
+ 1 APPPATH\Controllers\Excel.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: EMAIL', 'APPPATH\\Controllers\\Excel.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:24:51 --> Undefined index: EMAIL
+in APPPATH\Controllers\Excel.php on line 122.
+ 1 APPPATH\Controllers\Excel.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: EMAIL', 'APPPATH\\Controllers\\Excel.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:24:58 --> Undefined index: EMAIL
+in APPPATH\Controllers\Excel.php on line 122.
+ 1 APPPATH\Controllers\Excel.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: EMAIL', 'APPPATH\\Controllers\\Excel.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:25:48 --> Undefined index: NUMERO_TELEFONO
+in APPPATH\Controllers\Excel.php on line 125.
+ 1 APPPATH\Controllers\Excel.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NUMERO_TELEFONO', 'APPPATH\\Controllers\\Excel.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:26:24 --> Undefined index: LENGUA_SECUNDARIA
+in APPPATH\Controllers\Excel.php on line 139.
+ 1 APPPATH\Controllers\Excel.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: LENGUA_SECUNDARIA', 'APPPATH\\Controllers\\Excel.php', 139, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:26:44 --> Undefined index: NOMBRE
+in APPPATH\Controllers\Excel.php on line 149.
+ 1 APPPATH\Controllers\Excel.php(149): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE', 'APPPATH\\Controllers\\Excel.php', 149, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:27:09 --> Undefined index: NOMBRE
+in APPPATH\Controllers\Excel.php on line 149.
+ 1 APPPATH\Controllers\Excel.php(149): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE', 'APPPATH\\Controllers\\Excel.php', 149, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:27:30 --> Undefined index: NOMBRE
+in APPPATH\Controllers\Excel.php on line 150.
+ 1 APPPATH\Controllers\Excel.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE', 'APPPATH\\Controllers\\Excel.php', 150, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('7')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:35:19 --> Undefined index: TITULO_PREGUNTA
+in APPPATH\Views\admin\convocatorias\individual.php on line 209.
+ 1 APPPATH\Views\admin\convocatorias\individual.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TITULO_PREGUNTA', 'APPPATH\\Views\\admin\\convocatorias\\individual.php', 209, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\individual.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/individual', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(254): view('admin/convocatorias/individual', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('29')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:39:26 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads\\29\\13', 'cv.pdf')
+ 3 APPPATH\Controllers\Estudiante.php(367): CodeIgniter\HTTP\Files\UploadedFile->store('29/13/', 'cv.pdf')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-04 08:39:37 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\writable\\uploads\\29\\14', 'cv.pdf')
+ 3 APPPATH\Controllers\Estudiante.php(367): CodeIgniter\HTTP\Files\UploadedFile->store('29/14/', 'cv.pdf')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

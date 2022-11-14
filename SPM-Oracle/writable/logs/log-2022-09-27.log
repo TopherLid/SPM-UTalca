@@ -1,0 +1,55 @@
+CRITICAL - 2022-09-27 13:45:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\programas\crear.php on line 53.
+ 1 APPPATH\Views\admin\programas\crear.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\programas\\crear.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\programas\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/programas/crear', [], true)
+ 5 APPPATH\Controllers\Programa.php(76): view('admin/programas/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-27 14:40:11 --> Illegal string offset 'ID_PAIS'
+in APPPATH\Views\admin\universidades\vista.php on line 223.
+ 1 APPPATH\Views\admin\universidades\vista.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PAIS\'', 'APPPATH\\Views\\admin\\universidades\\vista.php', 223, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\universidades\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/universidades/vista', [], true)
+ 5 APPPATH\Controllers\Universidad.php(51): view('admin/universidades/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->universidades()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-27 14:43:15 --> Undefined variable: preguntas
+in APPPATH\Views\admin\universidades\vista.php on line 230.
+ 1 APPPATH\Views\admin\universidades\vista.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas', 'APPPATH\\Views\\admin\\universidades\\vista.php', 230, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\universidades\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/universidades/vista', [], true)
+ 5 APPPATH\Controllers\Universidad.php(51): view('admin/universidades/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->universidades()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-27 14:43:46 --> Undefined index: ID_PREGUNTA
+in APPPATH\Views\admin\universidades\vista.php on line 232.
+ 1 APPPATH\Views\admin\universidades\vista.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PREGUNTA', 'APPPATH\\Views\\admin\\universidades\\vista.php', 232, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\universidades\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/universidades/vista', [], true)
+ 5 APPPATH\Controllers\Universidad.php(51): view('admin/universidades/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->universidades()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-27 14:45:38 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\formularios\crear.php on line 53.
+ 1 APPPATH\Views\admin\formularios\crear.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\formularios\\crear.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formularios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/formularios/crear', [], true)
+ 5 APPPATH\Controllers\Formulario.php(74): view('admin/formularios/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,56 @@
+CRITICAL - 2022-10-04 07:40:54 --> Undefined variable: session
+in APPPATH\Controllers\AuthSPM.php on line 14.
+ 1 APPPATH\Controllers\AuthSPM.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Controllers\\AuthSPM.php', 14, [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->inicio()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-04 09:59:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 325.
+ 1 APPPATH\Controllers\Estudiante.php(325): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 325, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-04 10:46:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 325.
+ 1 APPPATH\Controllers\Estudiante.php(325): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 325, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-04 11:08:13 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Postulante.php(86): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Postulante->registro('61')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-04 11:08:13 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Postulante.php(86): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('61')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

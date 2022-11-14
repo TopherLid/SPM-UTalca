@@ -1,0 +1,39 @@
+CRITICAL - 2022-10-16 10:10:48 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\Postulante.php on line 183.
+ 1 APPPATH\Controllers\Postulante.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Controllers\\Postulante.php', 183, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-16 10:11:40 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\Postulante.php on line 185.
+ 1 APPPATH\Controllers\Postulante.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Controllers\\Postulante.php', 185, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-16 10:14:33 --> Undefined index: INPUT_TIPO
+in APPPATH\Controllers\Postulante.php on line 189.
+ 1 APPPATH\Controllers\Postulante.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: INPUT_TIPO', 'APPPATH\\Controllers\\Postulante.php', 189, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-16 10:14:58 --> Undefined index: INPUT_TIPO
+in APPPATH\Controllers\Postulante.php on line 189.
+ 1 APPPATH\Controllers\Postulante.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: INPUT_TIPO', 'APPPATH\\Controllers\\Postulante.php', 189, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-16 14:27:48 --> Array to string conversion
+in APPPATH\Views\admin\postulaciones\individual.php on line 170.
+ 1 APPPATH\Views\admin\postulaciones\individual.php(170): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\admin\\postulaciones\\individual.php', 170, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\individual.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/individual', [], true)
+ 5 APPPATH\Controllers\Postulante.php(270): view('admin/postulaciones/individual', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('58')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

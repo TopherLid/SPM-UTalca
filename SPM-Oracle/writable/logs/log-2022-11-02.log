@@ -1,0 +1,69 @@
+CRITICAL - 2022-11-02 07:49:18 --> Undefined index: NUMERO_TELEFONO
+in APPPATH\Views\estudiante\ticket\correcto.php on line 82.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NUMERO_TELEFONO', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(446): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->correcto()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 07:53:05 --> Undefined variable: idioma
+in APPPATH\Views\estudiante\ticket\correcto.php on line 85.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: idioma', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 85, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(446): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->correcto()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 09:19:01 --> mysqli_sql_exception: Column 'RESPUESTA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(358): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-02 09:19:01 --> Column 'RESPUESTA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `respuesta` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (NULL, \'2\', \'8\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `respuesta` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (NULL, \'2\', \'8\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `respuesta` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (NULL, \'2\', \'8\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `respuesta` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (:RESPUESTA:, :ID_PREGUNTA:, :ID_POSTULACION:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Estudiante.php(358): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 09:23:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 624.
+ 1 APPPATH\Controllers\Estudiante.php(624): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 624, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->individual('8')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 14:06:36 --> Undefined index: id_postulante
+in APPPATH\Views\template\pdf.php on line 23.
+ 1 APPPATH\Views\template\pdf.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_postulante', 'APPPATH\\Views\\template\\pdf.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('template/pdf', [], true)
+ 5 APPPATH\Controllers\PDF.php(59): view('template/pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('11')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,241 @@
+ERROR - 2022-10-30 02:06:08 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'TOPHER'@'localhost' (using password: YES) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'TOPHER', '123', 'spm', 3306, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '6169')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('6169')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '6169')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('6169')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-30 02:06:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '6169')
+ 5 APPPATH\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('6169')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 13:01:01 --> Class 'App\Models\PreguntaInputModel' not found
+in APPPATH\Controllers\Convocatoria.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 13:01:07 --> Class 'App\Controllers\UsuarioModel' not found
+in APPPATH\Controllers\Universidad.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->universidades()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 13:01:10 --> Class 'App\Models\DetallePostulante' not found
+in APPPATH\Controllers\Postulante.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 13:01:14 --> Class 'App\Models\PreguntaInputModel' not found
+in APPPATH\Controllers\Formulario.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 13:07:31 --> Undefined index: nombre
+in APPPATH\Views\admin\index.php on line 55.
+ 1 APPPATH\Views\admin\index.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'APPPATH\\Views\\admin\\index.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(69): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 13:21:36 --> Class 'App\Models\PreguntaInputModel' not found
+in APPPATH\Controllers\Convocatoria.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 13:21:56 --> Undefined index: nombre
+in APPPATH\Views\admin\convocatorias\vista.php on line 54.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(82): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:00:32 --> Undefined variable: convocatoria
+in APPPATH\Controllers\Formulario.php on line 42.
+ 1 APPPATH\Controllers\Formulario.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatoria', 'APPPATH\\Controllers\\Formulario.php', 42, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:00:48 --> Class 'App\Models\DetallePostulante' not found
+in APPPATH\Controllers\Postulante.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:00:54 --> Class 'App\Controllers\UsuarioModel' not found
+in APPPATH\Controllers\Universidad.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->universidades()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:01:00 --> Undefined index: nombre
+in APPPATH\Views\admin\programas\vista.php on line 54.
+ 1 APPPATH\Views\admin\programas\vista.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'APPPATH\\Views\\admin\\programas\\vista.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\programas\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/programas/vista', [], true)
+ 5 APPPATH\Controllers\Programa.php(33): view('admin/programas/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->programas()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:02:04 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\formularios\vista.php on line 108.
+ 1 APPPATH\Views\admin\formularios\vista.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\admin\\formularios\\vista.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formularios\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/formularios/vista', [], true)
+ 5 APPPATH\Controllers\Formulario.php(49): view('admin/formularios/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:02:23 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\formularios\vista.php on line 108.
+ 1 APPPATH\Views\admin\formularios\vista.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\admin\\formularios\\vista.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formularios\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/formularios/vista', [], true)
+ 5 APPPATH\Controllers\Formulario.php(51): view('admin/formularios/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:38:50 --> Class 'App\Models\DetallePostulante' not found
+in APPPATH\Controllers\Postulante.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:38:55 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\formularios\vista.php on line 108.
+ 1 APPPATH\Views\admin\formularios\vista.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\admin\\formularios\\vista.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formularios\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/formularios/vista', [], true)
+ 5 APPPATH\Controllers\Formulario.php(49): view('admin/formularios/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:38:55 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\formularios\vista.php on line 108.
+ 1 APPPATH\Views\admin\formularios\vista.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\admin\\formularios\\vista.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formularios\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/formularios/vista', [], true)
+ 5 APPPATH\Controllers\Formulario.php(49): view('admin/formularios/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 17:52:13 --> Invalid argument supplied for foreach()
+in APPPATH\Views\admin\formularios\vista.php on line 108.
+ 1 APPPATH\Views\admin\formularios\vista.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\admin\\formularios\\vista.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formularios\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/formularios/vista', [], true)
+ 5 APPPATH\Controllers\Formulario.php(49): view('admin/formularios/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 23:13:29 --> Class 'App\Models\UniversidadModel' not found
+in APPPATH\Controllers\Universidad.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->universidades()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 23:13:31 --> Undefined variable: movilidadModel
+in APPPATH\Controllers\Postulante.php on line 54.
+ 1 APPPATH\Controllers\Postulante.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: movilidadModel', 'APPPATH\\Controllers\\Postulante.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 23:13:54 --> Undefined variable: movilidad
+in APPPATH\Controllers\Postulante.php on line 85.
+ 1 APPPATH\Controllers\Postulante.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: movilidad', 'APPPATH\\Controllers\\Postulante.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 23:14:05 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 85.
+ 1 APPPATH\Controllers\Postulante.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 23:14:19 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 85.
+ 1 APPPATH\Controllers\Postulante.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 23:19:03 --> Undefined index: nombre
+in APPPATH\Views\admin\postulaciones\vista.php on line 56.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 56, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(91): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 23:26:48 --> Undefined index: nombre
+in APPPATH\Views\admin\postulaciones\vista.php on line 56.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 56, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(92): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

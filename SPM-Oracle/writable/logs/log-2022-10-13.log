@@ -1,0 +1,27 @@
+CRITICAL - 2022-10-13 15:28:08 --> Invalid file: fuera_plazo.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fuera_plazo.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('fuera_plazo', [], true)
+ 3 APPPATH\Controllers\Estudiante.php(20): view('fuera_plazo')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 16:06:33 --> Undefined variable: programa
+in APPPATH\Views\estudiante\fuera_plazo.php on line 49.
+ 1 APPPATH\Views\estudiante\fuera_plazo.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Views\\estudiante\\fuera_plazo.php', 49, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\fuera_plazo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/fuera_plazo', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(20): view('estudiante/fuera_plazo')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-13 19:04:40 --> Array to string conversion
+in APPPATH\Controllers\Estudiante.php on line 23.
+ 1 APPPATH\Controllers\Estudiante.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Estudiante.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

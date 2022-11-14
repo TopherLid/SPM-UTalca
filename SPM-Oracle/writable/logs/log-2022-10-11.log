@@ -1,0 +1,294 @@
+CRITICAL - 2022-10-11 06:23:10 --> Class 'App\Controllers\UsuarioModel' not found
+in APPPATH\Controllers\Postulante.php on line 167.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 07:18:44 --> unlink(C:\xampp\htdocs\tesis\writable\debugbar/debugbar_1665487873.800433.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\tesis\\writable\\debugbar/debugbar_1665487873.800433.json): No such file or directory', 'SYSTEMPATH\\Debug\\Toolbar\\Collectors\\History.php', 76, [...])
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('FCPATH\\writable\\debugbar/debugbar_1665487873.800433.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(501): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1665490722.779201', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(478): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(317): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 07:22:23 --> Class 'App\Controllers\UsuarioModel' not found
+in APPPATH\Controllers\Convocatoria.php on line 309.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202201')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 07:24:41 --> Undefined index: pregunta
+in APPPATH\Controllers\Convocatoria.php on line 211.
+ 1 APPPATH\Controllers\Convocatoria.php(211): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pregunta', 'APPPATH\\Controllers\\Convocatoria.php', 211, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:32:42 --> Undefined variable: preguntas
+in APPPATH\Controllers\Convocatoria.php on line 211.
+ 1 APPPATH\Controllers\Convocatoria.php(211): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas', 'APPPATH\\Controllers\\Convocatoria.php', 211, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:34:58 --> Undefined variable: preguntas_base
+in APPPATH\Controllers\Convocatoria.php on line 218.
+ 1 APPPATH\Controllers\Convocatoria.php(218): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas_base', 'APPPATH\\Controllers\\Convocatoria.php', 218, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 08:40:06 --> array_push() expects parameter 1 to be array, string given
+in APPPATH\Controllers\Convocatoria.php on line 226.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, string given', 'APPPATH\\Controllers\\Convocatoria.php', 226, [...])
+ 2 APPPATH\Controllers\Convocatoria.php(226): array_push('2')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:02:44 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 718.
+ 1 SYSTEMPATH\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Convocatoria.php(261): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:03:36 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 718.
+ 1 SYSTEMPATH\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Convocatoria.php(261): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:06:03 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 718.
+ 1 SYSTEMPATH\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\Convocatoria.php(262): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:07:27 --> Allowed fields must be specified for model: App\Models\DetallePreguntaModel
+in SYSTEMPATH\BaseModel.php on line 1139.
+ 1 SYSTEMPATH\BaseModel.php(1139): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\DetallePreguntaModel')
+ 2 SYSTEMPATH\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Convocatoria.php(261): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:36:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Postulante.php on line 130.
+ 1 APPPATH\Controllers\Postulante.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Postulante.php', 130, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('10000')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:38:46 --> Invalid file: admin/convocatorias/especifica.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/convocatorias/especifica.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/especifica', [], true)
+ 3 APPPATH\Controllers\Convocatoria.php(328): view('admin/convocatorias/especifica', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202201')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:40:49 --> Invalid file: admin/convocatorias/especifica.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/convocatorias/especifica.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/especifica', [], true)
+ 3 APPPATH\Controllers\Convocatoria.php(328): view('admin/convocatorias/especifica', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202201')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 09:41:03 --> Undefined variable: convocatorias
+in APPPATH\Views\admin\convocatorias\individual.php on line 110.
+ 1 APPPATH\Views\admin\convocatorias\individual.php(110): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatorias', 'APPPATH\\Views\\admin\\convocatorias\\individual.php', 110, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\individual.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/individual', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(328): view('admin/convocatorias/individual', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->vista('202201')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 14:52:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'topher_test'@'localhost' (using password: YES) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'topher_test', '123', 'spm', 3306, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('222')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-11 14:52:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `user`.`ID_USER` = :user.ID_USER:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 5 APPPATH\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('222')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 14:52:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'Topher'@'localhost' (using password: YES) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'Topher', '123', 'spm', 3306, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('222')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-11 14:52:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `user`.`ID_USER` = :user.ID_USER:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 5 APPPATH\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('222')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 14:52:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'Topher'@'localhost' (using password: YES) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'Topher', '123', 'spm', 3306, '', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '19718582')
+#6 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('19718582')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '19718582')
+#5 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('19718582')
+#6 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-11 14:52:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `user`.`ID_USER` = :user.ID_USER:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '19718582')
+ 5 APPPATH\Controllers\AuthSPM.php(31): CodeIgniter\BaseModel->find('19718582')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-11 15:07:07 --> mysqli_sql_exception: Unknown column 'ID_CARRERA' in 'field list' in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `postula...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `postula...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `postula...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `postula...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(401): CodeIgniter\Model->update('58', Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->modificar()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-11 15:07:07 --> Unknown column 'ID_CARRERA' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `postulacion` SET `NACIONALIDAD` = \'Chileno\', `NUMERO_TELEFONO` = \'989896187\', `EMAIL_PERSONAL_POSTULANTE` = \'a@gmail.com\', `NIVEL_INGLES` = \'Inglés B2\', `LENGUA_SECUNDARIA` = 1, `1RA_OPCION` = \'11\', `2DA_OPCION` = \'7\', `3RA_OPCION` = \'16\', `ESTADO_POSTULACION` = \'Modificable\', `ID_CARRERA` = \'419\', `ID_DETALLE_PREGUNTA` = 3, `ID_MOVILIDAD` = 4, `ID_CONVOCATORIA` = \'202237\'
+WHERE `postulacion`.`ID_POSTULACION` IN (\'58\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `postulacion` SET `NACIONALIDAD` = \'Chileno\', `NUMERO_TELEFONO` = \'989896187\', `EMAIL_PERSONAL_POSTULANTE` = \'a@gmail.com\', `NIVEL_INGLES` = \'Inglés B2\', `LENGUA_SECUNDARIA` = 1, `1RA_OPCION` = \'11\', `2DA_OPCION` = \'7\', `3RA_OPCION` = \'16\', `ESTADO_POSTULACION` = \'Modificable\', `ID_CARRERA` = \'419\', `ID_DETALLE_PREGUNTA` = 3, `ID_MOVILIDAD` = 4, `ID_CONVOCATORIA` = \'202237\'
+WHERE `postulacion`.`ID_POSTULACION` IN (\'58\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `postulacion` SET `NACIONALIDAD` = \'Chileno\', `NUMERO_TELEFONO` = \'989896187\', `EMAIL_PERSONAL_POSTULANTE` = \'a@gmail.com\', `NIVEL_INGLES` = \'Inglés B2\', `LENGUA_SECUNDARIA` = 1, `1RA_OPCION` = \'11\', `2DA_OPCION` = \'7\', `3RA_OPCION` = \'16\', `ESTADO_POSTULACION` = \'Modificable\', `ID_CARRERA` = \'419\', `ID_DETALLE_PREGUNTA` = 3, `ID_MOVILIDAD` = 4, `ID_CONVOCATORIA` = \'202237\'
+WHERE `postulacion`.`ID_POSTULACION` IN (\'58\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `postulacion` SET `NACIONALIDAD` = :NACIONALIDAD:, `NUMERO_TELEFONO` = :NUMERO_TELEFONO:, `EMAIL_PERSONAL_POSTULANTE` = :EMAIL_PERSONAL_POSTULANTE:, `NIVEL_INGLES` = :NIVEL_INGLES:, `LENGUA_SECUNDARIA` = :LENGUA_SECUNDARIA:, `1RA_OPCION` = :1RA_OPCION:, `2DA_OPCION` = :2DA_OPCION:, `3RA_OPCION` = :3RA_OPCION:, `ESTADO_POSTULACION` = :ESTADO_POSTULACION:, `ID_CARRERA` = :ID_CARRERA:, `ID_DETALLE_PREGUNTA` = :ID_DETALLE_PREGUNTA:, `ID_MOVILIDAD` = :ID_MOVILIDAD:, `ID_CONVOCATORIA` = :ID_CONVOCATORIA:
+WHERE `postulacion`.`ID_POSTULACION` IN :postulacion.ID_POSTULACION:', [...], false)
+ 5 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Estudiante.php(401): CodeIgniter\Model->update('58', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->modificar()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 15:35:50 --> Undefined variable: programa
+in APPPATH\Views\estudiante\verificador\correcto.php on line 47.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 47, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(63): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

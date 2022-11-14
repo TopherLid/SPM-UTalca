@@ -1,0 +1,134 @@
+CRITICAL - 2022-09-01 14:01:32 --> Undefined variable: convocatoriaModel
+in APPPATH\Controllers\Postulante.php on line 128.
+ 1 APPPATH\Controllers\Postulante.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatoriaModel', 'APPPATH\\Controllers\\Postulante.php', 128, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 14:01:38 --> Undefined variable: convocatoriaModel
+in APPPATH\Controllers\Postulante.php on line 128.
+ 1 APPPATH\Controllers\Postulante.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatoriaModel', 'APPPATH\\Controllers\\Postulante.php', 128, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 14:05:06 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Postulante.php(128): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 14:38:43 --> Undefined property: App\Controllers\Postulante::$input
+in APPPATH\Controllers\Postulante.php on line 122.
+ 1 APPPATH\Controllers\Postulante.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Postulante::$input', 'APPPATH\\Controllers\\Postulante.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 14:38:57 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Postulante.php on line 122.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 14:46:21 --> Undefined property: App\Controllers\Postulante::$input
+in APPPATH\Controllers\Postulante.php on line 122.
+ 1 APPPATH\Controllers\Postulante.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Postulante::$input', 'APPPATH\\Controllers\\Postulante.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 14:47:57 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getValue()
+in APPPATH\Controllers\Postulante.php on line 122.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 14:53:57 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getValue()
+in APPPATH\Controllers\Postulante.php on line 122.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 17:29:38 --> Undefined variable: data
+in APPPATH\Controllers\Postulante.php on line 146.
+ 1 APPPATH\Controllers\Postulante.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Postulante.php', 146, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->seleccion()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 18:55:32 --> Class 'App\Controllers\PreguntaModel' not found
+in APPPATH\Controllers\Convocatoria.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 18:57:14 --> syntax error, unexpected '<'
+in APPPATH\Views\admin\convocatorias\crear.php on line 131.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/crear', [], true)
+ 3 APPPATH\Controllers\Convocatoria.php(107): view('admin/convocatorias/crear', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 19:00:09 --> Undefined variable: reguntas
+in APPPATH\Views\admin\convocatorias\crear.php on line 129.
+ 1 APPPATH\Views\admin\convocatorias\crear.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: reguntas', 'APPPATH\\Views\\admin\\convocatorias\\crear.php', 129, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/crear', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(107): view('admin/convocatorias/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 22:05:48 --> Call to undefined function App\Controllers\strip_tag()
+in APPPATH\Controllers\Estudiante.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario_guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 22:07:46 --> Call to undefined function App\Controllers\strip_tag()
+in APPPATH\Controllers\Estudiante.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario_guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 22:08:00 --> Call to undefined function App\Controllers\strip_tag()
+in APPPATH\Controllers\Estudiante.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario_guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 22:08:16 --> Call to undefined function App\Controllers\strip_tag()
+in APPPATH\Controllers\Estudiante.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario_guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 22:34:36 --> Undefined index: SEGUNDO_IDIOMA
+in APPPATH\Views\estudiante\ticket\correcto.php on line 70.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: SEGUNDO_IDIOMA', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 70, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(193): view('estudiante/ticket/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario_guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-01 23:49:28 --> Undefined variable: preguntas
+in APPPATH\Views\estudiante\ticket\formulario.php on line 161.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 161, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(142): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

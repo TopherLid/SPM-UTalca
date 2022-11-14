@@ -1,0 +1,868 @@
+CRITICAL - 2022-11-10 06:15:34 --> Use of undefined constant OCI_COMMIT_ON_SUCCESS - assumed 'OCI_COMMIT_ON_SUCCESS' (this will throw an Error in a future version of PHP)
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant OCI_COMMIT_ON_SUCCESS - assumed \'OCI_COMMIT_ON_SUCCESS\' (this will throw an Error in a future version of PHP)', 'SYSTEMPATH\\Database\\Database.php', 136, [...])
+ 2 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('OCI8', 'CodeIgniter\\Database\\OCI8\\Connection', [...])
+ 3 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 4 SYSTEMPATH\Model.php(136): CodeIgniter\Database\Config::connect('default')
+ 5 APPPATH\Controllers\Estudiante.php(35): CodeIgniter\Model->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 06:18:13 --> Use of undefined constant OCI_COMMIT_ON_SUCCESS - assumed 'OCI_COMMIT_ON_SUCCESS' (this will throw an Error in a future version of PHP)
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant OCI_COMMIT_ON_SUCCESS - assumed \'OCI_COMMIT_ON_SUCCESS\' (this will throw an Error in a future version of PHP)', 'SYSTEMPATH\\Database\\Database.php', 136, [...])
+ 2 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('OCI8', 'CodeIgniter\\Database\\OCI8\\Connection', [...])
+ 3 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 4 SYSTEMPATH\Model.php(136): CodeIgniter\Database\Config::connect('default')
+ 5 APPPATH\Controllers\AuthSPM.php(30): CodeIgniter\Model->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 06:28:36 --> Use of undefined constant OCI_COMMIT_ON_SUCCESS - assumed 'OCI_COMMIT_ON_SUCCESS' (this will throw an Error in a future version of PHP)
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant OCI_COMMIT_ON_SUCCESS - assumed \'OCI_COMMIT_ON_SUCCESS\' (this will throw an Error in a future version of PHP)', 'SYSTEMPATH\\Database\\Database.php', 136, [...])
+ 2 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('OCI8', 'CodeIgniter\\Database\\OCI8\\Connection', [...])
+ 3 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 4 SYSTEMPATH\Model.php(136): CodeIgniter\Database\Config::connect('default')
+ 5 APPPATH\Controllers\AuthSPM.php(30): CodeIgniter\Model->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 06:28:39 --> Use of undefined constant OCI_COMMIT_ON_SUCCESS - assumed 'OCI_COMMIT_ON_SUCCESS' (this will throw an Error in a future version of PHP)
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant OCI_COMMIT_ON_SUCCESS - assumed \'OCI_COMMIT_ON_SUCCESS\' (this will throw an Error in a future version of PHP)', 'SYSTEMPATH\\Database\\Database.php', 136, [...])
+ 2 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('OCI8', 'CodeIgniter\\Database\\OCI8\\Connection', [...])
+ 3 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 4 SYSTEMPATH\Model.php(136): CodeIgniter\Database\Config::connect('default')
+ 5 APPPATH\Controllers\AuthSPM.php(30): CodeIgniter\Model->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 06:28:51 --> Error connecting to the database: ErrorException: oci_connect(): ORA-12514: TNS:el listener no conoce actualmente el servicio solicitado en el descriptor de conexi�n in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:128
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_connect(): ...', 'C:\\xampp\\htdocs...', 128, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(128): oci_connect('TOPHER', '123', 'localhost:1521/...', 'utf8')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\OCI8\Connection->connect(false)
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#7 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('222')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-10 06:28:51 --> Unable to connect to the database.
+Main connection [OCI8]: oci_connect(): ORA-12514: TNS:el listener no conoce actualmente el servicio solicitado en el descriptor de conexi�n
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "usuario"
+WHERE "usuario"."ID_USUARIO" = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 5 APPPATH\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('222')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 06:28:58 --> Error connecting to the database: ErrorException: oci_connect(): ORA-12514: TNS:el listener no conoce actualmente el servicio solicitado en el descriptor de conexi�n in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:128
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_connect(): ...', 'C:\\xampp\\htdocs...', 128, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(128): oci_connect('TOPHER', '123', 'localhost:1521/...', 'utf8')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\OCI8\Connection->connect(false)
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2016419076')
+#7 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('2016419076')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-10 06:28:58 --> Unable to connect to the database.
+Main connection [OCI8]: oci_connect(): ORA-12514: TNS:el listener no conoce actualmente el servicio solicitado en el descriptor de conexi�n
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "usuario"
+WHERE "usuario"."ID_USUARIO" = :usuario.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2016419076')
+ 5 APPPATH\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('2016419076')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 06:30:28 --> Error connecting to the database: ErrorException: oci_connect(): ORA-12514: TNS:el listener no conoce actualmente el servicio solicitado en el descriptor de conexi�n in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:128
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_connect(): ...', 'C:\\xampp\\htdocs...', 128, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(128): oci_connect('TOPHER', '123', 'localhost:1521/...', 'utf8')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\OCI8\Connection->connect(false)
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2016419076')
+#7 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('2016419076')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-10 06:30:28 --> Unable to connect to the database.
+Main connection [OCI8]: oci_connect(): ORA-12514: TNS:el listener no conoce actualmente el servicio solicitado en el descriptor de conexi�n
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "USUARIO"
+WHERE "USUARIO"."ID_USUARIO" = :USUARIO.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2016419076')
+ 5 APPPATH\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('2016419076')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 06:31:33 --> Error connecting to the database: ErrorException: oci_connect(): ORA-12514: TNS:el listener no conoce actualmente el servicio solicitado en el descriptor de conexi�n in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:128
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_connect(): ...', 'C:\\xampp\\htdocs...', 128, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(128): oci_connect('TOPHER', '123', 'localhost:1521/...', 'utf8')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(382): CodeIgniter\Database\OCI8\Connection->connect(false)
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2016419076')
+#7 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('2016419076')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-10 06:31:33 --> Unable to connect to the database.
+Main connection [OCI8]: oci_connect(): ORA-12514: TNS:el listener no conoce actualmente el servicio solicitado en el descriptor de conexi�n
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "USUARIO"
+WHERE "USUARIO"."ID_USUARIO" = :USUARIO.ID_USUARIO:', [...], false)
+ 3 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2016419076')
+ 5 APPPATH\Controllers\AuthSPM.php(35): CodeIgniter\BaseModel->find('2016419076')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 06:39:04 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #155, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '29')
+#7 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(159): CodeIgniter\BaseModel->find('29')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-10 06:39:04 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-00942: la tabla o vista no existe', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('SELECT *
+FROM "convocatoria"
+WHERE "convocatoria"."ID_CONVOCATORIA" = \'29\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "convocatoria"
+WHERE "convocatoria"."ID_CONVOCATORIA" = \'29\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "convocatoria"
+WHERE "convocatoria"."ID_CONVOCATORIA" = :convocatoria.ID_CONVOCATORIA:', [...], false)
+ 6 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '29')
+ 8 APPPATH\Controllers\Estudiante.php(159): CodeIgniter\BaseModel->find('29')
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 06:51:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 83.
+ 1 APPPATH\Controllers\AuthSPM.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 83, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 06:57:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 67.
+ 1 APPPATH\Controllers\AuthSPM.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:02:18 --> Invalid argument supplied for foreach()
+in APPPATH\Views\estudiante\historial.php on line 63.
+ 1 APPPATH\Views\estudiante\historial.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\estudiante\\historial.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(548): view('estudiante/historial', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:03:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\verificador\correcto.php on line 50.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(90): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:03:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\verificador\correcto.php on line 50.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(90): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:03:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\verificador\correcto.php on line 50.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(90): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:53:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\verificador\correcto.php on line 50.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(92): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:54:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\verificador\correcto.php on line 50.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(92): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:54:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\verificador\correcto.php on line 50.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(92): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 08:13:51 --> Trying to access array offset on value of type null
+in APPPATH\Views\estudiante\verificador\correcto.php on line 50.
+ 1 APPPATH\Views\estudiante\verificador\correcto.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\estudiante\\verificador\\correcto.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\verificador\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/verificador/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(92): view('estudiante/verificador/correcto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 08:16:00 --> Undefined index: DEUDA_DAFE
+in APPPATH\Views\estudiante\ticket\formulario.php on line 320.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(320): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: DEUDA_DAFE', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 320, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(255): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 08:17:53 --> Undefined index: deuda_dafe
+in APPPATH\Views\estudiante\ticket\formulario.php on line 320.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(320): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: deuda_dafe', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 320, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(259): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 08:18:46 --> Undefined index: deuda_dafe
+in APPPATH\Views\estudiante\ticket\formulario.php on line 320.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(320): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: deuda_dafe', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 320, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(259): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 08:26:17 --> ErrorException: oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #161, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PO...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PO...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PO...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(331): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 08:26:17 --> oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés A1\', \'1\', \'1\', \'1\', \'1\', \'1\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés A1\', \'1\', \'1\', \'1\', \'1\', \'1\', \'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (:NACIONALIDAD:, :N_TELEFONO:, :EMAIL_PERSONAL:, :NIVEL_INGLES:, :IDIOMA_2:, :1RA_OPCION:, :2DA_OPCION:, :3RA_OPCION:, :ID_ESTUDIANTE:, :ID_CONVOCATORIA:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Estudiante.php(331): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 08:54:53 --> Invalid argument supplied for foreach()
+in APPPATH\Views\estudiante\historial.php on line 63.
+ 1 APPPATH\Views\estudiante\historial.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\estudiante\\historial.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(550): view('estudiante/historial', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 10:17:23 --> ErrorException: oci_execute(): ORA-01722: número no válido in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #154, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'asdassda')
+#7 C:\xampp\htdocs\tesis\app\Controllers\AuthSPM.php(36): CodeIgniter\BaseModel->find('asdassda')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-10 10:17:23 --> oci_execute(): ORA-01722: número no válido
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01722: número no válido', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('SELECT *
+FROM "USUARIO"
+WHERE "USUARIO"."ID_USUARIO" = \'asdassda\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "USUARIO"
+WHERE "USUARIO"."ID_USUARIO" = \'asdassda\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "USUARIO"
+WHERE "USUARIO"."ID_USUARIO" = :USUARIO.ID_USUARIO:', [...], false)
+ 6 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, 'asdassda')
+ 8 APPPATH\Controllers\AuthSPM.php(36): CodeIgniter\BaseModel->find('asdassda')
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 10:17:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 53.
+ 1 APPPATH\Controllers\AuthSPM.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 10:18:49 --> Call to undefined function App\Controllers\vies()
+in APPPATH\Controllers\AuthSPM.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 10:18:53 --> Call to undefined function App\Controllers\vies()
+in APPPATH\Controllers\AuthSPM.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 10:23:18 --> ErrorException: oci_execute(): ORA-01861: el literal no coincide con la cadena de formato in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #154, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('UPDATE "CONVOCA...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "CONVOCA...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE "CONVOCA...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(194): CodeIgniter\Model->update('1', Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 10:23:18 --> oci_execute(): ORA-01861: el literal no coincide con la cadena de formato
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01861: el literal no coincide con la cadena de formato', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('UPDATE "CONVOCATORIA" SET "NOMBRE" = \'bbb\', "FECHA_INICIO" = \'2022-12-20\', "FECHA_FIN" = \'5221-02-25\', "ESTADO" = \'Activa\', "MIN_CREDITO_SCT" = \'1\', "MAX_CREDITO_SCT" = \'99\', "RAMOS_REPROBADOS" = \'5\', "ID_PROGRAMA" = \'1\'
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "CONVOCATORIA" SET "NOMBRE" = \'bbb\', "FECHA_INICIO" = \'2022-12-20\', "FECHA_FIN" = \'5221-02-25\', "ESTADO" = \'Activa\', "MIN_CREDITO_SCT" = \'1\', "MAX_CREDITO_SCT" = \'99\', "RAMOS_REPROBADOS" = \'5\', "ID_PROGRAMA" = \'1\'
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN (\'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE "CONVOCATORIA" SET "NOMBRE" = :NOMBRE:, "FECHA_INICIO" = :FECHA_INICIO:, "FECHA_FIN" = :FECHA_FIN:, "ESTADO" = :ESTADO:, "MIN_CREDITO_SCT" = :MIN_CREDITO_SCT:, "MAX_CREDITO_SCT" = :MAX_CREDITO_SCT:, "RAMOS_REPROBADOS" = :RAMOS_REPROBADOS:, "ID_PROGRAMA" = :ID_PROGRAMA:
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN :CONVOCATORIA.ID_CONVOCATORIA:', [...], false)
+ 6 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 8 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 9 APPPATH\Controllers\Convocatoria.php(194): CodeIgniter\Model->update('1', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 10:52:14 --> ErrorException: oci_execute(): ORA-01843: mes no válido in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #155, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('UPDATE "CONVOCA...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "CONVOCA...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE "CONVOCA...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(197): CodeIgniter\Model->update('1', Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 10:52:14 --> oci_execute(): ORA-01843: mes no válido
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01843: mes no válido', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('UPDATE "CONVOCATORIA" SET "NOMBRE" = \'bbb\', "FECHA_INICIO" = \'2022-12-20\', "FECHA_FIN" = \'5221-02-25\', "ESTADO" = \'Activa\', "MIN_CREDITO_SCT" = \'1\', "MAX_CREDITO_SCT" = \'99\', "RAMOS_REPROBADOS" = \'5\', "ID_PROGRAMA" = \'1\'
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "CONVOCATORIA" SET "NOMBRE" = \'bbb\', "FECHA_INICIO" = \'2022-12-20\', "FECHA_FIN" = \'5221-02-25\', "ESTADO" = \'Activa\', "MIN_CREDITO_SCT" = \'1\', "MAX_CREDITO_SCT" = \'99\', "RAMOS_REPROBADOS" = \'5\', "ID_PROGRAMA" = \'1\'
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN (\'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE "CONVOCATORIA" SET "NOMBRE" = :NOMBRE:, "FECHA_INICIO" = :FECHA_INICIO:, "FECHA_FIN" = :FECHA_FIN:, "ESTADO" = :ESTADO:, "MIN_CREDITO_SCT" = :MIN_CREDITO_SCT:, "MAX_CREDITO_SCT" = :MAX_CREDITO_SCT:, "RAMOS_REPROBADOS" = :RAMOS_REPROBADOS:, "ID_PROGRAMA" = :ID_PROGRAMA:
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN :CONVOCATORIA.ID_CONVOCATORIA:', [...], false)
+ 6 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 8 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 9 APPPATH\Controllers\Convocatoria.php(197): CodeIgniter\Model->update('1', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 10:52:25 --> DateTime::__construct(): Failed to parse time string (02/02/98 00:00:00,000000) at position 18 (0): Double time specification
+in APPPATH\Views\admin\convocatorias\vista.php on line 123.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(123): DateTime->__construct('02/02/98 00:00:00,000000')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(82): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 10:52:26 --> DateTime::__construct(): Failed to parse time string (02/02/98 00:00:00,000000) at position 18 (0): Double time specification
+in APPPATH\Views\admin\index.php on line 91.
+ 1 APPPATH\Views\admin\index.php(91): DateTime->__construct('02/02/98 00:00:00,000000')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(143): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 10:52:28 --> DateTime::__construct(): Failed to parse time string (02/02/98 00:00:00,000000) at position 18 (0): Double time specification
+in APPPATH\Views\admin\index.php on line 91.
+ 1 APPPATH\Views\admin\index.php(91): DateTime->__construct('02/02/98 00:00:00,000000')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(143): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 11:06:11 --> ErrorException: oci_execute(): ORA-01858: se ha encontrado un carácter no numérico donde se esperaba uno numérico in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #154, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('UPDATE "CONVOCA...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "CONVOCA...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE "CONVOCA...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(692): CodeIgniter\BaseModel->update(Array, Array)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(214): CodeIgniter\Model->update('1', Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 11:06:11 --> oci_execute(): ORA-01858: se ha encontrado un carácter no numérico donde se esperaba uno numérico
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01858: se ha encontrado un carácter no numérico donde se esperaba uno numérico', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('UPDATE "CONVOCATORIA" SET "NOMBRE" = \'a\', "FECHA_INICIO" = \'TO_DATE(2022-11-10\'\',\'\'YYYY-MM-DD\'\')\', "FECHA_FIN" = \'TO_DATE(2022-11-12\'\',\'\'YYYY-MM-DD\'\')\', "ESTADO" = \'Activa\', "MIN_CREDITO_SCT" = \'1\', "MAX_CREDITO_SCT" = \'99\', "RAMOS_REPROBADOS" = \'5\', "ID_PROGRAMA" = \'1\'
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "CONVOCATORIA" SET "NOMBRE" = \'a\', "FECHA_INICIO" = \'TO_DATE(2022-11-10\'\',\'\'YYYY-MM-DD\'\')\', "FECHA_FIN" = \'TO_DATE(2022-11-12\'\',\'\'YYYY-MM-DD\'\')\', "ESTADO" = \'Activa\', "MIN_CREDITO_SCT" = \'1\', "MAX_CREDITO_SCT" = \'99\', "RAMOS_REPROBADOS" = \'5\', "ID_PROGRAMA" = \'1\'
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN (\'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE "CONVOCATORIA" SET "NOMBRE" = :NOMBRE:, "FECHA_INICIO" = :FECHA_INICIO:, "FECHA_FIN" = :FECHA_FIN:, "ESTADO" = :ESTADO:, "MIN_CREDITO_SCT" = :MIN_CREDITO_SCT:, "MAX_CREDITO_SCT" = :MAX_CREDITO_SCT:, "RAMOS_REPROBADOS" = :RAMOS_REPROBADOS:, "ID_PROGRAMA" = :ID_PROGRAMA:
+WHERE "CONVOCATORIA"."ID_CONVOCATORIA" IN :CONVOCATORIA.ID_CONVOCATORIA:', [...], false)
+ 6 SYSTEMPATH\Model.php(337): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate([...], [...])
+ 8 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], [...])
+ 9 APPPATH\Controllers\Convocatoria.php(214): CodeIgniter\Model->update('1', [...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 11:20:35 --> Undefined variable: session
+in APPPATH\Controllers\AuthSPM.php on line 40.
+ 1 APPPATH\Controllers\AuthSPM.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Controllers\\AuthSPM.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->validador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 11:26:41 --> Undefined variable: preguntas
+in APPPATH\Controllers\Formulario.php on line 78.
+ 1 APPPATH\Controllers\Formulario.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas', 'APPPATH\\Controllers\\Formulario.php', 78, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 14:33:09 --> ErrorException: oci_execute(): ORA-01861: el literal no coincide con la cadena de formato in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #156, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "CO...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "CO...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CO...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(125): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 14:33:09 --> oci_execute(): ORA-01861: el literal no coincide con la cadena de formato
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01861: el literal no coincide con la cadena de formato', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "CONVOCATORIA" ("NOMBRE", "FECHA_INICIO", "FECHA_FIN", "MIN_CREDITO_SCT", "MAX_CREDITO_SCT", "RAMOS_REPROBADOS", "ID_PROGRAMA") VALUES (\'Convocatoria a Beca Juan Abate Molina 1er Semestre\', \'2023-01-01\', \'2023-02-02\', \'1\', \'99\', \'5\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "CONVOCATORIA" ("NOMBRE", "FECHA_INICIO", "FECHA_FIN", "MIN_CREDITO_SCT", "MAX_CREDITO_SCT", "RAMOS_REPROBADOS", "ID_PROGRAMA") VALUES (\'Convocatoria a Beca Juan Abate Molina 1er Semestre\', \'2023-01-01\', \'2023-02-02\', \'1\', \'99\', \'5\', \'2\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "CONVOCATORIA" ("NOMBRE", "FECHA_INICIO", "FECHA_FIN", "MIN_CREDITO_SCT", "MAX_CREDITO_SCT", "RAMOS_REPROBADOS", "ID_PROGRAMA") VALUES (:NOMBRE:, :FECHA_INICIO:, :FECHA_FIN:, :MIN_CREDITO_SCT:, :MAX_CREDITO_SCT:, :RAMOS_REPROBADOS:, :ID_PROGRAMA:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Convocatoria.php(125): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 14:34:29 --> ErrorException: oci_execute(): ORA-00001: restricción única (TOPHER.PROGRAMA_PK) violada in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #154, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PR...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PR...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Programa.php(55): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Programa->crear()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 14:34:29 --> oci_execute(): ORA-00001: restricción única (TOPHER.PROGRAMA_PK) violada
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-00001: restricción única (TOPHER.PROGRAMA_PK) violada', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PROGRAMA" ("NOMBRE", "DESCRIPCION") VALUES (\'Beca Juan Abate Molina 2\', \'dsa\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PROGRAMA" ("NOMBRE", "DESCRIPCION") VALUES (\'Beca Juan Abate Molina 2\', \'dsa\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PROGRAMA" ("NOMBRE", "DESCRIPCION") VALUES (:NOMBRE:, :DESCRIPCION:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Programa.php(55): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->crear()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 19:48:42 --> Undefined index: ESTADO
+in APPPATH\Views\admin\universidades\vista.php on line 122.
+ 1 APPPATH\Views\admin\universidades\vista.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ESTADO', 'APPPATH\\Views\\admin\\universidades\\vista.php', 122, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\universidades\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/universidades/vista', [], true)
+ 5 APPPATH\Controllers\Universidad.php(94): view('admin/universidades/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Universidad->universidades()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Universidad))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 21:01:56 --> Undefined index: deudor_dafe
+in APPPATH\Controllers\Estudiante.php on line 303.
+ 1 APPPATH\Controllers\Estudiante.php(303): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: deudor_dafe', 'APPPATH\\Controllers\\Estudiante.php', 303, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 21:02:29 --> ErrorException: oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #165, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PO...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PO...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PO...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(308): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 21:02:29 --> oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B1\', \'3\', \'8\', \'4\', \'13\', \'1\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B1\', \'3\', \'8\', \'4\', \'13\', \'1\', \'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (:NACIONALIDAD:, :N_TELEFONO:, :EMAIL_PERSONAL:, :NIVEL_INGLES:, :IDIOMA_2:, :1RA_OPCION:, :2DA_OPCION:, :3RA_OPCION:, :ID_ESTUDIANTE:, :ID_CONVOCATORIA:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Estudiante.php(308): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 21:03:19 --> ErrorException: oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #166, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PO...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PO...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PO...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(308): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 21:03:19 --> oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-00904: &quot;3RA_OPCION&quot;: identificador no válido', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B2\', \'4\', \'13\', \'1\', \'5\', \'1\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B2\', \'4\', \'13\', \'1\', \'5\', \'1\', \'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "1RA_OPCION", "2DA_OPCION", "3RA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (:NACIONALIDAD:, :N_TELEFONO:, :EMAIL_PERSONAL:, :NIVEL_INGLES:, :IDIOMA_2:, :1RA_OPCION:, :2DA_OPCION:, :3RA_OPCION:, :ID_ESTUDIANTE:, :ID_CONVOCATORIA:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Estudiante.php(308): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 21:05:27 --> ErrorException: oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;PRIMERA_OPCION&quot;) in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #165, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PO...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PO...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PO...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(308): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 21:05:27 --> oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;PRIMERA_OPCION&quot;)
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;PRIMERA_OPCION&quot;)', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B2\', \'3\', \'1\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B2\', \'3\', \'1\', \'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (:NACIONALIDAD:, :N_TELEFONO:, :EMAIL_PERSONAL:, :NIVEL_INGLES:, :IDIOMA_2:, :ID_ESTUDIANTE:, :ID_CONVOCATORIA:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Estudiante.php(308): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 21:06:28 --> ErrorException: oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;PRIMERA_OPCION&quot;) in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #165, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PO...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PO...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PO...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(310): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 21:06:28 --> oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;PRIMERA_OPCION&quot;)
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;PRIMERA_OPCION&quot;)', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B2\', \'3\', \'1\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B2\', \'3\', \'1\', \'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (:NACIONALIDAD:, :N_TELEFONO:, :EMAIL_PERSONAL:, :NIVEL_INGLES:, :IDIOMA_2:, :ID_ESTUDIANTE:, :ID_CONVOCATORIA:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Estudiante.php(310): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-10 21:07:22 --> ErrorException: oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;ESTADO&quot;) in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #165, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PO...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PO...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PO...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(310): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-10 21:07:22 --> oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;ESTADO&quot;)
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;POSTULACION&quot;.&quot;ESTADO&quot;)', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "PRIMERA_OPCION", "SEGUNDA_OPCION", "TERCERA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B2\', \'3\', \'5\', \'7\', \'12\', \'1\', \'1\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "PRIMERA_OPCION", "SEGUNDA_OPCION", "TERCERA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (\'Chilena\', \'56989896187\', \'chrisparedeslbz@gmail.com\', \'Inglés B2\', \'3\', \'5\', \'7\', \'12\', \'1\', \'1\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "POSTULACION" ("NACIONALIDAD", "N_TELEFONO", "EMAIL_PERSONAL", "NIVEL_INGLES", "IDIOMA_2", "PRIMERA_OPCION", "SEGUNDA_OPCION", "TERCERA_OPCION", "ID_ESTUDIANTE", "ID_CONVOCATORIA") VALUES (:NACIONALIDAD:, :N_TELEFONO:, :EMAIL_PERSONAL:, :NIVEL_INGLES:, :IDIOMA_2:, :PRIMERA_OPCION:, :SEGUNDA_OPCION:, :TERCERA_OPCION:, :ID_ESTUDIANTE:, :ID_CONVOCATORIA:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Estudiante.php(310): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 22:17:49 --> Undefined variable: convocatoriaModel
+in APPPATH\Controllers\Estudiante.php on line 307.
+ 1 APPPATH\Controllers\Estudiante.php(307): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatoriaModel', 'APPPATH\\Controllers\\Estudiante.php', 307, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 22:19:41 --> Undefined property: App\Controllers\Estudiante::$db
+in APPPATH\Controllers\Estudiante.php on line 307.
+ 1 APPPATH\Controllers\Estudiante.php(307): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Estudiante::$db', 'APPPATH\\Controllers\\Estudiante.php', 307, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 22:34:46 --> Object of class CodeIgniter\Database\OCI8\Connection could not be converted to string
+in APPPATH\Controllers\Estudiante.php on line 313.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 22:35:01 --> Undefined property: App\Controllers\Estudiante::$db
+in APPPATH\Controllers\Estudiante.php on line 313.
+ 1 APPPATH\Controllers\Estudiante.php(313): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Estudiante::$db', 'APPPATH\\Controllers\\Estudiante.php', 313, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 22:46:38 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 268.
+ 1 SYSTEMPATH\Model.php(268): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Estudiante.php(307): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 22:53:24 --> Undefined offset: 0
+in APPPATH\Controllers\Estudiante.php on line 361.
+ 1 APPPATH\Controllers\Estudiante.php(361): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Estudiante.php', 361, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 22:54:02 --> Undefined offset: 0
+in APPPATH\Controllers\Estudiante.php on line 361.
+ 1 APPPATH\Controllers\Estudiante.php(361): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Estudiante.php', 361, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 22:54:44 --> Undefined index: 1RA_OPCION
+in APPPATH\Controllers\PDF.php on line 34.
+ 1 APPPATH\Controllers\PDF.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1RA_OPCION', 'APPPATH\\Controllers\\PDF.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('21')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

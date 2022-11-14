@@ -1,0 +1,24 @@
+CRITICAL - 2022-10-07 15:00:04 --> Class 'App\Controllers\UsuarioModel' not found
+in APPPATH\Controllers\Convocatoria.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->modificar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 21:05:55 --> Undefined variable: year
+in APPPATH\Controllers\Convocatoria.php on line 29.
+ 1 APPPATH\Controllers\Convocatoria.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: year', 'APPPATH\\Controllers\\Convocatoria.php', 29, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 21:46:26 --> Undefined index: ID_POSTULANTE
+in APPPATH\Views\admin\postulaciones\vista.php on line 123.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(61): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

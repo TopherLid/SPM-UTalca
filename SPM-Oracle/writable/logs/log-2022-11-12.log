@@ -1,0 +1,14 @@
+CRITICAL - 2022-11-12 17:50:45 --> Undefined index: 1RA_OPCION
+in APPPATH\Controllers\Postulante.php on line 133.
+ 1 APPPATH\Controllers\Postulante.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1RA_OPCION', 'APPPATH\\Controllers\\Postulante.php', 133, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('21')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 18:25:04 --> Undefined index: 1RA_OPCION
+in APPPATH\Controllers\Postulante.php on line 133.
+ 1 APPPATH\Controllers\Postulante.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: 1RA_OPCION', 'APPPATH\\Controllers\\Postulante.php', 133, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('21')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

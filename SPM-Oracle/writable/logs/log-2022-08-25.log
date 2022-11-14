@@ -1,0 +1,62 @@
+CRITICAL - 2022-08-25 13:22:31 --> Undefined variable: p
+in APPPATH\Views\admin\postulaciones\vista.php on line 103.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: p', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 103, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(53): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 13:22:49 --> Undefined variable: p
+in APPPATH\Views\admin\postulaciones\vista.php on line 111.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: p', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 111, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(53): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 13:22:55 --> Undefined variable: p
+in APPPATH\Views\admin\postulaciones\vista.php on line 128.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: p', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 128, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(53): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 13:23:01 --> Undefined variable: p
+in APPPATH\Views\admin\postulaciones\vista.php on line 128.
+ 1 APPPATH\Views\admin\postulaciones\vista.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: p', 'APPPATH\\Views\\admin\\postulaciones\\vista.php', 128, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/vista', [], true)
+ 5 APPPATH\Controllers\Postulante.php(53): view('admin/postulaciones/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 14:28:38 --> Undefined variable: postulantes
+in APPPATH\Controllers\Postulante.php on line 52.
+ 1 APPPATH\Controllers\Postulante.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulantes', 'APPPATH\\Controllers\\Postulante.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-25 23:21:04 --> Undefined variable: postulante
+in APPPATH\Views\estudiante\ticket\formulario.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulante', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(105): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

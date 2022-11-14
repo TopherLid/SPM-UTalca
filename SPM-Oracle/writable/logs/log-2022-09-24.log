@@ -1,0 +1,22 @@
+CRITICAL - 2022-09-24 00:06:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\programas\vista.php on line 53.
+ 1 APPPATH\Views\admin\programas\vista.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\programas\\vista.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\programas\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/programas/vista', [], true)
+ 5 APPPATH\Controllers\Programa.php(29): view('admin/programas/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->programas()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-24 00:06:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\programas\vista.php on line 53.
+ 1 APPPATH\Views\admin\programas\vista.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\programas\\vista.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\programas\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/programas/vista', [], true)
+ 5 APPPATH\Controllers\Programa.php(29): view('admin/programas/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->programas()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

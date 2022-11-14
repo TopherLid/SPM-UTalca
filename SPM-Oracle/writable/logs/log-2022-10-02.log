@@ -1,0 +1,121 @@
+CRITICAL - 2022-10-02 11:28:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 242.
+ 1 APPPATH\Controllers\Estudiante.php(242): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 242, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:52:34 --> Undefined index: ID_PROGRAMA
+in APPPATH\Controllers\Estudiante.php on line 139.
+ 1 APPPATH\Controllers\Estudiante.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PROGRAMA', 'APPPATH\\Controllers\\Estudiante.php', 139, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:53:43 --> Undefined index: ID_PROGRAMA
+in APPPATH\Controllers\Estudiante.php on line 142.
+ 1 APPPATH\Controllers\Estudiante.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PROGRAMA', 'APPPATH\\Controllers\\Estudiante.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:54:42 --> Undefined index: ID_PROGRAMA
+in APPPATH\Controllers\Estudiante.php on line 140.
+ 1 APPPATH\Controllers\Estudiante.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PROGRAMA', 'APPPATH\\Controllers\\Estudiante.php', 140, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:55:14 --> Undefined index: ID_PROGRAMA
+in APPPATH\Controllers\Estudiante.php on line 141.
+ 1 APPPATH\Controllers\Estudiante.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PROGRAMA', 'APPPATH\\Controllers\\Estudiante.php', 141, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:56:53 --> Undefined variable: universidad
+in APPPATH\Controllers\Estudiante.php on line 142.
+ 1 APPPATH\Controllers\Estudiante.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: universidad', 'APPPATH\\Controllers\\Estudiante.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:57:37 --> Undefined variable: programa
+in APPPATH\Controllers\Estudiante.php on line 144.
+ 1 APPPATH\Controllers\Estudiante.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programa', 'APPPATH\\Controllers\\Estudiante.php', 144, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:01:34 --> Undefined index: ID_PROGRAMA
+in APPPATH\Controllers\Estudiante.php on line 140.
+ 1 APPPATH\Controllers\Estudiante.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PROGRAMA', 'APPPATH\\Controllers\\Estudiante.php', 140, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:01:44 --> Undefined index: ID_PROGRAMA
+in APPPATH\Controllers\Estudiante.php on line 142.
+ 1 APPPATH\Controllers\Estudiante.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PROGRAMA', 'APPPATH\\Controllers\\Estudiante.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:02:50 --> Undefined index: ID_PROGRAMA
+in APPPATH\Controllers\Estudiante.php on line 144.
+ 1 APPPATH\Controllers\Estudiante.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PROGRAMA', 'APPPATH\\Controllers\\Estudiante.php', 144, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:03:09 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\ticket\formulario.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(148): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:20:02 --> Undefined index: NOMBRE_POSTULANTE
+in APPPATH\Views\estudiante\ticket\formulario.php on line 48.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_POSTULANTE', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 48, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(145): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:21:14 --> Undefined variable: universidad
+in APPPATH\Views\estudiante\ticket\formulario.php on line 138.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: universidad', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 138, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(145): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:21:37 --> Undefined variable: deudor
+in APPPATH\Views\estudiante\ticket\formulario.php on line 198.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(198): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: deudor', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 198, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(145): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 18:35:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 318.
+ 1 APPPATH\Controllers\Estudiante.php(318): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 318, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

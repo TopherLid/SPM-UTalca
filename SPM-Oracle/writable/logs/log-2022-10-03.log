@@ -1,0 +1,18 @@
+CRITICAL - 2022-10-03 06:40:58 --> Undefined variable: universidad
+in APPPATH\Controllers\Estudiante.php on line 152.
+ 1 APPPATH\Controllers\Estudiante.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: universidad', 'APPPATH\\Controllers\\Estudiante.php', 152, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 06:41:20 --> Undefined variable: postulacion
+in APPPATH\Views\estudiante\ticket\correcto.php on line 42.
+ 1 APPPATH\Views\estudiante\ticket\correcto.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulacion', 'APPPATH\\Views\\estudiante\\ticket\\correcto.php', 42, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\correcto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/correcto', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(234): view('estudiante/ticket/correcto')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario_guardar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

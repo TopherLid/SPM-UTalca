@@ -1,0 +1,28 @@
+CRITICAL - 2022-08-16 23:36:12 --> Undefined property: App\Controllers\Email::$load
+in APPPATH\Controllers\Email.php on line 24.
+ 1 APPPATH\Controllers\Email.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Email::$load', 'APPPATH\\Controllers\\Email.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Email->email()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-16 23:36:21 --> Undefined property: App\Controllers\Email::$load
+in APPPATH\Controllers\Email.php on line 24.
+ 1 APPPATH\Controllers\Email.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Email::$load', 'APPPATH\\Controllers\\Email.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Email->email()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-16 23:36:27 --> Undefined property: App\Controllers\Email::$load
+in APPPATH\Controllers\Email.php on line 24.
+ 1 APPPATH\Controllers\Email.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Email::$load', 'APPPATH\\Controllers\\Email.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Email->email()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-16 23:36:37 --> Undefined property: App\Controllers\Email::$email
+in APPPATH\Controllers\Email.php on line 25.
+ 1 APPPATH\Controllers\Email.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Email::$email', 'APPPATH\\Controllers\\Email.php', 25, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Email->email()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,17 @@
+CRITICAL - 2022-09-26 21:48:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\convocatorias\crear.php on line 53.
+ 1 APPPATH\Views\admin\convocatorias\crear.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\convocatorias\\crear.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/crear', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(113): view('admin/convocatorias/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-26 23:32:52 --> Class 'App\Controllers\PreguntasModel' not found
+in APPPATH\Controllers\Convocatoria.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->convocatoria()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

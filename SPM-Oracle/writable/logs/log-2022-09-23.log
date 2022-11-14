@@ -1,0 +1,83 @@
+CRITICAL - 2022-09-23 19:03:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 59.
+ 1 APPPATH\Controllers\AuthSPM.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 59, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->redirector()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 19:04:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 59.
+ 1 APPPATH\Controllers\AuthSPM.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 59, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->redirector()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 19:04:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 59.
+ 1 APPPATH\Controllers\AuthSPM.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 59, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->redirector()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 19:05:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AuthSPM.php on line 59.
+ 1 APPPATH\Controllers\AuthSPM.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AuthSPM.php', 59, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AuthSPM->redirector()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthSPM))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 19:06:32 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\convocatorias\vista.php on line 62.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 62, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(48): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->convocatoria()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 21:56:20 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\convocatorias\vista.php on line 62.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 62, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(48): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->convocatoria()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 22:01:57 --> Undefined index: NOMBRE_USUARIO
+in APPPATH\Views\admin\convocatorias\vista.php on line 62.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_USUARIO', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 62, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(54): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->convocatoria()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 23:25:29 --> Undefined index: NOMBRE_USUARIO
+in APPPATH\Views\admin\convocatorias\vista.php on line 62.
+ 1 APPPATH\Views\admin\convocatorias\vista.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_USUARIO', 'APPPATH\\Views\\admin\\convocatorias\\vista.php', 62, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/vista', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(54): view('admin/convocatorias/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->convocatoria()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-23 23:26:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\convocatorias\crear.php on line 53.
+ 1 APPPATH\Views\admin\convocatorias\crear.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\convocatorias\\crear.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\convocatorias\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/convocatorias/crear', [], true)
+ 5 APPPATH\Controllers\Convocatoria.php(113): view('admin/convocatorias/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

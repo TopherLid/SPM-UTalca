@@ -1,0 +1,11 @@
+CRITICAL - 2022-08-28 16:48:29 --> Undefined index: NOMBRE_PREGUNTA
+in APPPATH\Views\admin\formularios\vista.php on line 100.
+ 1 APPPATH\Views\admin\formularios\vista.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_PREGUNTA', 'APPPATH\\Views\\admin\\formularios\\vista.php', 100, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formularios\\vista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/formularios/vista', [], true)
+ 5 APPPATH\Controllers\Formulario.php(41): view('admin/formularios/vista', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

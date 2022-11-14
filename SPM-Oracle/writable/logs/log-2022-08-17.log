@@ -1,0 +1,23 @@
+CRITICAL - 2022-08-17 19:44:27 --> Undefined index: SCT_CREDITOS
+in APPPATH\Controllers\Estudiante.php on line 37.
+ 1 APPPATH\Controllers\Estudiante.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: SCT_CREDITOS', 'APPPATH\\Controllers\\Estudiante.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-17 20:04:21 --> Undefined variable: 240
+in APPPATH\Controllers\Estudiante.php on line 66.
+ 1 APPPATH\Controllers\Estudiante.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: 240', 'APPPATH\\Controllers\\Estudiante.php', 66, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-17 23:25:14 --> Invalid file: admin/programas/view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/programas/view.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/programas/view', [], true)
+ 3 APPPATH\Controllers\Programa.php(29): view('admin/programas/view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Programa->programas()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programa))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

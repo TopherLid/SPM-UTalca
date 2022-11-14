@@ -1,0 +1,22 @@
+CRITICAL - 2022-09-05 14:59:01 --> Undefined index: NOMBRE_UNIVERSIDAD
+in APPPATH\Views\estudiante\historial_especifico.php on line 100.
+ 1 APPPATH\Views\estudiante\historial_especifico.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NOMBRE_UNIVERSIDAD', 'APPPATH\\Views\\estudiante\\historial_especifico.php', 100, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial_especifico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial_especifico', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(272): view('estudiante/historial_especifico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial_individual('58')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-05 18:51:11 --> Undefined variable: seleccion
+in APPPATH\Views\estudiante\historial.php on line 70.
+ 1 APPPATH\Views\estudiante\historial.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: seleccion', 'APPPATH\\Views\\estudiante\\historial.php', 70, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(235): view('estudiante/historial', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

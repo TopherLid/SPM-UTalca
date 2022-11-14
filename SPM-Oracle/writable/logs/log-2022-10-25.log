@@ -1,0 +1,591 @@
+ERROR - 2022-10-25 00:02:32 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Notificacion.php(40): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202201')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-25 00:02:32 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Notificacion.php(40): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202201')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 00:13:45 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 387.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 00:14:31 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Test.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 00:34:25 --> Undefined variable: img
+in APPPATH\Controllers\Test.php on line 47.
+ 1 APPPATH\Controllers\Test.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: img', 'APPPATH\\Controllers\\Test.php', 47, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Test->post_index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 00:36:24 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 384.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 00:37:48 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 384.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 00:41:43 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 384.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 00:59:46 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 384.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 08:50:47 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 384.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:25:35 --> Undefined variable: data
+in APPPATH\Controllers\Estudiante.php on line 376.
+ 1 APPPATH\Controllers\Estudiante.php(376): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Controllers\\Estudiante.php', 376, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:25:48 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 402.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:25:51 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 402.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:26:31 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 241.
+ 1 APPPATH\Controllers\Postulante.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 241, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('98')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:26:34 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 241.
+ 1 APPPATH\Controllers\Postulante.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 241, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('96')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:26:37 --> Undefined variable: pregunta_respuesta
+in APPPATH\Controllers\Postulante.php on line 241.
+ 1 APPPATH\Controllers\Postulante.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pregunta_respuesta', 'APPPATH\\Controllers\\Postulante.php', 241, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('95')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:28:54 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 402.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:33:21 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 402.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:39:49 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 108.
+ 1 APPPATH\Controllers\Postulante.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:40:12 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 108.
+ 1 APPPATH\Controllers\Postulante.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:40:14 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 108.
+ 1 APPPATH\Controllers\Postulante.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:41:17 --> Undefined variable: detallePreguntaMultipleModel
+in APPPATH\Controllers\Estudiante.php on line 257.
+ 1 APPPATH\Controllers\Estudiante.php(257): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: detallePreguntaMultipleModel', 'APPPATH\\Controllers\\Estudiante.php', 257, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:43:04 --> Class 'App\Controllers\DetallePreguntaMultiple' not found
+in APPPATH\Controllers\Estudiante.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:43:20 --> Call to undefined function App\Controllers\findAll()
+in APPPATH\Controllers\Estudiante.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:43:52 --> Undefined index: opcion_1
+in APPPATH\Views\estudiante\ticket\formulario.php on line 265.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(265): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: opcion_1', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 265, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(324): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:45:28 --> Undefined index: opcion_1
+in APPPATH\Views\estudiante\ticket\formulario.php on line 265.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(265): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: opcion_1', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 265, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(325): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:45:57 --> Undefined index: opcion_2
+in APPPATH\Views\estudiante\ticket\formulario.php on line 265.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(265): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: opcion_2', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 265, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(325): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:46:51 --> Undefined index: opcion_3
+in APPPATH\Views\estudiante\ticket\formulario.php on line 265.
+ 1 APPPATH\Views\estudiante\ticket\formulario.php(265): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: opcion_3', 'APPPATH\\Views\\estudiante\\ticket\\formulario.php', 265, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\ticket\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/ticket/formulario', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(325): view('estudiante/ticket/formulario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:56:48 --> Undefined variable: postulaciones
+in APPPATH\Controllers\Postulante.php on line 108.
+ 1 APPPATH\Controllers\Postulante.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: postulaciones', 'APPPATH\\Controllers\\Postulante.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->postulantes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 09:56:58 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 407.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 10:27:47 --> Undefined index: RAMOS_REPROBADOS
+in APPPATH\Controllers\Estudiante.php on line 111.
+ 1 APPPATH\Controllers\Estudiante.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: RAMOS_REPROBADOS', 'APPPATH\\Controllers\\Estudiante.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->verificador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 11:45:45 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `RE...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `RE...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `RE...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `RE...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(393): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-25 11:45:45 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES ((\'op1\',\'op2\'), \'42\', \'109\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES ((\'op1\',\'op2\'), \'42\', \'109\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES ((\'op1\',\'op2\'), \'42\', \'109\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (:RESPUESTA:, :ID_PREGUNTA:, :ID_POSTULACION:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Estudiante.php(393): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 12:17:24 --> Undefined index: LABEL
+in APPPATH\Views\admin\postulaciones\individual.php on line 174.
+ 1 APPPATH\Views\admin\postulaciones\individual.php(174): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: LABEL', 'APPPATH\\Views\\admin\\postulaciones\\individual.php', 174, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\postulaciones\\individual.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/postulaciones/individual', [], true)
+ 5 APPPATH\Controllers\Postulante.php(245): view('admin/postulaciones/individual', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Postulante->registro('109')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postulante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 12:49:54 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 399.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 12:50:29 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 399.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 12:51:25 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 399.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 12:52:10 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Estudiante.php on line 399.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 12:56:53 --> Undefined index: id_postulante
+in APPPATH\Views\template\pdf.php on line 27.
+ 1 APPPATH\Views\template\pdf.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_postulante', 'APPPATH\\Views\\template\\pdf.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('template/pdf', [], true)
+ 5 APPPATH\Controllers\PDF.php(59): view('template/pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\PDF->copia('116')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDF))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:01:52 --> Undefined variable: datos
+in APPPATH\Controllers\Estudiante.php on line 459.
+ 1 APPPATH\Controllers\Estudiante.php(459): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datos', 'APPPATH\\Controllers\\Estudiante.php', 459, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->correcto()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:02:26 --> Undefined variable: datos
+in APPPATH\Controllers\Estudiante.php on line 461.
+ 1 APPPATH\Controllers\Estudiante.php(461): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datos', 'APPPATH\\Controllers\\Estudiante.php', 461, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->correcto()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:02:43 --> Undefined variable: detallePreguntaModel
+in APPPATH\Controllers\Estudiante.php on line 467.
+ 1 APPPATH\Controllers\Estudiante.php(467): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: detallePreguntaModel', 'APPPATH\\Controllers\\Estudiante.php', 467, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->correcto()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:03:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Estudiante.php on line 461.
+ 1 APPPATH\Controllers\Estudiante.php(461): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Estudiante.php', 461, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->correcto()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:33:46 --> Undefined index: ID_POSTULANTE
+in APPPATH\Controllers\Excel.php on line 103.
+ 1 APPPATH\Controllers\Excel.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_POSTULANTE', 'APPPATH\\Controllers\\Excel.php', 103, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('202252')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:54:45 --> Undefined variable: post
+in APPPATH\Controllers\Excel.php on line 98.
+ 1 APPPATH\Controllers\Excel.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: post', 'APPPATH\\Controllers\\Excel.php', 98, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('202252')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:54:53 --> Undefined index: EMAIL_POSTULANTE
+in APPPATH\Controllers\Excel.php on line 123.
+ 1 APPPATH\Controllers\Excel.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: EMAIL_POSTULANTE', 'APPPATH\\Controllers\\Excel.php', 123, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('202252')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:55:41 --> Undefined variable: paises
+in APPPATH\Controllers\Excel.php on line 151.
+ 1 APPPATH\Controllers\Excel.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: paises', 'APPPATH\\Controllers\\Excel.php', 151, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Excel->exportar('202252')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Excel))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:59:52 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Notificacion.php(40): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202252')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-25 13:59:52 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Notificacion.php(40): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202252')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 14:06:04 --> mysqli_sql_exception: Table 'spm.usuario' doesn't exist in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+#6 C:\xampp\htdocs\tesis\app\Controllers\Notificacion.php(40): CodeIgniter\BaseModel->find('222')
+#7 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202201')
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-25 14:06:04 --> Table 'spm.usuario' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = \'222\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `usuario`.`ID_USUARIO` = :usuario.ID_USUARIO:', [...], false)
+ 5 SYSTEMPATH\Model.php(181): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '222')
+ 7 APPPATH\Controllers\Notificacion.php(40): CodeIgniter\BaseModel->find('222')
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202201')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:32:23 --> Undefined property: App\Controllers\Notificacion::$load
+in APPPATH\Controllers\Notificacion.php on line 63.
+ 1 APPPATH\Controllers\Notificacion.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Notificacion::$load', 'APPPATH\\Controllers\\Notificacion.php', 63, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202250')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:32:36 --> Undefined variable: datos
+in APPPATH\Views\template\email.php on line 10.
+ 1 APPPATH\Views\template\email.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datos', 'APPPATH\\Views\\template\\email.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('template/email', [], true)
+ 5 APPPATH\Controllers\Notificacion.php(63): view('template/email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202250')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:35:40 --> Undefined variable: datos
+in APPPATH\Views\template\email.php on line 10.
+ 1 APPPATH\Views\template\email.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datos', 'APPPATH\\Views\\template\\email.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('template/email', [], true)
+ 5 APPPATH\Controllers\Notificacion.php(63): view('template/email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202250')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:45:30 --> Undefined variable: datos
+in APPPATH\Views\template\email.php on line 10.
+ 1 APPPATH\Views\template\email.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datos', 'APPPATH\\Views\\template\\email.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('template/email', [], true)
+ 5 APPPATH\Controllers\Notificacion.php(63): view('template/email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202250')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 14:46:17 --> mysqli_sql_exception: Column 'RESPUESTA' cannot be null in C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tesis\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `RE...', 0)
+#1 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `RE...')
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `RE...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `RE...', Array, false)
+#4 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Estudiante.php(394): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-25 14:46:17 --> Column 'RESPUESTA' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (NULL, \'42\', \'120\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (NULL, \'42\', \'120\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (NULL, \'42\', \'120\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `RESPUESTA` (`RESPUESTA`, `ID_PREGUNTA`, `ID_POSTULACION`) VALUES (:RESPUESTA:, :ID_PREGUNTA:, :ID_POSTULACION:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Estudiante.php(394): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->guardar()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:47:40 --> Undefined variable: mensaje
+in APPPATH\Controllers\Notificacion.php on line 78.
+ 1 APPPATH\Controllers\Notificacion.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mensaje', 'APPPATH\\Controllers\\Notificacion.php', 78, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202250')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:57:23 --> A non-numeric value encountered
+in APPPATH\Controllers\Notificacion.php on line 67.
+ 1 APPPATH\Controllers\Notificacion.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Notificacion.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202250')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:57:55 --> A non-numeric value encountered
+in APPPATH\Controllers\Notificacion.php on line 67.
+ 1 APPPATH\Controllers\Notificacion.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Notificacion.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Notificacion->mailer('202250')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Notificacion))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 16:21:20 --> Undefined variable: info_preguntas
+in APPPATH\Controllers\Formulario.php on line 126.
+ 1 APPPATH\Controllers\Formulario.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: info_preguntas', 'APPPATH\\Controllers\\Formulario.php', 126, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 16:38:23 --> Undefined variable: movilidad_end
+in APPPATH\Views\admin\index.php on line 85.
+ 1 APPPATH\Views\admin\index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: movilidad_end', 'APPPATH\\Views\\admin\\index.php', 85, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 16:38:56 --> Undefined variable: movilidad_end
+in APPPATH\Views\admin\index.php on line 84.
+ 1 APPPATH\Views\admin\index.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: movilidad_end', 'APPPATH\\Views\\admin\\index.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 16:39:08 --> Undefined variable: total_postulantes
+in APPPATH\Views\admin\index.php on line 102.
+ 1 APPPATH\Views\admin\index.php(102): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: total_postulantes', 'APPPATH\\Views\\admin\\index.php', 102, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(49): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 16:39:18 --> syntax error, unexpected '?>'
+in APPPATH\Views\admin\index.php on line 102.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 3 APPPATH\Controllers\Admin.php(49): view('admin/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 16:42:26 --> Illegal string offset 'ID_PROGRAMA'
+in APPPATH\Views\admin\index.php on line 95.
+ 1 APPPATH\Views\admin\index.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'ID_PROGRAMA\'', 'APPPATH\\Views\\admin\\index.php', 95, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(51): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

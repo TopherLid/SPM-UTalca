@@ -1,0 +1,22 @@
+CRITICAL - 2022-09-04 23:34:06 --> Undefined variable: programas
+in APPPATH\Views\estudiante\historial.php on line 51.
+ 1 APPPATH\Views\estudiante\historial.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: programas', 'APPPATH\\Views\\estudiante\\historial.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(233): view('estudiante/historial', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 23:35:06 --> Undefined variable: convocatgorias
+in APPPATH\Views\estudiante\historial.php on line 52.
+ 1 APPPATH\Views\estudiante\historial.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: convocatgorias', 'APPPATH\\Views\\estudiante\\historial.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\estudiante\\historial.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('estudiante/historial', [], true)
+ 5 APPPATH\Controllers\Estudiante.php(235): view('estudiante/historial', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Estudiante->historial()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Estudiante))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
