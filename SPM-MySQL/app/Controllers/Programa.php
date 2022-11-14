@@ -27,7 +27,9 @@ class Programa extends BaseController
         $programas = $programaModel->paginate(25);
         $paginador=$programaModel->pager;
 
-        if(empty($programas)){
+        # En caso de ser vacía retorna False para ser trabajada en la vista
+
+        if(empty($programas) || is_null($programas)){
             $programas = false;
         }
         
@@ -52,7 +54,11 @@ class Programa extends BaseController
             'DESCRIPCION'=>$this->request->getVar('descripcion_programa')
         ];
 
-        if ($programaModel->insert($data)){
+        # Guarda el nuevo programa
+
+        if ($programaModel->save($data)){
+
+            # Genera alerta y devuelve a Programas
 
             $session-> setFlashData('status', 'Programa creado correctamente.');
             $session-> setFlashData('status_action', 'alert-success');
@@ -61,6 +67,8 @@ class Programa extends BaseController
             return redirect()->to('admin/programas');
 
         } else {
+
+            # Genera alerta y devuelve a Programas
 
             $session-> setFlashData('status', 'El programa no ha sido creado.');
             $session-> setFlashData('status_action', 'alert-danger');
@@ -89,7 +97,11 @@ class Programa extends BaseController
             'ESTADO' => $this->request->getVar('estado_programa')
         ];
         
+        # Modifica el programa con las características otorgadas
+
         if ($programaModel->update($aux, $data)){
+
+            # Genera alerta y devuelve a Programas
 
             $session-> setFlashData('status', 'Programa modificado correctamente.');
             $session-> setFlashData('status_action', 'alert-success');
@@ -98,6 +110,8 @@ class Programa extends BaseController
             return redirect()->to('admin/programas');
 
         } else {
+
+            # Genera alerta y devuelve a Programas
             
             $session-> setFlashData('status', 'El programa no ha sido modificado.');
             $session-> setFlashData('status_action', 'alert-danger');

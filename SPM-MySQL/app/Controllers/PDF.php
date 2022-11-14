@@ -55,6 +55,8 @@ class PDF extends BaseController
         if ($estudiante['id_estudiante']!=$postulacion['ID_ESTUDIANTE']){
             return redirect()->to('/');
         }
+
+        # Genera PDF con las características base de la postulación
         
         $datos = array('postulacion'=> $postulacion, 'estudiante'=>$estudiante, 'universidad1'=>$universidad1, 'universidad2'=>$universidad2, 'universidad3'=>$universidad3, 'idioma'=>$idioma);
 
@@ -66,7 +68,6 @@ class PDF extends BaseController
         $documento->setPaper('A4', 'portrait');
         $documento->render();
         $documento->stream("Postulacion".$aux, array("Attachment"=>1));
-
     }
 
     public function cv($aux)
@@ -81,13 +82,13 @@ class PDF extends BaseController
         helper("filesystem");
 
         $postulacionModel = new PostulacionModel();
-
         $postulacion = $postulacionModel->find($aux);
+
+        # Busca el PDF y lo descarga
 
         $filename = "cv.pdf";
 
         return $this->response->download(ROOTPATH.'/writable/uploads/'.$postulacion['ID_CONVOCATORIA'].'/'.$postulacion['ID_POSTULACION'].'/'.$filename, null);
-
     }
 
     public function antecedentes($aux)
@@ -102,14 +103,13 @@ class PDF extends BaseController
         helper("filesystem");
 
         $postulacionModel = new PostulacionModel();
-
         $postulacion = $postulacionModel->find($aux);
+
+        # Busca el PDF y lo descarga
 
         $filename = "antecedentes.pdf";
 
         return $this->response->download(ROOTPATH.'/writable/uploads/'.$postulacion['ID_CONVOCATORIA'].'/'.$postulacion['ID_POSTULACION'].'/'.$filename, null);
-
-
     }
 
 
@@ -122,18 +122,16 @@ class PDF extends BaseController
             return redirect()->to('/'); //http://inet.utalca.cl/intranet/auth_sso   
         }
 
-
         helper("filesystem");
 
         $postulacionModel = new PostulacionModel();
-
         $postulacion = $postulacionModel->find($aux);
+
+        # Busca el PDF y lo descarga
 
         $filename = "interes.pdf";
 
         return $this->response->download(ROOTPATH.'/writable/uploads/'.$postulacion['ID_CONVOCATORIA'].'/'.$postulacion['ID_POSTULACION'].'/'.$filename, null);
-
-
     }
 
 
@@ -146,21 +144,16 @@ class PDF extends BaseController
             return redirect()->to('/'); //http://inet.utalca.cl/intranet/auth_sso   
         }
 
-
         helper("filesystem");
 
         $postulacionModel = new PostulacionModel();
-
         $postulacion = $postulacionModel->find($aux);
+
+        # Busca el PDF y lo descarga
 
         $filename = "verificador.pdf";
 
         return $this->response->download(ROOTPATH.'/writable/uploads/'.$postulacion['ID_CONVOCATORIA'].'/'.$postulacion['ID_POSTULACION'].'/'.$filename, null);
-
-
-
     }
-
-
 
 }

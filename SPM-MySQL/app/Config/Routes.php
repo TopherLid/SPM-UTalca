@@ -34,9 +34,6 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-$routes->get('/prueba', 'Test::index');
-$routes->post('/archivoprueba', 'Test::post_index');
-
 /* Root/raiz del proyecto */
 
 $routes->get('/', 'AuthSPM::inicio');
@@ -49,15 +46,16 @@ $routes->get('/estudiante/formulario', 'Estudiante::formulario');
 $routes->post('/postulacion/estado', 'Estudiante::guardar');
 
 $routes->get('/postulacion/correcto', 'Estudiante::correcto');
-
-
 $routes->get('/estudiante/copia/(:num)','PDF::copia/$1');
+
+/* Historial de estudiantes */
 
 $routes->get('/estudiante/historial', 'Estudiante::historial');
 $routes->get('/estudiante/historial/(:num)', 'Estudiante::individual/$1');
 
-$routes->put('/estudiante/historial/modificar', 'Estudiante::modificar');
+/* Modificación de Postulación */
 
+$routes->put('/estudiante/historial/modificar', 'Estudiante::modificar');
 $routes->get('/estudiante/salir','Estudiante::logout');
 
 /* Rutas del panel de administrador */
@@ -65,23 +63,24 @@ $routes->get('/estudiante/salir','Estudiante::logout');
 $routes->get('/admin','Admin::home');
 $routes->get('/admin/salir','Admin::logout');
 
+/* Rutas de Convocatoria */
+
 $routes->get('/admin/convocatorias','Convocatoria::index');
 $routes->get('/admin/convocatorias/(:num)','Convocatoria::vista/$1');
 
-$routes->post('/admin/convocatoria/modificarformulario', 'Convocatoria::modificar_preguntas');
-$routes->delete('/admin/convocatoria/eliminar', 'Convocatoria::eliminar');
+/* CRUD Convocatoria */
 
 $routes->post('/admin/convocatorias/crear','Convocatoria::crear');
+$routes->post('/admin/convocatoria/modificarformulario', 'Convocatoria::modificar_preguntas');
 $routes->put('/admin/convocatoria/modificar','Convocatoria::modificar');
-
-//$routes->post('/admin/idioma/crear','Idioma::crear');
-
-//$routes->put('/admin/idioma/modificar','Idioma::modificar');
+$routes->delete('/admin/convocatoria/eliminar', 'Convocatoria::eliminar');
 
 /* Rutas del panel de Programas */
 
 $routes->get('/admin/programas','Programa::programas');
 $routes->get('/admin/programas/(:num)','Programa::vista/$1');
+
+/* CRUD Programas */
 
 $routes->post('/admin/programas/crear','Programa::crear');
 $routes->put('/admin/programas/modificar','Programa::modificar'); 
@@ -91,30 +90,33 @@ $routes->put('/admin/programas/modificar','Programa::modificar');
 $routes->get('/admin/postulantes','Postulante::postulantes');
 $routes->get('/admin/postulantes/(:num)','Postulante::registro/$1');
 
-$routes->put('/admin/estudiante/estado','Postulante::seleccion');
+/* Modificadores de Postulación */
 
-$routes->get('/admin/postulante/cv/(:num)', 'PDF::cv/$1');
-$routes->get('/admin/postulante/antecedente/(:num)', 'PDF::antecedentes/$1');
-$routes->get('/admin/postulante/cinteres/(:num)', 'PDF::cinteres/$1');
-$routes->get('/admin/postulante/verificador/(:num)', 'PDF::verificador/$1');
+$routes->put('/admin/estudiante/estado','Postulante::seleccion');
+$routes->post('/admin/postulante/confirmacion', 'Postulante::confirmacion');
+
+/* Archivos subidos por el Estudiante */
+
+$routes->get('/postulante/cv/(:num)', 'PDF::cv/$1');
+$routes->get('/postulante/antecedente/(:num)', 'PDF::antecedentes/$1');
+$routes->get('/postulante/cinteres/(:num)', 'PDF::cinteres/$1');
+$routes->get('/postulante/verificador/(:num)', 'PDF::verificador/$1');
+
+/* Excel */
 
 $routes->get('/admin/postulantes/exportar/(:num)', 'Excel::exportar/$1');
 
-
-
+/* Notificación */
 
 $routes->put('/admin/movilidad/notificar', 'Notificacion::email');
-$routes->post('/admin/postulante/confirmacion', 'Postulante::confirmacion');
-
-
-
 
 /* Rutas del panel de Universidades */
 
 $routes->get('/admin/universidades','Universidad::universidades');
-$routes->post('/admin/universidades/crear','Universidad::crear');
 
-$routes->get('/admin/universidades/(:num)','Universidad::universidades_edit/$1');
+/* CRUD de Universidades */
+
+$routes->post('/admin/universidades/crear','Universidad::crear');
 $routes->post('/admin/universidades/modificar','Universidad::modificar');
 
 /* Rutas del panel de Formulario */
@@ -122,13 +124,13 @@ $routes->post('/admin/universidades/modificar','Universidad::modificar');
 $routes->get('/admin/formulario','Formulario::formulario');
 $routes->get('/admin/formulario/(:num)','Formulario::form_edit_admin/$1');
 
-$routes->post('/admin/formulario/crear','Formulario::crear');
+/* CRUD Preguntas */
 
 $routes->post('/admin/formulario/crear/input','Formulario::crear_input');
 $routes->post('/admin/formulario/crear/multiple','Formulario::crear_multiple');
+
 $routes->put('/admin/formulario/modificar','Formulario::modificar');
 $routes->put('/admin/formulario/multiple','Formulario::modificar_multiple');
-//$routes-delete?
 
 /*
  * --------------------------------------------------------------------

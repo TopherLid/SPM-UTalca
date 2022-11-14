@@ -32,12 +32,9 @@ class Excel extends BaseController
         $convocatoriaModel = new ConvocatoriaModel();
         $paisModel = new PaisModel();
         $postulacionModel = new PostulacionModel();
-        #$estudianteModel = new PostulanteModel(); //estudiante
         $programaModel = new ProgramaModel();
         $universidadModel = new UniversidadModel();
-        #$detallePostulanteModel = new DetallePostulante();
         $estudianteModel = new EstudianteModel();
-
 
         $convocatoria  = $convocatoriaModel->find($aux);
         $programa  = $programaModel->find($convocatoria['ID_PROGRAMA']);
@@ -100,15 +97,23 @@ class Excel extends BaseController
             $u2 = $universidadModel->find($postulacion['2DA_OPCION']);
             $u3 = $universidadModel->find($postulacion['3RA_OPCION']);
 
+            /**
+             * Si no existe selección por su estado (Rechazado o modificable),
+             * Cambia la celda por el estado.
+             * En caso de ser aprobada, la celda ingresa la universidad y el país.
+             */
             
-            if ($postulacion['SELECCION']==0){
-                $seleccion = [
-                    'NOMBRE' => "Rechazada o no verificado"
-                ];
-                $pais = [
-                    'NOMBRE' => "Rechazada o no verificado"
-                ];
-            } else {
+            if ($postulacion['SELECCION']==0 && $postulacion['ESTADO']=="Rechazada"){
+                $seleccion = ['NOMBRE' => "Rechazado"];
+                $pais = ['NOMBRE' => "Rechazada o no verificado"];
+            } 
+            
+            if ($postulacion['SELECCION']==0 && $postulacion['ESTADO']!="Modificable"){
+                $seleccion = ['NOMBRE' => "Modificable"];
+                $pais = ['NOMBRE' => "Modificable"];
+            }
+        
+            if ($postulacion['SELECCION']!=0){
                 $seleccion = $universidadModel->find($postulacion['SELECCION']);
                 $pais = $paisModel->find($seleccion['ID_PAIS']);
             }
@@ -138,6 +143,11 @@ class Excel extends BaseController
             $sheet->setCellValue('T'.$contador_columna, $postulacion['IDIOMA_2']);
             
             $sheet->setCellValue('U'.$contador_columna, $convocatoria['NOMBRE']);
+
+            /**
+             * Si el estado es "Aceptado", 
+             * el postulante utilizará crédito.
+             */
 
             if ($postulacion['ESTADO']=="Aceptado"){
                 $sheet->setCellValue('Y'.$contador_columna, "Si");

@@ -27,6 +27,14 @@ class AuthSPM extends BaseController
 
     public function validador(){
 
+        $session = session();
+
+        /**
+         * Crea la sesión en el sistema, y redirecciona al apartado correspondiente
+         * estudiante -> Controlador: Estudiante
+         * Administrativo -> Controlador: Administrativo
+         */
+
         $usuarioModel = new UsuarioModel();
 
         $usr = $this->request->getVar('login');
@@ -34,13 +42,9 @@ class AuthSPM extends BaseController
 
         $usuario = $usuarioModel->find($usr);
 
-        if (is_null($usuario)){
+        if (is_null($usuario) || empty($usuario)){
 
-            $sesionInfo=[
-                'status'=> 'El usuario no existe, intente nuevamente.'
-            ];
-            session()->markAsFlashdata($sesionInfo);
-
+            $session-> setFlashData('estado', 'El usuario no existe, intente nuevamente.');
             return redirect()->to('/');
         }
 
@@ -88,11 +92,8 @@ class AuthSPM extends BaseController
             return redirect()->to('admin');
         }
 
-        $sesionInfo=[
-            'status'=> 'El usuario o contraseña no corresponden, intente nuevamente.'
-        ];
+        $session-> setFlashData('status', 'El usuario o contraseña no corresponden, intente nuevamente.');
 
-        session()->set($sesionInfo);
         return redirect()->to('/'); //http://inet.utalca.cl/intranet/auth_sso
     }
 }

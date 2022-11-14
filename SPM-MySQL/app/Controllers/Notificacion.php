@@ -25,7 +25,6 @@ class Notificacion extends BaseController
 
         $convocatoriaModel = new ConvocatoriaModel();
         $postulacionModel = new PostulacionModel();
-        //$postulanteModel = new PostulanteModel();
         $carreraModel = new CarreraModel();
         $universidadModel = new UniversidadModel();
         $programaModel = new ProgramaModel();
@@ -35,7 +34,10 @@ class Notificacion extends BaseController
         $postulaciones = $postulacionModel -> select('*')->where ('ID_CONVOCATORIA', $aux)->findAll();
         $programa = $programaModel -> find ($convocatoria['ID_PROGRAMA']);
 
-
+        /**
+         * Algoritmo para renombrar la postulación y selección dependiendo del
+         * estado y la Universidad seleccionada dentro del Mail
+         */
 
         foreach($postulaciones as $postulacion) {
 

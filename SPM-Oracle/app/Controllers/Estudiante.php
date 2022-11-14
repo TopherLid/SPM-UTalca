@@ -719,9 +719,9 @@ class Estudiante extends BaseController
                 'EMAIL_PERSONAL'=>strip_tags($this->request->getVar('email_personal')),
                 'NIVEL_INGLES'=> strip_tags($this->request->getVar('nivel_ingles')),
                 'IDIOMA_2'=> strip_tags($this->request->getVar('idioma_sec')),
-                'PRIMERA_OPCION'=>strip_tags($this->request->getVar('PRIMERA_OPCION')),
-                'SEGUNDA_OPCION'=> strip_tags($this->request->getVar('SEGUNDA_OPCION')),
-                'TERCERA_OPCION'=> strip_tags($this->request->getVar('TERCERA_OPCION')),   
+                'PRIMERA_OPCION'=>strip_tags($this->request->getVar('1ra_opcion')),
+                'SEGUNDA_OPCION'=> strip_tags($this->request->getVar('2da_opcion')),
+                'TERCERA_OPCION'=> strip_tags($this->request->getVar('3ra_opcion')),   
                 'ESTADO' => "En espera" 
             ];
 

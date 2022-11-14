@@ -35,9 +35,11 @@ class Admin extends BaseController
         $programaModel = new ProgramaModel();
         $postulacionModel = new PostulacionModel();
 
-        #Busca la última convocatoria creada
+        # Busca la última convocatoria creada
 
         $convocatoria = $convocatoriaModel->select('*')->orderBy('ID_CONVOCATORIA', 'DESC')->first();   
+
+        # En caso de ser vacía retorna False para ser trabajada en la vista
 
         if (is_null($convocatoria) || empty($convocatoria)) {
 
@@ -90,9 +92,7 @@ class Admin extends BaseController
             ];
 
             /**
-             * Cuando existe una convocatoria busca la última creada
-             * Busca el programa, las postulaciones y la movilidad del estudiante
-             * Si la cantidad de postulaciones es distinto de 0, cuenta todas las postulaciones
+             * Busca todas las movilidades de la última convocatoria finalizada
              */
 
             $preparacion = array(

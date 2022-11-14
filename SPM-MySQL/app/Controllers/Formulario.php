@@ -28,6 +28,8 @@ class Formulario extends BaseController
         $preguntas_base = $preguntaModel->orderBy('ID_PREGUNTA', 'DESC')->paginate(25);
         $paginador = $preguntaModel->pager;
 
+        # En caso de ser vacía retorna False para ser trabajada en la vista
+
         if(empty($preguntas_base) || is_null($preguntas_base)){
 
             $preguntas = false;
@@ -37,6 +39,8 @@ class Formulario extends BaseController
             $contador = 0;
 
             foreach ($preguntas_base as $pregunta) {
+
+                # Si la pregunta es múltiple, busca las posibles opciones asociadas
 
                 $contador_opciones = 1;
 
@@ -99,13 +103,17 @@ class Formulario extends BaseController
         $titulo = $this->request->getVar('titulo_pregunta');
         $tipo_input = $this->request->getVar('tipo_pregunta');
 
+        # Crea una pregunta de tipo input simple
+
         $data = [
             'TIPO' => "input",
             'TITULO' => $titulo,
             'TIPO_INPUT' => $tipo_input
         ];
 
-        if ($preguntaModel->insert($data)){
+        if ($preguntaModel->save($data)){
+
+            # Devuelve a Formulario con alerta bootstrap
 
             $session-> setFlashData('status', 'Se ha añadido un nuevo campo "Input", para utilizarlo en el siguiente formulario, debe ser asignado a una convocatoria.');
             $session-> setFlashData('status_action', 'alert-success');
@@ -114,6 +122,8 @@ class Formulario extends BaseController
             return redirect()->to('admin/formulario');
 
         } else {
+
+            # Devuelve a Formulario con alerta bootstrap
 
             $session-> setFlashData('status', 'No se ha creado la pregunta.');
             $session-> setFlashData('status_action', 'alert-danger');
@@ -135,6 +145,11 @@ class Formulario extends BaseController
         $preguntaModel = new PreguntaModel();
         $opcionesPMultipleModel = new OpcionesPMultipleModel(); 
 
+        /**
+         * Crea una pregunta de tipo input de múltiples opciones
+         * las opciones son almacenadas en OpcionesPMultiple
+         */
+
         $titulo = $this->request->getVar('etiqueta');
         $tipo_input = $this->request->getVar('tipo_pregunta');
 
@@ -144,10 +159,16 @@ class Formulario extends BaseController
             'TIPO_INPUT' => $tipo_input
         ];
 
-        if ($preguntaModel->insert($data)){
+        if ($preguntaModel->save($data)){
+
+            /**
+             * Toma la cantidad de opciones de un hidden input
+             * Crea un bucle for para la misma cantidad
+             * Inserta cada opción guardada por el nombre 'nuevo_(posición del for)'
+             * hasta llegar al número del hidden input 
+             */
 
             $ultima_pregunta = $preguntaModel ->select('*')->orderBy('ID_PREGUNTA', 'DESC')->first();
-
             $opciones = $this->request->getVar('total_opciones');
             
             for ($i=1; $i <= $opciones; $i++) { 
@@ -158,8 +179,10 @@ class Formulario extends BaseController
                     'ID_PREGUNTA' => $ultima_pregunta['ID_PREGUNTA']
                 ];
 
-                $opcionesPMultipleModel->insert($insertar_opcion);
+                $opcionesPMultipleModel->save($insertar_opcion);
             }
+
+            # Devuelve a Formulario con alerta bootstrap
 
             $session-> setFlashData('status', 'Se ha añadido un nuevo campo de selección múltiple, para utilizarlo en el siguiente formulario, debe ser asignado a una convocatoria.');
             $session-> setFlashData('status_action', 'alert-success');
@@ -168,6 +191,12 @@ class Formulario extends BaseController
             return redirect()->to('admin/formulario');
 
         } else {
+
+            # Devuelve a Formulario con alerta bootstrap
+
+            $session-> setFlashData('status', 'No se ha creado la pregunta.');
+            $session-> setFlashData('status_action', 'alert-damger');
+            $session-> setFlashData('status_alert', '¡Error!');
 
             return redirect()->to('admin/formulario');
         }
@@ -192,7 +221,11 @@ class Formulario extends BaseController
 
         $pregunta = $preguntaModel->find($aux);
 
+        # Si la pregunta no es Simple devuelve sin realizar modificaciones
+
         if ($pregunta != "Simple") {
+
+            # Devuelve a Formulario con alerta bootstrap
 
             $session-> setFlashData('status', 'No se puede modificar (Pregunta múltiple).');
             $session-> setFlashData('status_action', 'alert-danger');
@@ -209,12 +242,17 @@ class Formulario extends BaseController
 
         if ($preguntaModel->update($aux, $data)){
 
+            # Devuelve a Formulario con alerta bootstrap
+
             $session-> setFlashData('status', 'Pregunta modificada correctamente.');
             $session-> setFlashData('status_action', 'alert-success');
             $session-> setFlashData('status_alert', '¡Correcto!');
 
             return redirect()->to('admin/formulario');
         } else {
+
+            # Devuelve a Formulario con alerta bootstrap
+
             $session-> setFlashData('status', 'No se pudo modificar.');
             $session-> setFlashData('status_action', 'alert-danger');
             $session-> setFlashData('status_alert', '¡Error!');
@@ -240,13 +278,15 @@ class Formulario extends BaseController
         $pregunta = $preguntaModel->find($aux);
         $opciones = $opcionesPMultipleModel->select('*')->where('ID_PREGUNTA', $aux)->findAll();
 
+        # Si la pregunta no es Múltiple devuelve sin realizar modificaciones
+
         if ($pregunta != "Múltiple") {
 
             $session-> setFlashData('status', 'No se puede modificar (Pregunta Simple).');
             $session-> setFlashData('status_action', 'alert-danger');
             $session-> setFlashData('status_alert', '¡Error!');
 
-            //return redirect()->to('admin/formulario');
+            return redirect()->to('admin/formulario');
         }
 
         $data = [
@@ -259,26 +299,34 @@ class Formulario extends BaseController
 
             $total_opciones = $this->request->getVar('total_campo_m');
 
+            /**
+             * Si la pregunta posee opciones, elimina toda la información previa
+             */
+
             if (! is_null($opciones) || ! empty($opciones)){ 
                 foreach ($opciones as $opcion) {
                     $opcionesPMultipleModel->delete($opcion['ID_OPCIONES_PM']);
                 }
             }
 
+            /**
+             * Se genera un for por cada opcion de la pregunta nueva
+             * Para ser insertado en la tabla de OpcionesPMultiple
+             */
             
             for ($i=1; $i <= $total_opciones; $i++) { 
                 
                 $opcion = $this->request->getVar('m_nuevo_'.$i);
-                
-                var_dump($opcion);
 
                 $insertar_opcion = [
                     'OPCION_PMULTIPLE' => $opcion,
                     'ID_PREGUNTA' => $aux
                 ];
 
-                $opcionesPMultipleModel->insert($insertar_opcion);
+                $opcionesPMultipleModel->save($insertar_opcion);
             }
+
+            # Devuelve a Formulario con alerta bootstrap
 
             $session-> setFlashData('status', 'Pregunta modificada correctamente.');
             $session-> setFlashData('status_action', 'alert-success');
@@ -286,26 +334,14 @@ class Formulario extends BaseController
 
             return redirect()->to('admin/formulario');
         } else {
+
+            # Devuelve a Formulario con alerta bootstrap
+
             $session-> setFlashData('status', 'No se pudo modificar.');
             $session-> setFlashData('status_action', 'alert-danger');
             $session-> setFlashData('status_alert', '¡Error!');
 
             return view('admin/convicatorias/error'); #('errors/admin/convocatoria') o redirect -> controlador -> error
         }  
-
-        $session-> setFlashData('status', 'Se han modificado las opciones de la pregunta.');
-        $session-> setFlashData('status_action', 'alert-success');
-        $session-> setFlashData('status_alert', '¡Correcto!');
-
-        return redirect()->to('admin/formulario');
     }
 }
-
-
-/*
- 
-    El apartado pregunta puede ser reducido a pregunta con el titulo y el tipo
-    en caso de ser múltiple -> opciones pmultiple.
-
-
- */

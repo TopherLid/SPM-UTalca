@@ -9,13 +9,10 @@ use App\Models\UniversidadModel;
 use App\Models\IdiomaModel;
 use App\Models\CarreraModel;
 use App\Models\PostulacionModel;
-
 use App\Models\PreguntaConvocatoriaModel;
-
 use App\Models\PreguntaModel;
 use App\Models\OpcionesPMultipleModel;
 use App\Models\RespuestaModel;
-
 use App\Models\EstudianteModel;
 
 use CodeIgniter\Files\File;
@@ -38,10 +35,8 @@ class Estudiante extends BaseController
         $carreraModel = new CarreraModel();
 
         $convocatoria = $convocatoriaModel->select('*')->orderBy('ID_CONVOCATORIA', 'DESC')->first();
-        
-        $conv_check = is_null($convocatoria);
 
-        if ($conv_check==true){
+        if (is_null($convocatoria)){
             return view('estudiante/proximamente');
         }
 
@@ -57,13 +52,17 @@ class Estudiante extends BaseController
             'estudiante_regular' => session()->get('estudiante_regular'),
             'id_carrera' => session()->get('id_carrera'),
             'carrera' => session()->get('carrera'),
-            'deuda_dafe'=>session()->get('deuda'),
-            'deuda_biblioteca'=>session()->get('deuda_biblioteca'),
+            'deuda_dafe'=>session()->get('deuda_dafe'),
+            'deuda_biblioteca'=>session()->get('deuda_biblioteca')
         ];
 
         $postulacion_check = $postulacionModel->select('*')->where('ID_CONVOCATORIA', $convocatoria['ID_CONVOCATORIA'])->findAll();
         $programa = $programaModel->find($convocatoria['ID_PROGRAMA']);
         $programas = $programaModel->findAll();
+
+        if (is_null($convocatoria)){
+            return view('estudiante/proximamente');
+        }
 
         $ver = count($postulacion_check);
 
@@ -74,12 +73,18 @@ class Estudiante extends BaseController
         } 
 
         if ($ver!=0){
-            //$postulacion_multiple = true; //bypass para multiples postulaciones
+            $postulacion_multiple = true; # Bypass para multiples postulaciones
         }
 
         $carrera = $carreraModel->find($postulante['id_carrera']);
         $max_creditos = ( $convocatoria['MAX_CREDITO_SCT'] / 100 );
         $creditos_carrera = ($carrera['CREDITOS'] * $max_creditos );
+
+        /**
+         * En caso ed que se cumplan todas las validaciones del siguiente IF, el estudiante podrá postular
+         * Caso contrario no tendrá la sesión "Habilitado" para ingresar
+         * Así como también se despliegan los distintos posibles errores del estudiante al postular
+         */
 
         if ($postulante['sct']>=$convocatoria['MIN_CREDITO_SCT'] && $postulante['sct']<=$creditos_carrera && $postulante['estudiante_regular']=="Si" && $postulacion_multiple==false && $postulante['ramos_reprobados']<=$convocatoria['RAMOS_REPROBADOS'])
         {
@@ -101,9 +106,8 @@ class Estudiante extends BaseController
             if ($postulante['deuda_dafe']=="Si"){
                 array_push($problema, "Su situación no se encuentra regularizada (deuda con las cuotas universitarias).");
             }
-
             if ($postulante['deuda_biblioteca']=="Si"){
-                array_push($problema, "Su situación no se encuentra regularizada (deuda con las cuotas universitarias).");
+                array_push($problema, "Su situación no se encuentra regularizada con Biblioteca.");
             }
             
             if ($postulante['ramos_reprobados']>$convocatoria['RAMOS_REPROBADOS']){
@@ -156,7 +160,7 @@ class Estudiante extends BaseController
             'estudiante_regular' => session()->get('estudiante_regular'),
             'id_carrera' => session()->get('id_carrera'),
             'carrera' => session()->get('carrera'),
-            'deuda'=>session()->get('deuda'),
+            'deuda_dafe'=>session()->get('deuda_dafe'),
             'id_convocatoria'=>session()->get('id_convocatoria'),
         ];
 
@@ -172,19 +176,20 @@ class Estudiante extends BaseController
         $universidadModel = new UniversidadModel();
         $paisModel = new PaisModel();
         $idiomaModel = new IdiomaModel();
-        
         $preguntaModel = new PreguntaModel();
         $opcionesPMultipleModel = new OpcionesPMultipleModel();
         $preguntaConvocatoriaModel = new PreguntaConvocatoriaModel();
 
         $programa = $programaModel->find($convocatoria['ID_PROGRAMA']);
-        $universidades_base = $universidadModel->orderBy('ID_PAIS', 'ASC')->findAll(); 
-        #$universidades = $detalleUniversidadModel -> select('*')->where('ID_PROGRAMA', $programa['ID_PROGRAMA'])->findAll();
+        $universidades_base = $universidadModel->where('ESTADO', 'Activo')->orderBy('ID_PAIS', 'ASC')->findAll(); 
         $idiomas = $idiomaModel->select('*')->where('ESTADO', 'Activo')->findAll();
-
         $preguntas_adicionales = $preguntaConvocatoriaModel->select('*')->where('ID_CONVOCATORIA', $postulante['id_convocatoria'])->findAll();
 
         $contador_universidad = 0;
+
+        /**
+         * Busca cada universidad Activa y reemplaza el dato "id_pais" por el nombre del pais
+         */
 
         foreach ($universidades_base as $universidad){
             $pais = $paisModel ->find($universidad['ID_PAIS']);
@@ -200,6 +205,12 @@ class Estudiante extends BaseController
         }
 
         $preguntas_lista = true;
+
+        /**
+         * Si no existen preguntas adicionales, devuelve
+         * Caso contrario las busca para reconocer pregunta simple o múltiple
+         * Y buscar las posibles respuestas de las múltiples
+         */
 
         if (empty($preguntas_adicionales) || is_null($preguntas_adicionales)) {
             $preguntas_lista = false;
@@ -223,10 +234,11 @@ class Estudiante extends BaseController
                     ];
 
                     $preguntas = array_replace($preguntas_adicionales, $cambiar_pregunta);
-
                 }
 
                 if ($pregunta_finder['TIPO']=="Múltiple") {
+
+                    # Busca las opciones de las preguntas múltiples
 
                     $opciones = $opcionesPMultipleModel->select('*')->where('ID_PREGUNTA', $p_a['ID_PREGUNTA'])->findAll();
 
@@ -285,61 +297,59 @@ class Estudiante extends BaseController
                 'estudiante_regular' => session()->get('estudiante_regular'),
                 'id_carrera' => session()->get('id_carrera'),
                 'carrera' => session()->get('carrera'),
-                'deuda'=>session()->get('deuda'),
+                'deudor_dafe'=>session()->get('deuda_dafe'),
                 'id_convocatoria'=>session()->get('id_convocatoria'),
             ];
 
+            /**
+             * Capta la información estática del formulario
+             * (Lo dinámico lo capta después)
+             */
+
             $datos = [
-                'NACIONALIDAD'=> $this->request->getVar('nacionalidad'),
-                'N_TELEFONO'=>$this->request->getVar('telefono'),
-                'EMAIL_PERSONAL'=>$this->request->getVar('email_personal'),
-                'NIVEL_INGLES'=> $this->request->getVar('nivel_ingles'),
-                'IDIOMA_2'=> $this->request->getVar('idioma_sec'),
-                '1RA_OPCION'=>$this->request->getVar('1ra_opcion'),
-                '2DA_OPCION'=> $this->request->getVar('2da_opcion'),
-                '3RA_OPCION'=> $this->request->getVar('3ra_opcion'),
+                'NACIONALIDAD'=> strip_tags($this->request->getVar('nacionalidad')),
+                'N_TELEFONO'=>strip_tags($this->request->getVar('telefono')),
+                'EMAIL_PERSONAL'=>strip_tags($this->request->getVar('email_personal')),
+                'NIVEL_INGLES'=> strip_tags($this->request->getVar('nivel_ingles')),
+                'IDIOMA_2'=> strip_tags($this->request->getVar('idioma_sec')),
+                '1RA_OPCION'=>strip_tags($this->request->getVar('1ra_opcion')),
+                '2DA_OPCION'=> strip_tags($this->request->getVar('2da_opcion')),
+                '3RA_OPCION'=> strip_tags($this->request->getVar('3ra_opcion')),
                 'ID_ESTUDIANTE'=> $postulante['id_estudiante'],  
                 'ID_CONVOCATORIA' => $postulante['id_convocatoria']
             ];
 
-            /*
+            /**
+             * Capta los archivos
+             * Si es deudor capta el archivo verificador
+             */
 
             $cv = $this->request->getFile('cv');
+            $interes = $this->request->getFile('cinteres');
+            $antecedentes = $this->request->getFile('antecedente');
 
-            if (! $cv->hasMoved()) {
-                $filepath = WRITEPATH . 'uploads/' . $cv->store($postulante['id_convocatoria'].'/'.$postulante['RUT'], 'cv.pdf');
-                $data = ['uploaded_flleinfo' => new File($filepath)];
+            if ($postulante['deudor_dafe']=="Si"){
+                $verificador = $this->request->getFile('verificador');
             }
 
-            $antecedente = $this->request->getFile('antecedente');
+            if ($postulacionModel->insert($datos, TRUE)){
 
-            if (! $antecedente->hasMoved()) {
-                $filepath = WRITEPATH . 'uploads/' . $antecedente->store($postulante['id_convocatoria'].'/'.$postulante['RUT'], 'antecedentes.pdf');
-                $data = ['uploaded_flleinfo' => new File($filepath)];
-            }
+                /**
+                 * Una vez la postulación creada, busca la postulación añadida
+                 * Y crea la instancia de las respuestas
+                 */
 
-            $cinteres = $this->request->getFile('cinteres');
-            
-            if (! $cinteres->hasMoved()) {
-                $filepath = WRITEPATH . 'uploads/' . $cinteres->store($postulante['id_convocatoria'].'/'.$postulante['RUT'], 'c_interes.pdf');
-                $data = ['uploaded_flleinfo' => new File($filepath)];
-            }
-
-            */
-            
-            if ($postulacionModel->insert($datos)){
-
-                $postulacion = $postulacionModel->select('*')->where('ID_ESTUDIANTE', $datos['ID_ESTUDIANTE'])->orderBy('ID_POSTULACION', 'DESC')->first();
-
-                $universidad1=$universidadModel->find($datos['1RA_OPCION']);
-                $universidad2=$universidadModel->find($datos['2DA_OPCION']);
-                $universidad3=$universidadModel->find($datos['3RA_OPCION']);
-                
+                $postulacion = $postulacionModel->select('*')->where('ID_ESTUDIANTE', $datos['ID_ESTUDIANTE'])->orderBy('ID_POSTULACION', 'DESC')->first();                
                 $detalle_pregunta = $preguntaConvocatoriaModel->select('*')->where('ID_CONVOCATORIA', $postulacion['ID_CONVOCATORIA'])->findAll();
-
                 $contador_respuestas = $this->request->getVar('respuestas_cant');
 
                 $i=1;
+
+                /**
+                 * Por cada pregunta asociada en los formularios, crea una respuesta
+                 * Para las preguntas de tipo checkbox, se genera un implode (juntar todo el arreglo en una string)
+                 */
+
                 foreach ($detalle_pregunta as $dp){
 
                     $pregunta = $preguntaModel -> find($dp['ID_PREGUNTA']);
@@ -355,7 +365,7 @@ class Estudiante extends BaseController
                         ];
                     } else { 
                         $insertor_respuestas = [
-                            'RESPUESTA'=> $this->request->getVar('pregunta_'.$i),
+                            'RESPUESTA'=> strip_tags($this->request->getVar('pregunta_'.$i)),
                             'ID_PREGUNTA' => $dp['ID_PREGUNTA'],
                             'ID_POSTULACION' => $postulacion['ID_POSTULACION']
                         ];
@@ -363,41 +373,33 @@ class Estudiante extends BaseController
                     $respuestaModel->insert($insertor_respuestas);
                     $i++;
                 }
-
-                
-
-                $cv = $this->request->getFile('cv');
+                /**
+                 * Mueve los archivos 
+                 * (en este caso, los sube a ./uploads/id_convocatoria/id_postulacion)
+                 */
 
                 if (! $cv->hasMoved()) {
                     $filepath = WRITEPATH . 'uploads/' . $cv->store($postulacion['ID_CONVOCATORIA'].'/'.$postulacion['ID_POSTULACION'], 'cv.pdf');
                     $data = ['uploaded_flleinfo' => new File($filepath)];
                 }
         
-                $interes = $this->request->getFile('cinteres');
-        
                 if (! $interes->hasMoved()) {
                     $filepath = WRITEPATH . 'uploads/' . $interes->store($postulacion['ID_CONVOCATORIA'].'/'.$postulacion['ID_POSTULACION'], 'interes.pdf');
                     $data = ['uploaded_flleinfo' => new File($filepath)];
                 }
-        
-                $antecedentes = $this->request->getFile('antecedente');
         
                 if (! $antecedentes->hasMoved()) {
                     $filepath = WRITEPATH . 'uploads/' . $antecedentes->store($postulacion['ID_CONVOCATORIA'].'/'.$postulacion['ID_POSTULACION'], 'antecedentes.pdf');
                     $data = ['uploaded_flleinfo' => new File($filepath)];
                 }
 
-                if ($postulante['deudor'==1]) {
+                if ($postulante['deudor_dafe']=="Si") {
                     
-                    $verificador = $this->request->getFile('verificador');
-            
                     if (! $verificador->hasMoved()) {
                         $filepath = WRITEPATH . 'uploads/' . $antecedentes->store($postulacion['ID_CONVOCATORIA'].'/'.$postulacion['ID_POSTULACION'], 'verificador.pdf');
                         $data = ['uploaded_flleinfo' => new File($filepath)];
                     }
                 }
-
-                
 
                 $session-> setFlashData('id_postulacion', $postulacion['ID_POSTULACION']);
                 
@@ -452,6 +454,10 @@ class Estudiante extends BaseController
             $universidad2=$universidadModel->find($postulacion['2DA_OPCION']);
             $universidad3=$universidadModel->find($postulacion['3RA_OPCION']);
 
+            /**
+             * Devuelve vista correcta de la postulación al estudiante, con posibilidad de descargar un pdf
+             */
+
             $carrera = [
                 'ID_CARRERA' => $postulante['id_carrera'],
                 'NOMBRE' => $postulante['carrera']
@@ -494,6 +500,11 @@ class Estudiante extends BaseController
             
             $postulaciones_base = $postulacionModel->select('*')->where('ID_ESTUDIANTE', $postulante['id_estudiante'])->orderBy('ID_POSTULACION', 'DESC')->findAll();
 
+            /**
+             * Revisa si existen postulaciones
+             * En caso que no, manda booleana false para trabajarla en la vista
+             */
+
             if (is_null($postulaciones_base) || empty($postulaciones_base)){
 
                 $postulaciones = false;
@@ -511,6 +522,11 @@ class Estudiante extends BaseController
                     $universidad1 = $universidadModel->find($postulacion['1RA_OPCION']);
                     $universidad2 = $universidadModel->find($postulacion['2DA_OPCION']);
                     $universidad3 = $universidadModel->find($postulacion['3RA_OPCION']);
+
+                    /**
+                     * Cambia los datos de la tabla postulacion
+                     * para ser más legibles por el estudiante
+                     */
 
                     if($postulacion['SELECCION']==0){
 
@@ -583,7 +599,6 @@ class Estudiante extends BaseController
             $universidadModel = new UniversidadModel();
             $convocatoriaModel = new ConvocatoriaModel();
             $paisModel = new PaisModel();
-
             $preguntaModel = new PreguntaModel();
             $respuestaModel = new RespuestaModel();
             $preguntaConvocatoriaModel = new PreguntaConvocatoriaModel();
@@ -596,18 +611,28 @@ class Estudiante extends BaseController
             $universidades_base = $universidadModel->findAll();
             $paises= $paisModel->findAll(); 
 
-            $contador = 0;
+            /**
+             * Mustra la cantidad total de universidades en caso de que la postulación esté marcada como modificable
+             */
 
-            foreach ($universidades_base as $universidad){
-                $pais = $paisModel -> find($universidad['ID_PAIS']);
-                $cambiar[$contador]=[
-                    'ID_UNIVERSIDAD' => $universidad['ID_UNIVERSIDAD'],
-                    'NOMBRE' => $universidad['NOMBRE'],
-                    'ID_PAIS' => $pais['NOMBRE']
-                ];
-                $universidades = array_replace($universidades_base, $cambiar);
-                $contador++;
+            
+            if ($postulacion['ESTADO']=="Modificable"){
+                $contador = 0;
+                foreach ($universidades_base as $universidad){
+                    $pais = $paisModel -> find($universidad['ID_PAIS']);
+                    $cambiar[$contador]=[
+                        'ID_UNIVERSIDAD' => $universidad['ID_UNIVERSIDAD'],
+                        'NOMBRE' => $universidad['NOMBRE'],
+                        'ID_PAIS' => $pais['NOMBRE']
+                    ];
+                    $universidades = array_replace($universidades_base, $cambiar);
+                    $contador++;
+                }
+                
+            } else {
+                $universidades = false;
             }
+
 
             $universidad1 = $universidadModel->find($postulacion['1RA_OPCION']);
             $universidad2 = $universidadModel->find($postulacion['2DA_OPCION']);
@@ -615,6 +640,11 @@ class Estudiante extends BaseController
             $seleccion  = $universidadModel->find($postulacion['SELECCION']);
 
             $preguntas_convocatoria = $preguntaConvocatoriaModel -> select('*')->where('ID_CONVOCATORIA', $convocatoria['ID_CONVOCATORIA'])->findAll();
+
+            /**
+             * Si existen preguntas para la convocatoria
+             * Busca las respuestas pertinentes del formulario
+             */
 
             if ( is_null($preguntas_convocatoria) || empty($preguntas_convocatoria)) {
                 $preguntas = false;
@@ -684,20 +714,22 @@ class Estudiante extends BaseController
             $url="estudiante/historial/".$id_postulacion;
 
             $data = [
-                'NACIONALIDAD'=>$this->request->getVar('nacionalidad'),
-                'N_TELEFONO'=>$this->request->getVar('telefono'),
-                'EMAIL_PERSONAL'=>$this->request->getVar('email_personal'),
-                'NIVEL_INGLES'=> $this->request->getVar('nivel_ingles'),
-                'IDIOMA_2'=> $this->request->getVar('idioma_sec'), //$s_i
-                '1RA_OPCION'=>$this->request->getVar('1ra_opcion'),
-                '2DA_OPCION'=> $this->request->getVar('2da_opcion'),
-                '3RA_OPCION'=> $this->request->getVar('3ra_opcion'),   
+                'NACIONALIDAD'=>strip_tags($this->request->getVar('nacionalidad')),
+                'N_TELEFONO'=>strip_tags($this->request->getVar('telefono')),
+                'EMAIL_PERSONAL'=>strip_tags($this->request->getVar('email_personal')),
+                'NIVEL_INGLES'=> strip_tags($this->request->getVar('nivel_ingles')),
+                'IDIOMA_2'=> strip_tags($this->request->getVar('idioma_sec')),
+                '1RA_OPCION'=>strip_tags($this->request->getVar('1ra_opcion')),
+                '2DA_OPCION'=> strip_tags($this->request->getVar('2da_opcion')),
+                '3RA_OPCION'=> strip_tags($this->request->getVar('3ra_opcion')),   
                 'ESTADO' => "En espera" 
             ];
+
+            # Modifica el formulario con las características correspondientes
             
             if ($postulacionModel->update($id_postulacion, $data)){
 
-                #modificar preguntas adicionales
+                # Genera alerta y devuelve al Historial
 
                 $session-> setFlashData('status', 'Postulación modificada correctamente.');
                 $session-> setFlashData('status_action', 'alert-success');
@@ -705,6 +737,9 @@ class Estudiante extends BaseController
 
                 return redirect()->to($url);
             } else {
+
+                # Genera alerta y devuelve al Historial
+
                 $session-> setFlashData('status', 'La postulación no ha sido modificada.');
                 $session-> setFlashData('status_action', 'alert-danger');
                 $session-> setFlashData('status_alert', '¡Error!');

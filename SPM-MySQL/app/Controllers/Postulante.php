@@ -51,13 +51,18 @@ class Postulante extends BaseController
         $postulaciones_base = $postulacionModel->orderBy('ID_POSTULACION', 'DESC')->paginate(25);
         $paginador = $postulacionModel->pager;
         
-
+        # En caso de ser vacía retorna False para ser trabajada en la vista
 
         if (is_null($postulaciones_base) || empty($postulaciones_base)){
             $postulaciones = false;
         } else {
             
             $contador = 0;
+
+            /**
+             * Para cada postulación ordena la información asociada para mostrar nombres 
+             * (estudiante, carrera, convocatoria, programa)
+             */
             
             foreach ($postulaciones_base as $aux){
     
@@ -122,6 +127,8 @@ class Postulante extends BaseController
         $preguntaModel = new PreguntaModel();
         $respuestaModel = new RespuestaModel();
         $preguntaConvocatoriaModel = new PreguntaConvocatoriaModel();
+
+        # Busca todas las características de la postulación con el aux dado
         
         $postulacion = $postulacionModel->find($aux);
         $estudiante = $estudianteModel ->find($postulacion['ID_ESTUDIANTE']);
@@ -138,6 +145,11 @@ class Postulante extends BaseController
 
         $idioma = $idiomaModel ->find($postulacion['IDIOMA_2']);
 
+        /**
+         * Si la postulación es rechazada o modificable
+         * Muestra a la derecha el estado y en el campo de selección
+         */
+
         if($postulacion['SELECCION']==0 )
         {
             if($postulacion['ESTADO']=="Rechazado"){
@@ -151,6 +163,11 @@ class Postulante extends BaseController
 
         $contador_u = 0;
 
+        /**
+         * Alguritmo para buscar el país de las universidades
+         * Para cada universidad se busca el país
+         */
+
         foreach ($universidades_base as $universidad){
             $pais = $paisModel -> find($universidad['ID_PAIS']);
             $cambiar[$contador_u]=[
@@ -162,9 +179,13 @@ class Postulante extends BaseController
             $contador_u++;
         }
 
-
-
         $preguntas_convocatoria = $preguntaConvocatoriaModel -> select('*')->where('ID_CONVOCATORIA', $convocatoria['ID_CONVOCATORIA'])->findAll();
+
+        /**
+         * Si la convocatoria no posee preguntas asociadas, 
+         * muestra alerta de que no existen preguntas ni respuestas
+         * Sino, busca todas las respuestas asociadas al formulario con la pregunta y la postulación
+         */
 
         if ( is_null($preguntas_convocatoria) || empty($preguntas_convocatoria)) {
             $preguntas = false;
@@ -221,6 +242,8 @@ class Postulante extends BaseController
         $estado = $this->request->getVar('estado_post');
         $u_seleccion = $this->request->getVar('seleccion');
 
+        # Modifica el estado según el input otorgado por el administrativo
+
         if ($estado == "Rechazado"){
             $data = [
                 'ESTADO'=> "Rechazada",
@@ -245,6 +268,8 @@ class Postulante extends BaseController
 
         if ($postulacionModel->update($aux, $data)){
 
+            # Genera alerta y devuelve a Postulantes/aux
+
             $session-> setFlashData('status', 'El registro '.$aux.' ha sido actualizado correctamente.');
             $session-> setFlashData('status_action', 'alert-success');
             $session-> setFlashData('status_alert', '¡Correcto!');
@@ -252,6 +277,8 @@ class Postulante extends BaseController
 
             return redirect()->to('admin/postulantes/'.$aux);
         } else {
+
+            # Genera alerta y devuelve a Postulantes/aux
 
             $session-> setFlashData('status', 'El registro '.$aux.' no ha sido actualizado.');
             $session-> setFlashData('status_action', 'alert-danger');
@@ -281,7 +308,12 @@ class Postulante extends BaseController
             'SELECCION'=>$seleccion
         ];
 
-        $postulacion = $postulacionModel-> find ($aux);
+        $postulacion = $postulacionModel-> find($aux);
+
+        /**
+         * Cambia estado de selección
+         * En caso de ser confirmado, se crea la movilidad
+         */
 
         if ($postulacionModel->update($aux, $data)){
             
@@ -291,8 +323,10 @@ class Postulante extends BaseController
                     'ID_ESTUDIANTE' => $postulacion['ID_ESTUDIANTE']
                 ];
 
-                $movilidadModel->insert($movilidad);
+                $movilidadModel->save($movilidad);
             }
+
+            # Genera alerta y devuelve a Postulantes
 
             $session-> setFlashData('status', 'El registro '.$aux.' se ha asignado como: '.$seleccion);
             $session-> setFlashData('status_action', 'alert-success');
@@ -300,6 +334,8 @@ class Postulante extends BaseController
 
             return redirect()->to('admin/postulantes');
         } else {
+
+            # Genera alerta y devuelve a Postulantes
 
             $session-> setFlashData('status', 'El registro '.$aux.' no ha sido actualizado.');
             $session-> setFlashData('status_action', 'alert-danger');
