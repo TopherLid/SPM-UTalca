@@ -106,7 +106,10 @@
 
             <div class="row">
                 <div class="col-md-12 info_box">
-                    <table class="table  caption-top table-striped table-hover table-borderedless border-dark">
+                    <div class="table-responsive">
+
+                    
+                    <table class="table caption-top table-striped table-hover table-borderedless border-dark">
                         <caption>Preguntas adicionales existentes:</caption>
                         <thead>
                             <tr>
@@ -114,6 +117,7 @@
                                 <th scope="col">Titulo</th>
                                 <th scope="col">Simple o múltiple</th>
                                 <th scope="col">Tipo de pregunta</th>
+                                <th scope="col">Estado</th>
                                 <th scope="col">Opciones</th>
                                 <th scope="col">Acciones</th>
                             </tr>
@@ -125,9 +129,10 @@
                                     <td><?=$pregunta['TITULO']?></td>
                                     <td><?=$pregunta['TIPO']?></td>
                                     <td><?=$pregunta['TIPO_INPUT']?></td>
+                                    <td><?=$pregunta['ESTADO']?></td>
 
                                     <td>
-                                    <?php if ($pregunta['TIPO']=="Simple"): ?>
+                                    <?php if ($pregunta['TIPO']=="Individual"): ?>
                                         No posee opciones.
                                         </td>
                                         <td>
@@ -151,7 +156,9 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
+                    
                     <?php echo $paginador->links();?>
+                    </div>
                 </div>
             </div>
 
@@ -169,6 +176,16 @@
                         <div class="d-grid gap-2">
                             <center><h4>Parámetros</h4></center>
                             <input class="form-control rest proh" id="id_pregunta" readonly="true" type="hidden" name="id_pregunta_m">
+
+                            <div class="row"> 
+                                <label class="col-md-4 control-label" for="estado_multiple">Tipo</label>
+                                <div class="col-md-8">
+                                    <select class="form-select" name="estado_multiple" required>
+                                        <option value='Activo'>Activo</option>
+                                        <option value='En espera'>En espera</option>
+                                    </select>
+                                </div>
+                            </div>
                             
                             <div class="row"> 
                                 <label class="col-md-4 control-label" for="tipo_multiple">Tipo</label>
@@ -211,11 +228,6 @@
                 </div>
             </div>
             </div>
-
-
-
-
-
         
             <div class="modal fade" id="preguntaModal" tabindex="-1" aria-labelledby="preguntaModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -224,14 +236,23 @@
                         <h5 class="modal-title" id="preguntaModalLabel">Modificar Pregunta</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form class="needs-validation" action="<?= base_url() ?>/admin/formulario/modificar/" method="post" accept-charset="utf-8" id="form_modificar_pregunta" novalidate>
+                    <form class="needs-validation" action="<?= base_url() ?>/admin/formulario/modificar" method="post" accept-charset="utf-8" id="form_modificar_pregunta" novalidate>
                     <input type="hidden" name="_method" value="PUT"/>
 
                     <div class="modal-body">
                         <div class="d-grid gap-2">
                             <center><h4>Parámetros</h4></center>
                             <input class="form-control rest proh" id="id_pregunta" readonly="true" type="hidden" name="id_pregunta">
-                            
+
+                            <div class="row"> 
+                                <label class="col-md-4 control-label" for="estado_simple">Tipo</label>
+                                <div class="col-md-8">
+                                    <select class="form-select" name="estado_simple" required>
+                                        <option value='Activo'>Activo</option>
+                                        <option value='En espera'>En espera</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="row"> 
                                 <label class="col-md-4 control-label" for="tipo_simple">Tipo</label>
                                 <div class="col-md-8">

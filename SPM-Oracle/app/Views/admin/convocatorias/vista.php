@@ -108,7 +108,7 @@
                                     <th scope="col">Nombre Convocatoria</th>
                                     <th scope="col">Inicio</th>
                                     <th scope="col">Termino</th>
-                                    <th scope="col">Contador</th>
+                                    <th scope="col">Postulantes</th>
                                     <th scope="col">Estado</th>
                                     <th scope="col">Opciones</th>
                                     <th scope="col">Vista</th>

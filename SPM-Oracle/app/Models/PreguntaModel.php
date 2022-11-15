@@ -10,7 +10,7 @@ class PreguntaModel extends Model
     protected $primaryKey = 'ID_PREGUNTA';
 
     protected $returnType     = 'array';
-    protected $allowedFields = ['TIPO', 'TITULO', 'TIPO_INPUT'];
+    protected $allowedFields = ['TIPO', 'TITULO', 'TIPO_INPUT', 'ESTADO'];
 
     protected $validationRules    = [];
     protected $validationMessages = [];

@@ -83,20 +83,17 @@
             <div class="row">
 
                 <div class="alert <?php
-                if($convocatoria['ESTADO']=="Activa"){
-                    echo "alert-success";
-                }
-                if($convocatoria['ESTADO']=="Próximamente"){
-                    echo "alert-warning";
-                }
-                if($convocatoria['ESTADO']=="Cerrada"){
+                if($atraso=true){
                     echo "alert-danger";
+                } else {
+                    echo "alert-success";
                 }
             ?>" roles="alert">
                 La convocatoria <?=$convocatoria['NOMBRE']?> se encuentra: <?=$convocatoria['ESTADO']?> con fecha límite de <?php 
                 $fin_convocatoria = new DateTime ($convocatoria['FECHA_FIN']);
-                echo date_format($fin_convocatoria, "d-m-Y")?>
-                
+                echo date_format($fin_convocatoria, "d-m-Y")?>. <?php if ($atraso=true && $convocatoria['ESTADO']=="Activa") {
+                    echo "<strong>Porfavor, cierre la convocatoria</strong>";
+                }?>
                 </div>
             </div>
         <?php else: ?>

@@ -42,9 +42,10 @@ class Formulario extends BaseController
 
                 # Si la pregunta es múltiple, busca las posibles opciones asociadas
 
-                $contador_opciones = 1;
-
+                
                 if ($pregunta['TIPO']=="Múltiple"){
+                    
+                    $contador_opciones = 1;
 
                     $opciones = $opcionesPMultipleModel->select('*')->where('ID_PREGUNTA', $pregunta['ID_PREGUNTA'])->findAll();
 
@@ -52,7 +53,8 @@ class Formulario extends BaseController
                         'ID_PREGUNTA' => $pregunta['ID_PREGUNTA'],
                         'TIPO' => $pregunta['TIPO'],
                         'TITULO' => $pregunta['TITULO'],
-                        'TIPO_INPUT' => $pregunta['TIPO_INPUT']
+                        'TIPO_INPUT' => $pregunta['TIPO_INPUT'],
+                        'ESTADO' => $pregunta['ESTADO']
                     ];
                     
                     foreach($opciones as $opcion){
@@ -65,6 +67,19 @@ class Formulario extends BaseController
 
                     $preguntas = array_replace($preguntas_base, $cambiar);
                     $contador++;
+                } else {
+
+                    $cambiar[$contador] = [
+                        'ID_PREGUNTA' => $pregunta['ID_PREGUNTA'],
+                        'TIPO' => $pregunta['TIPO'],
+                        'TITULO' => $pregunta['TITULO'],
+                        'TIPO_INPUT' => $pregunta['TIPO_INPUT'],
+                        'ESTADO' => $pregunta['ESTADO']
+                    ];
+
+                    $preguntas = array_replace($preguntas_base, $cambiar);
+                    $contador++;
+
                 }
             }
         }
@@ -106,7 +121,7 @@ class Formulario extends BaseController
         # Crea una pregunta de tipo input simple
 
         $data = [
-            'TIPO' => "input",
+            'TIPO' => "Individual",
             'TITULO' => $titulo,
             'TIPO_INPUT' => $tipo_input
         ];
@@ -223,7 +238,7 @@ class Formulario extends BaseController
 
         # Si la pregunta no es Simple devuelve sin realizar modificaciones
 
-        if ($pregunta != "Simple") {
+        if ($pregunta['TIPO'] != "Individual") {
 
             # Devuelve a Formulario con alerta bootstrap
 
@@ -235,9 +250,10 @@ class Formulario extends BaseController
         }
 
         $data = [
-            'TIPO'=> "Simple",
+            'TIPO'=> "Individual",
             'TITULO'=>  $this->request->getVar('titulo_pregunta'),
-            'TIPO_INPUT' => $this->request->getVar('tipo_simple')
+            'TIPO_INPUT' => $this->request->getVar('tipo_simple'),
+            'ESTADO' => $this->request->getVar('estado_simple')
         ];
 
         if ($preguntaModel->update($aux, $data)){
@@ -292,7 +308,8 @@ class Formulario extends BaseController
         $data = [
             'TIPO'=> "Múltiple",
             'TITULO'=>  $this->request->getVar('titulo_pregunta_m'),
-            'TIPO_INPUT' => $this->request->getVar('tipo_multiple')
+            'TIPO_INPUT' => $this->request->getVar('tipo_multiple'),
+            'ESTADO' => $this->request->getVar('estado_multiple')
         ];
 
         if ($preguntaModel->update($aux, $data)){

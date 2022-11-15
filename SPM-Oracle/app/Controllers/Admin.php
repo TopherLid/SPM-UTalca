@@ -13,6 +13,8 @@ class Admin extends BaseController
     {
         #Función Home, muestra la vista de inicio de todas las funciones administrativas
 
+
+
         $session = session();
         $sesion_creada = $session->has('id_administrativo');
 
@@ -55,6 +57,14 @@ class Admin extends BaseController
             return view('admin/index', $data);
     
         } else {
+
+
+            $server = date("d/m/y");
+
+            if ($server > $convocatoria['FECHA_FIN'])
+                $atrasado = true;
+            else
+                $atrasado = false;
 
             /**
              * Cuando existe una convocatoria busca la última creada
@@ -138,7 +148,7 @@ class Admin extends BaseController
         }
 
         $data=array('programa'=>$programa, 'convocatoria'=>$convocatoria, 'usuario'=>$usuario, 'contador'=>$contador, 'no_info'=>$no_info, 
-        'postulaciones_contadas'=>$postulaciones_contadas, 'movilidad_contadas'=>$movilidad_contadas);
+        'postulaciones_contadas'=>$postulaciones_contadas, 'movilidad_contadas'=>$movilidad_contadas, 'atrasado'=>$atrasado);
             
         return view('admin/index', $data);
     }

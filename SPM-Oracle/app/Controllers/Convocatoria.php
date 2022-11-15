@@ -51,7 +51,7 @@ class Convocatoria extends BaseController
         $paginador = $convocatoriaModel->pager;
         $postulaciones = $postulacionModel-> findAll();
         $programas = $programaModel->where('ESTADO', 'Activo')->findAll(); 
-        $preguntas = $preguntasModel->findAll();
+        $preguntas = $preguntasModel->where('ESTADO', 'Activo')->findAll();
 
         # En caso de ser vacía retorna False para ser trabajada en la vista
 
@@ -80,7 +80,7 @@ class Convocatoria extends BaseController
          * Toma la información y la guarda en el arreglo data, el cual, es mostrado en la vista
          */
         
-        $data=array('convocatorias'=>$convocatorias,  'programas'=>$programas, 'preguntas'=>$preguntas,  'usuario'=>$usuario, 'paginador'=>$paginador); 
+        $data=array('convocatorias'=>$convocatorias, 'programas'=>$programas, 'preguntas'=>$preguntas,  'usuario'=>$usuario, 'paginador'=>$paginador); 
             
         return view('admin/convocatorias/vista', $data);
     }

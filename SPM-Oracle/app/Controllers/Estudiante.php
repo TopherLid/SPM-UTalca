@@ -14,6 +14,7 @@ use App\Models\PreguntaModel;
 use App\Models\OpcionesPMultipleModel;
 use App\Models\RespuestaModel;
 use App\Models\EstudianteModel;
+use App\Models\DetalleUniversidadModel;
 
 use CodeIgniter\Files\File;
 
@@ -180,10 +181,14 @@ class Estudiante extends BaseController
         $opcionesPMultipleModel = new OpcionesPMultipleModel();
         $preguntaConvocatoriaModel = new PreguntaConvocatoriaModel();
 
+        $detalleUniversidadModel = new DetalleUniversidadModel();
+
         $programa = $programaModel->find($convocatoria['ID_PROGRAMA']);
-        $universidades_base = $universidadModel->where('ESTADO', 'Activo')->orderBy('ID_PAIS', 'ASC')->findAll(); 
+
         $idiomas = $idiomaModel->select('*')->where('ESTADO', 'Activo')->findAll();
         $preguntas_adicionales = $preguntaConvocatoriaModel->select('*')->where('ID_CONVOCATORIA', $postulante['id_convocatoria'])->findAll();
+        
+        $universidades_base = $universidadModel->where('ESTADO', 'Activo')->orderBy('ID_PAIS', 'ASC')->findAll(); 
 
         $contador_universidad = 0;
 
@@ -603,6 +608,18 @@ class Estudiante extends BaseController
             $respuestaModel = new RespuestaModel();
             $preguntaConvocatoriaModel = new PreguntaConvocatoriaModel();
 
+
+            /*   
+            * Para buscar sólamente las universidades asociadas al programa de la convocatoria
+            * Decomentar esta función una vez que ya las universidades se encuentren con su programa asociado
+
+            $detalle = ['ESTADO' => 'Activo', 'ID_PROGRAMA' => $programa['ID_PROGRAMA']];
+
+            $universidades_base = $universidadModel->where($detalle)->orderBy('ID_PAIS', 'ASC')->findAll();
+
+            */
+
+
             $postulacion = $postulacionModel->find($aux);
             $carrera = $carreraModel->find($postulante['id_carrera']);
             $convocatoria = $convocatoriaModel->find($postulacion['ID_CONVOCATORIA']);
@@ -719,9 +736,9 @@ class Estudiante extends BaseController
                 'EMAIL_PERSONAL'=>strip_tags($this->request->getVar('email_personal')),
                 'NIVEL_INGLES'=> strip_tags($this->request->getVar('nivel_ingles')),
                 'IDIOMA_2'=> strip_tags($this->request->getVar('idioma_sec')),
-                'PRIMERA_OPCION'=>strip_tags($this->request->getVar('1ra_opcion')),
-                'SEGUNDA_OPCION'=> strip_tags($this->request->getVar('2da_opcion')),
-                'TERCERA_OPCION'=> strip_tags($this->request->getVar('3ra_opcion')),   
+                'PRIMERA_OPCION'=>strip_tags($this->request->getVar('PRIMERA_OPCION')),
+                'SEGUNDA_OPCION'=> strip_tags($this->request->getVar('SEGUNDA_OPCION')),
+                'TERCERA_OPCION'=> strip_tags($this->request->getVar('TERCERA_OPCION')),   
                 'ESTADO' => "En espera" 
             ];
 

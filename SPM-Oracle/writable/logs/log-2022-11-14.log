@@ -1,0 +1,157 @@
+CRITICAL - 2022-11-14 18:04:12 --> A non well formed numeric value encountered
+in APPPATH\Controllers\Admin.php on line 62.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well formed numeric value encountered', 'APPPATH\\Controllers\\Admin.php', 62, [...])
+ 2 APPPATH\Controllers\Admin.php(62): date('d-m-Y', '10/11/22')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:06:20 --> Class 'App\Controllers\Time' not found
+in APPPATH\Controllers\Admin.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:08:25 --> Class 'App\Controllers\Time' not found
+in APPPATH\Controllers\Admin.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 18:53:48 --> ErrorException: oci_execute(): ORA-00904: &quot;ESTADO&quot;: identificador no válido in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #167, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(54): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-14 18:53:48 --> oci_execute(): ORA-00904: &quot;ESTADO&quot;: identificador no válido
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-00904: &quot;ESTADO&quot;: identificador no válido', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('SELECT *
+FROM "PREGUNTA"
+WHERE "ESTADO" = \'Activo\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "PREGUNTA"
+WHERE "ESTADO" = \'Activo\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "PREGUNTA"
+WHERE "ESTADO" = :ESTADO:', [...], false)
+ 6 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 8 APPPATH\Controllers\Convocatoria.php(54): CodeIgniter\BaseModel->findAll()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 18:54:25 --> ErrorException: oci_execute(): ORA-00904: &quot;ESTADO&quot;: identificador no válido in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #167, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\tesis\app\Controllers\Convocatoria.php(54): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+#9 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-14 18:54:25 --> oci_execute(): ORA-00904: &quot;ESTADO&quot;: identificador no válido
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-00904: &quot;ESTADO&quot;: identificador no válido', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('SELECT *
+FROM "PREGUNTA"
+WHERE "ESTADO" = \'Activo\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "PREGUNTA"
+WHERE "ESTADO" = \'Activo\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "PREGUNTA"
+WHERE "ESTADO" = :ESTADO:', [...], false)
+ 6 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 8 APPPATH\Controllers\Convocatoria.php(54): CodeIgniter\BaseModel->findAll()
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Convocatoria->index()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Convocatoria))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-14 18:55:48 --> ErrorException: oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;PREGUNTA&quot;.&quot;ID_PREGUNTA&quot;) in C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ...', 'C:\\xampp\\htdocs...', 198, Array)
+#1 C:\xampp\htdocs\tesis\system\Database\OCI8\Connection.php(198): oci_execute(Resource id #154, 32)
+#2 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PR...')
+#3 C:\xampp\htdocs\tesis\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PR...')
+#4 C:\xampp\htdocs\tesis\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PR...', Array, false)
+#5 C:\xampp\htdocs\tesis\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\tesis\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\tesis\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\tesis\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\tesis\app\Controllers\Formulario.php(114): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\tesis\system\CodeIgniter.php(904): App\Controllers\Formulario->crear_input()
+#11 C:\xampp\htdocs\tesis\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+#12 C:\xampp\htdocs\tesis\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\tesis\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-11-14 18:55:48 --> oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;PREGUNTA&quot;.&quot;ID_PREGUNTA&quot;)
+in SYSTEMPATH\Database\OCI8\Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_execute(): ORA-01400: no se puede realizar una inserción NULL en (&quot;TOPHER&quot;.&quot;PREGUNTA&quot;.&quot;ID_PREGUNTA&quot;)', 'SYSTEMPATH\\Database\\OCI8\\Connection.php', 198, [...])
+ 2 SYSTEMPATH\Database\OCI8\Connection.php(198): oci_execute(resource (oci8 statement), 32)
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\OCI8\Connection->execute('INSERT INTO "PREGUNTA" ("TIPO", "TITULO", "TIPO_INPUT") VALUES (\'input\', \'Pregunta Input Simple\', \'Texto\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "PREGUNTA" ("TIPO", "TITULO", "TIPO_INPUT") VALUES (\'input\', \'Pregunta Input Simple\', \'Texto\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "PREGUNTA" ("TIPO", "TITULO", "TIPO_INPUT") VALUES (:TIPO:, :TITULO:, :TIPO_INPUT:)', [...], false)
+ 6 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\Formulario.php(114): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->crear_input()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:56:25 --> Undefined variable: preguntas
+in APPPATH\Controllers\Formulario.php on line 81.
+ 1 APPPATH\Controllers\Formulario.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas', 'APPPATH\\Controllers\\Formulario.php', 81, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:57:20 --> Undefined variable: preguntas
+in APPPATH\Controllers\Formulario.php on line 82.
+ 1 APPPATH\Controllers\Formulario.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas', 'APPPATH\\Controllers\\Formulario.php', 82, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:57:59 --> Undefined variable: preguntas
+in APPPATH\Controllers\Formulario.php on line 70.
+ 1 APPPATH\Controllers\Formulario.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: preguntas', 'APPPATH\\Controllers\\Formulario.php', 70, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:59:33 --> Undefined variable: contador_opciones
+in APPPATH\Controllers\Formulario.php on line 67.
+ 1 APPPATH\Controllers\Formulario.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: contador_opciones', 'APPPATH\\Controllers\\Formulario.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Formulario->formulario()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulario))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 20:48:13 --> Class 'App\Controllers\DateTime' not found
+in APPPATH\Controllers\Admin.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin->home()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
