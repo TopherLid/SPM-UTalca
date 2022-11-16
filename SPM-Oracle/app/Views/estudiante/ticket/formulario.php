@@ -70,10 +70,7 @@
         <div class="row">
             <label class="col-md-4 control-label" for="nombre">Fecha de Nacimiento</label>
             <div clasS="col-md-8">
-                <input class="form-control proh" type="text" name="nacimiento" readonly="true" value='<?php 
-                    $nacimiento = new DateTime ($postulante['nacimiento']);
-                    echo date_format($nacimiento, "d-m-Y"); 
-                ?>'>
+                <input class="form-control proh" type="text" name="nacimiento" readonly="true" value='<?=$postulante['nacimiento']?>'>
             </div>
         </div>
         <div class="row">
