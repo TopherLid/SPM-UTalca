@@ -28,8 +28,11 @@ class PDF extends BaseController
         $postulacionModel = new PostulacionModel();
         $universidadModel = new UniversidadModel();
         $idiomaModel = new IdiomaModel();
+        $convocatoriaModel = new ConvocatoriaModel();
 
         $postulacion = $postulacionModel->find($aux);
+
+        $convocatoria = $convocatoriaModel->find($postulacion['ID_CONVOCATORIA']);
 
         $universidad1 = $universidadModel -> find($postulacion['PRIMERA_OPCION']);
         $universidad2 = $universidadModel -> find($postulacion['SEGUNDA_OPCION']);
@@ -58,7 +61,7 @@ class PDF extends BaseController
 
         # Genera PDF con las características base de la postulación
         
-        $datos = array('postulacion'=> $postulacion, 'estudiante'=>$estudiante, 'universidad1'=>$universidad1, 'universidad2'=>$universidad2, 'universidad3'=>$universidad3, 'idioma'=>$idioma);
+        $datos = array('postulacion'=> $postulacion, 'estudiante'=>$estudiante, 'universidad1'=>$universidad1, 'universidad2'=>$universidad2, 'universidad3'=>$universidad3, 'idioma'=>$idioma, 'convocatoria'=>$convocatoria);
 
         $documento = new Dompdf();
         $documento->set_option('isRemoteEnabled', TRUE);

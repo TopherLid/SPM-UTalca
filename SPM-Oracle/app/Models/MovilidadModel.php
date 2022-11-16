@@ -10,7 +10,7 @@ class MovilidadModel extends Model
     protected $primaryKey = 'ID_MOVILIDAD';
 
     protected $returnType     = 'array';
-    protected $allowedFields = ['FECHA_INICIO', 'FECHA_FIN', 'SEMESTRE', 'ESTADO', 'ID_ESTUDIANTE'];
+    protected $allowedFields = ['FECHA_INICIO', 'FECHA_FIN', 'SEMESTRE', 'ESTADO', 'ID_ESTUDIANTE', 'ID_CONVOCATORIA'];
 
     protected $validationRules    = [];
     protected $validationMessages = [];

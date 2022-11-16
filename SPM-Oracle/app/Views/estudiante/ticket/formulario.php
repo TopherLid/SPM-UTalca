@@ -212,7 +212,7 @@
             <div class="d-grid gap-2">
                 <?php foreach($preguntas as $pregunta): ?>
 
-                    <?php if($pregunta['TIPO']=="Simple"): ?>
+                    <?php if($pregunta['TIPO']=="Individual"): ?>
 
                         <div class="row">
                             <label class="col-md-4 control-label" for="pregunta_<?=$contador_preguntas?>"><?=$pregunta['TITULO']?></label>

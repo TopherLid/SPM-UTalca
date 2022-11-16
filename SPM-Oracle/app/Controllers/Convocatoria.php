@@ -15,6 +15,7 @@ class Convocatoria extends BaseController
 
     public function index()
     {
+
         $session = session();
         $sesion_creada = $session->has('id_administrativo');
 
@@ -40,7 +41,7 @@ class Convocatoria extends BaseController
         
         $convocatorias = $convocatoriaModel->orderBy('ID_CONVOCATORIA', 'DESC')->paginate(25);
         
-        if(empty($convocatorias)){
+        if(empty($convocatorias) || is_null($convocatorias)){
             $convocatorias = false;
         }
 
@@ -87,6 +88,7 @@ class Convocatoria extends BaseController
 
     public function crear()
     {
+
         $session = session();
         $sesion_creada = $session->has('id_administrativo');
 
@@ -101,10 +103,15 @@ class Convocatoria extends BaseController
          * las preguntas
          */
 
+         #'YYYY-MM-DD HH24:MI:SS'
+
+        $f_inicio = $this->request->getVar('f_inicio');
+        $f_fin = $this->request->getVar('f_fin');
+        
         $id_convocatoria = strip_tags($this->request->getVar('id_convocatoria'));
         $nombre_conv = strip_tags($this->request->getVar('nombre_convocatoria'));
-        $inicio_conv = strip_tags($this->request->getVar('f_inicio'));
-        $fin_conv = strip_tags($this->request->getVar('f_fin'));
+        $inicio_convocatoria = date("d/m/Y", strtotime($f_inicio));
+        $fin_convocatoria = date("d/m/Y ", strtotime($f_fin));
         $min_sct = strip_tags($this->request->getVar('min_sct_creditos'));
         $max_sct = strip_tags($this->request->getVar('max_sct_creditos'));
         $ramos = strip_tags($this->request->getVar('ramos_reprobados'));
@@ -112,8 +119,8 @@ class Convocatoria extends BaseController
 
         $data = [
             'NOMBRE'=> $nombre_conv ,
-            'FECHA_INICIO'=>$inicio_conv ,
-            'FECHA_FIN'=>$fin_conv ,
+            'FECHA_INICIO'=>$inicio_convocatoria ,
+            'FECHA_FIN'=>$fin_convocatoria ,
             'MIN_CREDITO_SCT'=>$min_sct ,
             'MAX_CREDITO_SCT'=> $max_sct ,
             'RAMOS_REPROBADOS' => $ramos,
@@ -124,45 +131,45 @@ class Convocatoria extends BaseController
          * Insersión de datos en tabla CONVOCATORIA
          */
 
-        if ($convocatoriaModel->save($data)){
+        if ($convocatoriaModel->save($data, TRUE)){
 
             # Genera alerta y devuelve a Convocatoria
-
+            
             $session-> setFlashData('status', 'Convocatoria creada correctamente.');
             $session-> setFlashData('status_action', 'alert-success');
             $session-> setFlashData('status_alert', '¡Correcto!');
-
+            
             $convocatoria_actual = $convocatoriaModel -> orderBy('ID_CONVOCATORIA', 'DESC')-> first();
-
+            
             /**
              * Insersión del formulario 
              * SIEMPRE Y CUANDO
              * existan preguntas seleccionadas en la checkbox
              */
-
+            
             if (! is_null($this->request->getVar('pregunta')) || ! empty($this->request->getVar('pregunta'))){
                 
                 foreach ($_POST['pregunta'] as $valor) {
-
+            
                     $datos_pregunta = [
                         'ID_PREGUNTA' => $valor,
                         'ID_CONVOCATORIA' => $convocatoria_actual['ID_CONVOCATORIA']
-
+            
                     ];
                     $preguntaConvocatoriaModel->save($datos_pregunta); 
                 }
             }
-
+            
             return redirect()->to('admin/convocatorias');
-
-        } else {
-
+            
+            } else {
+            
             # Genera alerta y devuelve a Convocatoria
-
+            
             $session-> setFlashData('status', 'La convocatoria no ha sido creada.');
             $session-> setFlashData('status_action', 'alert-danger');
             $session-> setFlashData('status_alert', '¡Error!');
-
+            
             return redirect()->to('admin/convocatorias');
         }
     }

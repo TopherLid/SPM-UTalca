@@ -16,4 +16,5 @@ class ConvocatoriaModel extends Model
     protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
+
 }

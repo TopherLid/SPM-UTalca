@@ -98,6 +98,7 @@
             </div>
 
         <?php else: ?>
+
             <div class="row">
                 <div class="col-md-12 info_box">
                     <div class="table-responsive">
@@ -115,24 +116,30 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $contador=1; foreach($convocatorias as $convocatoria): #echo count($movilidad); arraylenght #revisar el mismo posible error que students, muchas dudas ahora que estoy arreglando esto?>
+                                <?php $contador=1; foreach($convocatorias as $convocatoria): ?>
                                 <tr scope='row'>
                                     <th>#<?=$contador?></th>
                                     <td><?=$convocatoria['NOMBRE']?></td>
                                     <td><?=$convocatoria['FECHA_INICIO']?></td>
-                                    <td><?=$convocatoria['FECHA_INICIO']?></td>
+                                    <td><?=$convocatoria['FECHA_FIN']?></td>
                                     <td><?=$convocatoria['CONTADOR']?></td>
                                     <td><?=$convocatoria['ESTADO']?></td> 
                                     <?php if ($convocatoria['ESTADO']!='Cerrada'): ?>
                                     <td> 
                                         <button type="button" class="btn btn-warning btn-circle" data-bs-toggle="modal" data-bs-target="#convocatoriaModal" data-bs-id="<?=$convocatoria['ID_CONVOCATORIA']?>" 
-                                        data-bs-nombre="<?=$convocatoria['NOMBRE']?>" data-bs-inicio="<?php 
-                                            $fecha_inicial = new DateTime($convocatoria['FECHA_INICIO']);
-                                            echo date_format($fecha_inicial, "Y-m-d");
-                                            ?>" data-bs-fin="<?php 
-                                            $fecha_final = new DateTime ($convocatoria['FECHA_INICIO']);
-                                            echo date_format($fecha_final, "Y-m-d");
-                                            ?>" 
+                                        data-bs-nombre="<?=$convocatoria['NOMBRE']?>" data-bs-inicio="<?php
+                                        # Workaround por problemas con date y Oracle, acepta hasta 2099
+                                        $data = explode("/", $convocatoria['FECHA_INICIO']);
+                                        $data = array_reverse($data);
+                                        $data[0] = "20".$data[0];
+                                        $data = implode("-",$data);
+                                        echo $data;?>" data-bs-fin="<?php
+                                        # Workaround por problemas con date y Oracle, acepta hasta 2099
+                                        $data = explode("/", $convocatoria['FECHA_FIN']);
+                                        $data = array_reverse($data);
+                                        $data[0] = "20".$data[0];
+                                        $data = implode("-",$data);
+                                        echo $data;?>" 
                                         data-bs-estado="<?=$convocatoria['ESTADO']?>" data-bs-minSCT="<?=$convocatoria['MIN_CREDITO_SCT']?>" data-bs-maxSCT="<?=$convocatoria['MAX_CREDITO_SCT']?>" 
                                         data-bs-reprobado="<?=$convocatoria['RAMOS_REPROBADOS']?>"><i class="fa-solid fa-pen-to-square"></i> Modificar</button>
                                     </td>
@@ -152,10 +159,7 @@
         <?php endif;?>
     </div>
 
-
-
     <?php if(! $convocatorias == false) : ?>
-
 
         <div class="modal fade" id="convocatoriaModal" tabindex="-1" aria-labelledby="convocatoriaModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" >
@@ -189,13 +193,13 @@
                             <div class="row">
                                 <label class="col-md-4 control-label" for="f_inicio">Fecha de inicio</label>
                                 <div class="col-md-8">
-                                    <input type="date" class="form-control" id="f_inicio" name="f_inicio" min="2021-01-01">
+                                    <input type="date" class="form-control" id="f_inicio" name="f_inicio" min="2021-01-01" max="2099-12-31" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <label class="col-md-4 control-label" for="f_fin">Fecha de término</label>
                                 <div class="col-md-8">
-                                    <input type="date" class="form-control" id="f_fin" name="f_fin" min="2021-01-02" required>
+                                    <input type="date" class="form-control" id="f_fin" name="f_fin" min="2021-01-02" max="2099-12-31" required>
                                 </div>
                             </div>
                             <div class="row"> 
@@ -289,13 +293,13 @@
                             <div class="row">
                                 <label class="col-md-4 control-label" for="f_inicio">Fecha de inicio</label>
                                 <div class="col-md-8">
-                                    <input type="date" class="form-control" id="f_inicio" name="f_inicio" min="2021-01-01" required>
+                                    <input type="date" class="form-control" id="f_inicio" name="f_inicio" min="2021-01-01" max="2099-12-31" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <label class="col-md-4 control-label" for="f_fin">Fecha de término</label>
                                 <div class="col-md-8">
-                                    <input type="date" class="form-control" id="f_fin" name="f_fin" min="2021-01-02" required>
+                                    <input type="date" class="form-control" id="f_fin" name="f_fin" min="2021-01-02" max="2099-12-31" required>
                                 </div>
                             </div>
                             <div class="row"> 

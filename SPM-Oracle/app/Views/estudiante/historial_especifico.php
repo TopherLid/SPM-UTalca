@@ -237,8 +237,9 @@
         
     </div>
 
+    <?php if ($postulacion['ESTADO']=="Modificable"): ?>
 
-    <div class="modal fade" id="postulacion" tabindex="-1" aria-labelledby="postulacionModalLabel" aria-hidden="true">
+        <div class="modal fade" id="postulacion" tabindex="-1" aria-labelledby="postulacionModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <form class="needs-validation" action="<?= base_url() ?>/estudiante/historial/modificar" method="post" accept-charset="utf-8" id="modificar_postulacion_estudiante" novalidate>
@@ -327,6 +328,11 @@
             </div>
         </div>
     </div>
+
+
+    <?php endif; ?>
+
+    
 
     <div id="footer">
         <center>

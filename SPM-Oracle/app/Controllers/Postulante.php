@@ -305,7 +305,7 @@ class Postulante extends BaseController
         $seleccion = $this->request->getVar('seleccion');
         
         $data = [
-            'SELECCION'=>$seleccion
+            'CONFIRMACION' => $seleccion
         ];
 
         $postulacion = $postulacionModel-> find($aux);
@@ -320,7 +320,8 @@ class Postulante extends BaseController
             if ($seleccion=="Confirmado"){
 
                 $movilidad = [
-                    'ID_ESTUDIANTE' => $postulacion['ID_ESTUDIANTE']
+                    'ID_ESTUDIANTE' => $postulacion['ID_ESTUDIANTE'],
+                    'ID_CONVOCATORIA' => $postulacion['ID_CONVOCATORIA']
                 ];
 
                 $movilidadModel->save($movilidad);
@@ -333,6 +334,7 @@ class Postulante extends BaseController
             $session-> setFlashData('status_alert', '¡Correcto!');
 
             return redirect()->to('admin/postulantes');
+
         } else {
 
             # Genera alerta y devuelve a Postulantes

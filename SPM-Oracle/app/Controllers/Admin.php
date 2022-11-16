@@ -58,8 +58,7 @@ class Admin extends BaseController
     
         } else {
 
-
-            $server = date("d/m/y");
+            $server = date("d/m/Y");
 
             if ($server > $convocatoria['FECHA_FIN'])
                 $atrasado = true;

@@ -245,9 +245,6 @@
             <div class="col">
                 <button type="button" class="btn btn-success btn-circle w-100" data-bs-toggle="modal" data-bs-target="#crearUniversidadModal"><i class="fa-solid fa-address-book"></i> Añadir nueva universidad asociada</button>
             </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#crearPaisModal"><i class="fa-solid fa-address-book"></i> Añadir Pais al sistema</button>
-            </div>
         </div>
     </div>
     
@@ -313,33 +310,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i> Cerrar</button>
                         <button type="submit" class="btn btn-primary" id="boton_crear_universidad"><i class="fa-solid fa-floppy-disk"></i> Crear</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="crearPaisModal" tabindex="-1" aria-labelledby="crearPaisModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="crearPaisModalLabel">Añadir país</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form class="needs-validation" action="<?= base_url() ?>/admin/pais/crear" method="post" id="form_crear_pais" accept-charset="utf-8" novalidate> 
-                    <div class="modal-body">
-                        <div class="d-grid gap-2">
-                            <div class="row">
-                                <label class="col-md-4 control-label" for="nombre_pais">Nombre del país</label>
-                                <div class="col-md-8">
-                                    <input class="form-control" type="text" name="nombre_pais" placeholder="Chile" required>
-                                </div>
-                            </div>
-                        </div>                                     
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i> Cerrar</button>
-                        <button type="submit" class="btn btn-primary" id="boton_crear_pais"><i class="fa-solid fa-floppy-disk"></i> Crear</button>
                     </div>
                 </form>
             </div>

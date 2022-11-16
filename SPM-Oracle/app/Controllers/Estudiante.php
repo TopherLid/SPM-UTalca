@@ -37,7 +37,7 @@ class Estudiante extends BaseController
 
         $convocatoria = $convocatoriaModel->select('*')->orderBy('ID_CONVOCATORIA', 'DESC')->first();
 
-        if (is_null($convocatoria)){
+        if (is_null($convocatoria) || empty($convocatoria)){
             return view('estudiante/proximamente');
         }
 
@@ -61,10 +61,6 @@ class Estudiante extends BaseController
         $programa = $programaModel->find($convocatoria['ID_PROGRAMA']);
         $programas = $programaModel->findAll();
 
-        if (is_null($convocatoria)){
-            return view('estudiante/proximamente');
-        }
-
         $ver = count($postulacion_check);
 
         $postulacion_multiple = false;
@@ -74,7 +70,7 @@ class Estudiante extends BaseController
         } 
 
         if ($ver!=0){
-            $postulacion_multiple = true; # Bypass para multiples postulaciones
+            //$postulacion_multiple = true; # Bypass para multiples postulaciones
         }
 
         $carrera = $carreraModel->find($postulante['id_carrera']);
@@ -229,7 +225,7 @@ class Estudiante extends BaseController
 
                 $pregunta_finder = $preguntaModel -> find($p_a['ID_PREGUNTA']);
 
-                if ($pregunta_finder['TIPO']=="Simple"){
+                if ($pregunta_finder['TIPO']=="Individual"){
                     
                     $cambiar_pregunta[$contador_pregunta]=[
                         'ID_PREGUNTA' => $pregunta_finder['ID_PREGUNTA'],

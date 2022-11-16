@@ -27,7 +27,7 @@
     <br>
     <center><h4>Información registrada</h4></center>
     <ul>
-        <li>Convocatoria: <?=$postulacion['ID_CONVOCATORIA']?></li>
+        <li>Convocatoria: <?=$convocatoria['NOMBRE']?></li>
         <li>Nacionalidad: <?=$postulacion['NACIONALIDAD']?></li>
         <li>Telefono: <?=$postulacion['N_TELEFONO']?></li>
         <li>Email Personal: <?=$postulacion['EMAIL_PERSONAL']?></li>

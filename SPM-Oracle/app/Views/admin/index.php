@@ -89,9 +89,12 @@
                     echo "alert-success";
                 }
             ?>" roles="alert">
-                La convocatoria <?=$convocatoria['NOMBRE']?> se encuentra: <?=$convocatoria['ESTADO']?> con fecha límite de <?php 
-                $fin_convocatoria = new DateTime ($convocatoria['FECHA_FIN']);
-                echo date_format($fin_convocatoria, "d-m-Y")?>. <?php if ($atraso=true && $convocatoria['ESTADO']=="Activa") {
+                La convocatoria <?=$convocatoria['NOMBRE']?> se encuentra: <?=$convocatoria['ESTADO']?> con fecha límite de: <?php
+                    # Workaround por problemas con date y Oracle, acepta hasta 2099
+                    $data = explode("/", $convocatoria['FECHA_FIN']);
+                    $data[2] = "20".$data[2];
+                    $data = implode("-",$data);
+                    echo $data;?>. <?php if ($atraso=true && $convocatoria['ESTADO']=="Activa") {
                     echo "<strong>Porfavor, cierre la convocatoria</strong>";
                 }?>
                 </div>
@@ -148,7 +151,7 @@
                                 <p class="card-text">Estudiantes aceptados con beca: <?=$postulaciones_contadas['Becados']?> estudiantes</p>
                                 <p class="card-text">Estudiantes aceptados con crédito: <?=$postulaciones_contadas['Aceptadas']?> estudiantes</p>
                                 <p class="card-text">Estudiantes rechazados: <?=$postulaciones_contadas['Rechazadas']?> estudiantes</p>
-                                <p class="card-text">Movilidad Preparada:<?=$movilidad_contadas['Preparacion']?> estudiantes</p>
+                                <p class="card-text">Movilidad Preparada: <?=$movilidad_contadas['Preparacion']?> estudiantes</p>
                             <?php else: ?>
                                 <p class="card-text">No existe movilidad.</p>
                             <?php endif;?>
